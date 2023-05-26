@@ -34,11 +34,11 @@ func (s *AddDataSourcesReqApplicationJSON) SetFake() {
 	{
 		elem = nil
 		for i := 0; i < 0; i++ {
-			var elemX SzDataSourceDescriptor
+			var elem SzDataSourceDescriptor
 			{
-				elemX.SetFake()
+				elem.SetFake()
 			}
-			elem = append(elem, elemX)
+			elem = append(elem, elem)
 		}
 	}
 	s.SetSzDataSourceDescriptorArray(elem)

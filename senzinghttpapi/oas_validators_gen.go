@@ -11,13 +11,15 @@ import (
 )
 
 func (s *AddDataSourcesApplicationJSONForbidden) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *AddDataSourcesApplicationJSONInternalServerError) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
@@ -37,230 +39,268 @@ func (s AddDataSourcesReqApplicationJSON) Validate() error {
 }
 
 func (s *AddRecordApplicationJSONBadRequest) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *AddRecordApplicationJSONForbidden) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *AddRecordApplicationJSONInternalServerError) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *AddRecordApplicationJSONNotFound) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *AddRecordWithReturnedRecordIdApplicationJSONBadRequest) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *AddRecordWithReturnedRecordIdApplicationJSONForbidden) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *AddRecordWithReturnedRecordIdApplicationJSONInternalServerError) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *AddRecordWithReturnedRecordIdApplicationJSONNotFound) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *DeleteRecordApplicationJSONInternalServerError) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *DeleteRecordApplicationJSONNotFound) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *FindEntityNetworkApplicationJSONBadRequest) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *FindEntityNetworkApplicationJSONInternalServerError) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *FindEntityPathApplicationJSONBadRequest) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *FindEntityPathApplicationJSONInternalServerError) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *GetAttributeTypeApplicationJSONInternalServerError) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *GetAttributeTypeApplicationJSONNotFound) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *GetEntityByEntityIdApplicationJSONInternalServerError) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *GetEntityByEntityIdApplicationJSONNotFound) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *GetEntityByRecordIdApplicationJSONInternalServerError) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *GetEntityByRecordIdApplicationJSONNotFound) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *GetRecordApplicationJSONInternalServerError) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *GetRecordApplicationJSONNotFound) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *GetVirtualEntityByRecordIdsApplicationJSONBadRequest) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *GetVirtualEntityByRecordIdsApplicationJSONInternalServerError) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *HowEntityByEntityIDApplicationJSONInternalServerError) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *HowEntityByEntityIDApplicationJSONNotFound) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *HowEntityByRecordIDApplicationJSONInternalServerError) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *HowEntityByRecordIDApplicationJSONNotFound) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *LoadBulkRecordsApplicationJSONForbidden) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *LoadBulkRecordsApplicationJSONInternalServerError) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 
 func (s *ReevaluateEntityApplicationJSONInternalServerError) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *ReevaluateEntityApplicationJSONNotFound) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *ReevaluateRecordApplicationJSONInternalServerError) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *ReevaluateRecordApplicationJSONNotFound) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *SearchEntitiesByGetApplicationJSONBadRequest) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *SearchEntitiesByGetApplicationJSONInternalServerError) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *SearchEntitiesByPostApplicationJSONBadRequest) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *SearchEntitiesByPostApplicationJSONInternalServerError) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
@@ -2334,49 +2374,57 @@ func (s *SzWhyRecordsResult) Validate() error {
 	return nil
 }
 func (s *WhyEntitiesApplicationJSONInternalServerError) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *WhyEntitiesApplicationJSONNotFound) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *WhyEntityByEntityIDApplicationJSONInternalServerError) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *WhyEntityByEntityIDApplicationJSONNotFound) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *WhyEntityByRecordIDApplicationJSONInternalServerError) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *WhyEntityByRecordIDApplicationJSONNotFound) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *WhyRecordsApplicationJSONInternalServerError) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil
 }
 func (s *WhyRecordsApplicationJSONNotFound) Validate() error {
-	if err := s.Validate(); err != nil {
+	alias := (*SzErrorResponse)(s)
+	if err := alias.Validate(); err != nil {
 		return err
 	}
 	return nil

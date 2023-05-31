@@ -1,4 +1,4 @@
-module github.com/docktermj/go-http
+module github.com/docktermj/go-rest-api-client
 
 go 1.20
 

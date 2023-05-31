@@ -1,4 +1,4 @@
-# go-http
+# go-rest-api-client
 
 ## Development
 

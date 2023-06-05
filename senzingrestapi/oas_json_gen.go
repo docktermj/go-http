@@ -1935,6 +1935,56 @@ func (s *OptNilStringArray) UnmarshalJSON(data []byte) error {
 	return s.Decode(d)
 }
 
+// Encode encodes SzAttributeSearchResponseRawData as json.
+func (o OptNilSzAttributeSearchResponseRawData) Encode(e *jx.Encoder) {
+	if !o.Set {
+		return
+	}
+	if o.Null {
+		e.Null()
+		return
+	}
+	o.Value.Encode(e)
+}
+
+// Decode decodes SzAttributeSearchResponseRawData from json.
+func (o *OptNilSzAttributeSearchResponseRawData) Decode(d *jx.Decoder) error {
+	if o == nil {
+		return errors.New("invalid: unable to decode OptNilSzAttributeSearchResponseRawData to nil")
+	}
+	if d.Next() == jx.Null {
+		if err := d.Null(); err != nil {
+			return err
+		}
+
+		var v SzAttributeSearchResponseRawData
+		o.Value = v
+		o.Set = true
+		o.Null = true
+		return nil
+	}
+	o.Set = true
+	o.Null = false
+	o.Value = make(SzAttributeSearchResponseRawData)
+	if err := o.Value.Decode(d); err != nil {
+		return err
+	}
+	return nil
+}
+
+// MarshalJSON implements stdjson.Marshaler.
+func (s OptNilSzAttributeSearchResponseRawData) MarshalJSON() ([]byte, error) {
+	e := jx.Encoder{}
+	s.Encode(&e)
+	return e.Bytes(), nil
+}
+
+// UnmarshalJSON implements stdjson.Unmarshaler.
+func (s *OptNilSzAttributeSearchResponseRawData) UnmarshalJSON(data []byte) error {
+	d := jx.DecodeBytes(data)
+	return s.Decode(d)
+}
+
 // Encode encodes SzAttributeSearchResultFeatureScores as json.
 func (o OptNilSzAttributeSearchResultFeatureScores) Encode(e *jx.Encoder) {
 	if !o.Set {
@@ -1981,6 +2031,256 @@ func (s OptNilSzAttributeSearchResultFeatureScores) MarshalJSON() ([]byte, error
 
 // UnmarshalJSON implements stdjson.Unmarshaler.
 func (s *OptNilSzAttributeSearchResultFeatureScores) UnmarshalJSON(data []byte) error {
+	d := jx.DecodeBytes(data)
+	return s.Decode(d)
+}
+
+// Encode encodes SzAttributeTypeResponseRawData as json.
+func (o OptNilSzAttributeTypeResponseRawData) Encode(e *jx.Encoder) {
+	if !o.Set {
+		return
+	}
+	if o.Null {
+		e.Null()
+		return
+	}
+	o.Value.Encode(e)
+}
+
+// Decode decodes SzAttributeTypeResponseRawData from json.
+func (o *OptNilSzAttributeTypeResponseRawData) Decode(d *jx.Decoder) error {
+	if o == nil {
+		return errors.New("invalid: unable to decode OptNilSzAttributeTypeResponseRawData to nil")
+	}
+	if d.Next() == jx.Null {
+		if err := d.Null(); err != nil {
+			return err
+		}
+
+		var v SzAttributeTypeResponseRawData
+		o.Value = v
+		o.Set = true
+		o.Null = true
+		return nil
+	}
+	o.Set = true
+	o.Null = false
+	o.Value = make(SzAttributeTypeResponseRawData)
+	if err := o.Value.Decode(d); err != nil {
+		return err
+	}
+	return nil
+}
+
+// MarshalJSON implements stdjson.Marshaler.
+func (s OptNilSzAttributeTypeResponseRawData) MarshalJSON() ([]byte, error) {
+	e := jx.Encoder{}
+	s.Encode(&e)
+	return e.Bytes(), nil
+}
+
+// UnmarshalJSON implements stdjson.Unmarshaler.
+func (s *OptNilSzAttributeTypeResponseRawData) UnmarshalJSON(data []byte) error {
+	d := jx.DecodeBytes(data)
+	return s.Decode(d)
+}
+
+// Encode encodes SzAttributeTypesResponseRawData as json.
+func (o OptNilSzAttributeTypesResponseRawData) Encode(e *jx.Encoder) {
+	if !o.Set {
+		return
+	}
+	if o.Null {
+		e.Null()
+		return
+	}
+	o.Value.Encode(e)
+}
+
+// Decode decodes SzAttributeTypesResponseRawData from json.
+func (o *OptNilSzAttributeTypesResponseRawData) Decode(d *jx.Decoder) error {
+	if o == nil {
+		return errors.New("invalid: unable to decode OptNilSzAttributeTypesResponseRawData to nil")
+	}
+	if d.Next() == jx.Null {
+		if err := d.Null(); err != nil {
+			return err
+		}
+
+		var v SzAttributeTypesResponseRawData
+		o.Value = v
+		o.Set = true
+		o.Null = true
+		return nil
+	}
+	o.Set = true
+	o.Null = false
+	o.Value = make(SzAttributeTypesResponseRawData)
+	if err := o.Value.Decode(d); err != nil {
+		return err
+	}
+	return nil
+}
+
+// MarshalJSON implements stdjson.Marshaler.
+func (s OptNilSzAttributeTypesResponseRawData) MarshalJSON() ([]byte, error) {
+	e := jx.Encoder{}
+	s.Encode(&e)
+	return e.Bytes(), nil
+}
+
+// UnmarshalJSON implements stdjson.Unmarshaler.
+func (s *OptNilSzAttributeTypesResponseRawData) UnmarshalJSON(data []byte) error {
+	d := jx.DecodeBytes(data)
+	return s.Decode(d)
+}
+
+// Encode encodes SzDataSourceResponseRawData as json.
+func (o OptNilSzDataSourceResponseRawData) Encode(e *jx.Encoder) {
+	if !o.Set {
+		return
+	}
+	if o.Null {
+		e.Null()
+		return
+	}
+	o.Value.Encode(e)
+}
+
+// Decode decodes SzDataSourceResponseRawData from json.
+func (o *OptNilSzDataSourceResponseRawData) Decode(d *jx.Decoder) error {
+	if o == nil {
+		return errors.New("invalid: unable to decode OptNilSzDataSourceResponseRawData to nil")
+	}
+	if d.Next() == jx.Null {
+		if err := d.Null(); err != nil {
+			return err
+		}
+
+		var v SzDataSourceResponseRawData
+		o.Value = v
+		o.Set = true
+		o.Null = true
+		return nil
+	}
+	o.Set = true
+	o.Null = false
+	o.Value = make(SzDataSourceResponseRawData)
+	if err := o.Value.Decode(d); err != nil {
+		return err
+	}
+	return nil
+}
+
+// MarshalJSON implements stdjson.Marshaler.
+func (s OptNilSzDataSourceResponseRawData) MarshalJSON() ([]byte, error) {
+	e := jx.Encoder{}
+	s.Encode(&e)
+	return e.Bytes(), nil
+}
+
+// UnmarshalJSON implements stdjson.Unmarshaler.
+func (s *OptNilSzDataSourceResponseRawData) UnmarshalJSON(data []byte) error {
+	d := jx.DecodeBytes(data)
+	return s.Decode(d)
+}
+
+// Encode encodes SzDataSourcesResponseRawData as json.
+func (o OptNilSzDataSourcesResponseRawData) Encode(e *jx.Encoder) {
+	if !o.Set {
+		return
+	}
+	if o.Null {
+		e.Null()
+		return
+	}
+	o.Value.Encode(e)
+}
+
+// Decode decodes SzDataSourcesResponseRawData from json.
+func (o *OptNilSzDataSourcesResponseRawData) Decode(d *jx.Decoder) error {
+	if o == nil {
+		return errors.New("invalid: unable to decode OptNilSzDataSourcesResponseRawData to nil")
+	}
+	if d.Next() == jx.Null {
+		if err := d.Null(); err != nil {
+			return err
+		}
+
+		var v SzDataSourcesResponseRawData
+		o.Value = v
+		o.Set = true
+		o.Null = true
+		return nil
+	}
+	o.Set = true
+	o.Null = false
+	o.Value = make(SzDataSourcesResponseRawData)
+	if err := o.Value.Decode(d); err != nil {
+		return err
+	}
+	return nil
+}
+
+// MarshalJSON implements stdjson.Marshaler.
+func (s OptNilSzDataSourcesResponseRawData) MarshalJSON() ([]byte, error) {
+	e := jx.Encoder{}
+	s.Encode(&e)
+	return e.Bytes(), nil
+}
+
+// UnmarshalJSON implements stdjson.Unmarshaler.
+func (s *OptNilSzDataSourcesResponseRawData) UnmarshalJSON(data []byte) error {
+	d := jx.DecodeBytes(data)
+	return s.Decode(d)
+}
+
+// Encode encodes SzDeleteRecordResponseRawData as json.
+func (o OptNilSzDeleteRecordResponseRawData) Encode(e *jx.Encoder) {
+	if !o.Set {
+		return
+	}
+	if o.Null {
+		e.Null()
+		return
+	}
+	o.Value.Encode(e)
+}
+
+// Decode decodes SzDeleteRecordResponseRawData from json.
+func (o *OptNilSzDeleteRecordResponseRawData) Decode(d *jx.Decoder) error {
+	if o == nil {
+		return errors.New("invalid: unable to decode OptNilSzDeleteRecordResponseRawData to nil")
+	}
+	if d.Next() == jx.Null {
+		if err := d.Null(); err != nil {
+			return err
+		}
+
+		var v SzDeleteRecordResponseRawData
+		o.Value = v
+		o.Set = true
+		o.Null = true
+		return nil
+	}
+	o.Set = true
+	o.Null = false
+	o.Value = make(SzDeleteRecordResponseRawData)
+	if err := o.Value.Decode(d); err != nil {
+		return err
+	}
+	return nil
+}
+
+// MarshalJSON implements stdjson.Marshaler.
+func (s OptNilSzDeleteRecordResponseRawData) MarshalJSON() ([]byte, error) {
+	e := jx.Encoder{}
+	s.Encode(&e)
+	return e.Bytes(), nil
+}
+
+// UnmarshalJSON implements stdjson.Unmarshaler.
+func (s *OptNilSzDeleteRecordResponseRawData) UnmarshalJSON(data []byte) error {
 	d := jx.DecodeBytes(data)
 	return s.Decode(d)
 }
@@ -2046,6 +2346,156 @@ func (s *OptNilSzDisclosedRelationArray) UnmarshalJSON(data []byte) error {
 	return s.Decode(d)
 }
 
+// Encode encodes SzEntityNetworkResponseRawData as json.
+func (o OptNilSzEntityNetworkResponseRawData) Encode(e *jx.Encoder) {
+	if !o.Set {
+		return
+	}
+	if o.Null {
+		e.Null()
+		return
+	}
+	o.Value.Encode(e)
+}
+
+// Decode decodes SzEntityNetworkResponseRawData from json.
+func (o *OptNilSzEntityNetworkResponseRawData) Decode(d *jx.Decoder) error {
+	if o == nil {
+		return errors.New("invalid: unable to decode OptNilSzEntityNetworkResponseRawData to nil")
+	}
+	if d.Next() == jx.Null {
+		if err := d.Null(); err != nil {
+			return err
+		}
+
+		var v SzEntityNetworkResponseRawData
+		o.Value = v
+		o.Set = true
+		o.Null = true
+		return nil
+	}
+	o.Set = true
+	o.Null = false
+	o.Value = make(SzEntityNetworkResponseRawData)
+	if err := o.Value.Decode(d); err != nil {
+		return err
+	}
+	return nil
+}
+
+// MarshalJSON implements stdjson.Marshaler.
+func (s OptNilSzEntityNetworkResponseRawData) MarshalJSON() ([]byte, error) {
+	e := jx.Encoder{}
+	s.Encode(&e)
+	return e.Bytes(), nil
+}
+
+// UnmarshalJSON implements stdjson.Unmarshaler.
+func (s *OptNilSzEntityNetworkResponseRawData) UnmarshalJSON(data []byte) error {
+	d := jx.DecodeBytes(data)
+	return s.Decode(d)
+}
+
+// Encode encodes SzEntityPathResponseRawData as json.
+func (o OptNilSzEntityPathResponseRawData) Encode(e *jx.Encoder) {
+	if !o.Set {
+		return
+	}
+	if o.Null {
+		e.Null()
+		return
+	}
+	o.Value.Encode(e)
+}
+
+// Decode decodes SzEntityPathResponseRawData from json.
+func (o *OptNilSzEntityPathResponseRawData) Decode(d *jx.Decoder) error {
+	if o == nil {
+		return errors.New("invalid: unable to decode OptNilSzEntityPathResponseRawData to nil")
+	}
+	if d.Next() == jx.Null {
+		if err := d.Null(); err != nil {
+			return err
+		}
+
+		var v SzEntityPathResponseRawData
+		o.Value = v
+		o.Set = true
+		o.Null = true
+		return nil
+	}
+	o.Set = true
+	o.Null = false
+	o.Value = make(SzEntityPathResponseRawData)
+	if err := o.Value.Decode(d); err != nil {
+		return err
+	}
+	return nil
+}
+
+// MarshalJSON implements stdjson.Marshaler.
+func (s OptNilSzEntityPathResponseRawData) MarshalJSON() ([]byte, error) {
+	e := jx.Encoder{}
+	s.Encode(&e)
+	return e.Bytes(), nil
+}
+
+// UnmarshalJSON implements stdjson.Unmarshaler.
+func (s *OptNilSzEntityPathResponseRawData) UnmarshalJSON(data []byte) error {
+	d := jx.DecodeBytes(data)
+	return s.Decode(d)
+}
+
+// Encode encodes SzEntityResponseRawData as json.
+func (o OptNilSzEntityResponseRawData) Encode(e *jx.Encoder) {
+	if !o.Set {
+		return
+	}
+	if o.Null {
+		e.Null()
+		return
+	}
+	o.Value.Encode(e)
+}
+
+// Decode decodes SzEntityResponseRawData from json.
+func (o *OptNilSzEntityResponseRawData) Decode(d *jx.Decoder) error {
+	if o == nil {
+		return errors.New("invalid: unable to decode OptNilSzEntityResponseRawData to nil")
+	}
+	if d.Next() == jx.Null {
+		if err := d.Null(); err != nil {
+			return err
+		}
+
+		var v SzEntityResponseRawData
+		o.Value = v
+		o.Set = true
+		o.Null = true
+		return nil
+	}
+	o.Set = true
+	o.Null = false
+	o.Value = make(SzEntityResponseRawData)
+	if err := o.Value.Decode(d); err != nil {
+		return err
+	}
+	return nil
+}
+
+// MarshalJSON implements stdjson.Marshaler.
+func (s OptNilSzEntityResponseRawData) MarshalJSON() ([]byte, error) {
+	e := jx.Encoder{}
+	s.Encode(&e)
+	return e.Bytes(), nil
+}
+
+// UnmarshalJSON implements stdjson.Unmarshaler.
+func (s *OptNilSzEntityResponseRawData) UnmarshalJSON(data []byte) error {
+	d := jx.DecodeBytes(data)
+	return s.Decode(d)
+}
+
 // Encode encodes []SzFeatureReference as json.
 func (o OptNilSzFeatureReferenceArray) Encode(e *jx.Encoder) {
 	if !o.Set {
@@ -2107,6 +2557,56 @@ func (s *OptNilSzFeatureReferenceArray) UnmarshalJSON(data []byte) error {
 	return s.Decode(d)
 }
 
+// Encode encodes SzHowEntityResponseRawData as json.
+func (o OptNilSzHowEntityResponseRawData) Encode(e *jx.Encoder) {
+	if !o.Set {
+		return
+	}
+	if o.Null {
+		e.Null()
+		return
+	}
+	o.Value.Encode(e)
+}
+
+// Decode decodes SzHowEntityResponseRawData from json.
+func (o *OptNilSzHowEntityResponseRawData) Decode(d *jx.Decoder) error {
+	if o == nil {
+		return errors.New("invalid: unable to decode OptNilSzHowEntityResponseRawData to nil")
+	}
+	if d.Next() == jx.Null {
+		if err := d.Null(); err != nil {
+			return err
+		}
+
+		var v SzHowEntityResponseRawData
+		o.Value = v
+		o.Set = true
+		o.Null = true
+		return nil
+	}
+	o.Set = true
+	o.Null = false
+	o.Value = make(SzHowEntityResponseRawData)
+	if err := o.Value.Decode(d); err != nil {
+		return err
+	}
+	return nil
+}
+
+// MarshalJSON implements stdjson.Marshaler.
+func (s OptNilSzHowEntityResponseRawData) MarshalJSON() ([]byte, error) {
+	e := jx.Encoder{}
+	s.Encode(&e)
+	return e.Bytes(), nil
+}
+
+// UnmarshalJSON implements stdjson.Unmarshaler.
+func (s *OptNilSzHowEntityResponseRawData) UnmarshalJSON(data []byte) error {
+	d := jx.DecodeBytes(data)
+	return s.Decode(d)
+}
+
 // Encode encodes SzHowMatchInfoFeatureScores as json.
 func (o OptNilSzHowMatchInfoFeatureScores) Encode(e *jx.Encoder) {
 	if !o.Set {
@@ -2153,6 +2653,106 @@ func (s OptNilSzHowMatchInfoFeatureScores) MarshalJSON() ([]byte, error) {
 
 // UnmarshalJSON implements stdjson.Unmarshaler.
 func (s *OptNilSzHowMatchInfoFeatureScores) UnmarshalJSON(data []byte) error {
+	d := jx.DecodeBytes(data)
+	return s.Decode(d)
+}
+
+// Encode encodes SzLicenseResponseRawData as json.
+func (o OptNilSzLicenseResponseRawData) Encode(e *jx.Encoder) {
+	if !o.Set {
+		return
+	}
+	if o.Null {
+		e.Null()
+		return
+	}
+	o.Value.Encode(e)
+}
+
+// Decode decodes SzLicenseResponseRawData from json.
+func (o *OptNilSzLicenseResponseRawData) Decode(d *jx.Decoder) error {
+	if o == nil {
+		return errors.New("invalid: unable to decode OptNilSzLicenseResponseRawData to nil")
+	}
+	if d.Next() == jx.Null {
+		if err := d.Null(); err != nil {
+			return err
+		}
+
+		var v SzLicenseResponseRawData
+		o.Value = v
+		o.Set = true
+		o.Null = true
+		return nil
+	}
+	o.Set = true
+	o.Null = false
+	o.Value = make(SzLicenseResponseRawData)
+	if err := o.Value.Decode(d); err != nil {
+		return err
+	}
+	return nil
+}
+
+// MarshalJSON implements stdjson.Marshaler.
+func (s OptNilSzLicenseResponseRawData) MarshalJSON() ([]byte, error) {
+	e := jx.Encoder{}
+	s.Encode(&e)
+	return e.Bytes(), nil
+}
+
+// UnmarshalJSON implements stdjson.Unmarshaler.
+func (s *OptNilSzLicenseResponseRawData) UnmarshalJSON(data []byte) error {
+	d := jx.DecodeBytes(data)
+	return s.Decode(d)
+}
+
+// Encode encodes SzLoadRecordResponseRawData as json.
+func (o OptNilSzLoadRecordResponseRawData) Encode(e *jx.Encoder) {
+	if !o.Set {
+		return
+	}
+	if o.Null {
+		e.Null()
+		return
+	}
+	o.Value.Encode(e)
+}
+
+// Decode decodes SzLoadRecordResponseRawData from json.
+func (o *OptNilSzLoadRecordResponseRawData) Decode(d *jx.Decoder) error {
+	if o == nil {
+		return errors.New("invalid: unable to decode OptNilSzLoadRecordResponseRawData to nil")
+	}
+	if d.Next() == jx.Null {
+		if err := d.Null(); err != nil {
+			return err
+		}
+
+		var v SzLoadRecordResponseRawData
+		o.Value = v
+		o.Set = true
+		o.Null = true
+		return nil
+	}
+	o.Set = true
+	o.Null = false
+	o.Value = make(SzLoadRecordResponseRawData)
+	if err := o.Value.Decode(d); err != nil {
+		return err
+	}
+	return nil
+}
+
+// MarshalJSON implements stdjson.Marshaler.
+func (s OptNilSzLoadRecordResponseRawData) MarshalJSON() ([]byte, error) {
+	e := jx.Encoder{}
+	s.Encode(&e)
+	return e.Bytes(), nil
+}
+
+// UnmarshalJSON implements stdjson.Unmarshaler.
+func (s *OptNilSzLoadRecordResponseRawData) UnmarshalJSON(data []byte) error {
 	d := jx.DecodeBytes(data)
 	return s.Decode(d)
 }
@@ -2207,6 +2807,106 @@ func (s *OptNilSzMetaTimings) UnmarshalJSON(data []byte) error {
 	return s.Decode(d)
 }
 
+// Encode encodes SzRecordResponseRawData as json.
+func (o OptNilSzRecordResponseRawData) Encode(e *jx.Encoder) {
+	if !o.Set {
+		return
+	}
+	if o.Null {
+		e.Null()
+		return
+	}
+	o.Value.Encode(e)
+}
+
+// Decode decodes SzRecordResponseRawData from json.
+func (o *OptNilSzRecordResponseRawData) Decode(d *jx.Decoder) error {
+	if o == nil {
+		return errors.New("invalid: unable to decode OptNilSzRecordResponseRawData to nil")
+	}
+	if d.Next() == jx.Null {
+		if err := d.Null(); err != nil {
+			return err
+		}
+
+		var v SzRecordResponseRawData
+		o.Value = v
+		o.Set = true
+		o.Null = true
+		return nil
+	}
+	o.Set = true
+	o.Null = false
+	o.Value = make(SzRecordResponseRawData)
+	if err := o.Value.Decode(d); err != nil {
+		return err
+	}
+	return nil
+}
+
+// MarshalJSON implements stdjson.Marshaler.
+func (s OptNilSzRecordResponseRawData) MarshalJSON() ([]byte, error) {
+	e := jx.Encoder{}
+	s.Encode(&e)
+	return e.Bytes(), nil
+}
+
+// UnmarshalJSON implements stdjson.Unmarshaler.
+func (s *OptNilSzRecordResponseRawData) UnmarshalJSON(data []byte) error {
+	d := jx.DecodeBytes(data)
+	return s.Decode(d)
+}
+
+// Encode encodes SzReevaluateResponseRawData as json.
+func (o OptNilSzReevaluateResponseRawData) Encode(e *jx.Encoder) {
+	if !o.Set {
+		return
+	}
+	if o.Null {
+		e.Null()
+		return
+	}
+	o.Value.Encode(e)
+}
+
+// Decode decodes SzReevaluateResponseRawData from json.
+func (o *OptNilSzReevaluateResponseRawData) Decode(d *jx.Decoder) error {
+	if o == nil {
+		return errors.New("invalid: unable to decode OptNilSzReevaluateResponseRawData to nil")
+	}
+	if d.Next() == jx.Null {
+		if err := d.Null(); err != nil {
+			return err
+		}
+
+		var v SzReevaluateResponseRawData
+		o.Value = v
+		o.Set = true
+		o.Null = true
+		return nil
+	}
+	o.Set = true
+	o.Null = false
+	o.Value = make(SzReevaluateResponseRawData)
+	if err := o.Value.Decode(d); err != nil {
+		return err
+	}
+	return nil
+}
+
+// MarshalJSON implements stdjson.Marshaler.
+func (s OptNilSzReevaluateResponseRawData) MarshalJSON() ([]byte, error) {
+	e := jx.Encoder{}
+	s.Encode(&e)
+	return e.Bytes(), nil
+}
+
+// UnmarshalJSON implements stdjson.Unmarshaler.
+func (s *OptNilSzReevaluateResponseRawData) UnmarshalJSON(data []byte) error {
+	d := jx.DecodeBytes(data)
+	return s.Decode(d)
+}
+
 // Encode encodes SzResponseWithRawDataRawData as json.
 func (o OptNilSzResponseWithRawDataRawData) Encode(e *jx.Encoder) {
 	if !o.Set {
@@ -2253,6 +2953,206 @@ func (s OptNilSzResponseWithRawDataRawData) MarshalJSON() ([]byte, error) {
 
 // UnmarshalJSON implements stdjson.Unmarshaler.
 func (s *OptNilSzResponseWithRawDataRawData) UnmarshalJSON(data []byte) error {
+	d := jx.DecodeBytes(data)
+	return s.Decode(d)
+}
+
+// Encode encodes SzVersionResponseRawData as json.
+func (o OptNilSzVersionResponseRawData) Encode(e *jx.Encoder) {
+	if !o.Set {
+		return
+	}
+	if o.Null {
+		e.Null()
+		return
+	}
+	o.Value.Encode(e)
+}
+
+// Decode decodes SzVersionResponseRawData from json.
+func (o *OptNilSzVersionResponseRawData) Decode(d *jx.Decoder) error {
+	if o == nil {
+		return errors.New("invalid: unable to decode OptNilSzVersionResponseRawData to nil")
+	}
+	if d.Next() == jx.Null {
+		if err := d.Null(); err != nil {
+			return err
+		}
+
+		var v SzVersionResponseRawData
+		o.Value = v
+		o.Set = true
+		o.Null = true
+		return nil
+	}
+	o.Set = true
+	o.Null = false
+	o.Value = make(SzVersionResponseRawData)
+	if err := o.Value.Decode(d); err != nil {
+		return err
+	}
+	return nil
+}
+
+// MarshalJSON implements stdjson.Marshaler.
+func (s OptNilSzVersionResponseRawData) MarshalJSON() ([]byte, error) {
+	e := jx.Encoder{}
+	s.Encode(&e)
+	return e.Bytes(), nil
+}
+
+// UnmarshalJSON implements stdjson.Unmarshaler.
+func (s *OptNilSzVersionResponseRawData) UnmarshalJSON(data []byte) error {
+	d := jx.DecodeBytes(data)
+	return s.Decode(d)
+}
+
+// Encode encodes SzVirtualEntityResponseRawData as json.
+func (o OptNilSzVirtualEntityResponseRawData) Encode(e *jx.Encoder) {
+	if !o.Set {
+		return
+	}
+	if o.Null {
+		e.Null()
+		return
+	}
+	o.Value.Encode(e)
+}
+
+// Decode decodes SzVirtualEntityResponseRawData from json.
+func (o *OptNilSzVirtualEntityResponseRawData) Decode(d *jx.Decoder) error {
+	if o == nil {
+		return errors.New("invalid: unable to decode OptNilSzVirtualEntityResponseRawData to nil")
+	}
+	if d.Next() == jx.Null {
+		if err := d.Null(); err != nil {
+			return err
+		}
+
+		var v SzVirtualEntityResponseRawData
+		o.Value = v
+		o.Set = true
+		o.Null = true
+		return nil
+	}
+	o.Set = true
+	o.Null = false
+	o.Value = make(SzVirtualEntityResponseRawData)
+	if err := o.Value.Decode(d); err != nil {
+		return err
+	}
+	return nil
+}
+
+// MarshalJSON implements stdjson.Marshaler.
+func (s OptNilSzVirtualEntityResponseRawData) MarshalJSON() ([]byte, error) {
+	e := jx.Encoder{}
+	s.Encode(&e)
+	return e.Bytes(), nil
+}
+
+// UnmarshalJSON implements stdjson.Unmarshaler.
+func (s *OptNilSzVirtualEntityResponseRawData) UnmarshalJSON(data []byte) error {
+	d := jx.DecodeBytes(data)
+	return s.Decode(d)
+}
+
+// Encode encodes SzWhyEntitiesResponseRawData as json.
+func (o OptNilSzWhyEntitiesResponseRawData) Encode(e *jx.Encoder) {
+	if !o.Set {
+		return
+	}
+	if o.Null {
+		e.Null()
+		return
+	}
+	o.Value.Encode(e)
+}
+
+// Decode decodes SzWhyEntitiesResponseRawData from json.
+func (o *OptNilSzWhyEntitiesResponseRawData) Decode(d *jx.Decoder) error {
+	if o == nil {
+		return errors.New("invalid: unable to decode OptNilSzWhyEntitiesResponseRawData to nil")
+	}
+	if d.Next() == jx.Null {
+		if err := d.Null(); err != nil {
+			return err
+		}
+
+		var v SzWhyEntitiesResponseRawData
+		o.Value = v
+		o.Set = true
+		o.Null = true
+		return nil
+	}
+	o.Set = true
+	o.Null = false
+	o.Value = make(SzWhyEntitiesResponseRawData)
+	if err := o.Value.Decode(d); err != nil {
+		return err
+	}
+	return nil
+}
+
+// MarshalJSON implements stdjson.Marshaler.
+func (s OptNilSzWhyEntitiesResponseRawData) MarshalJSON() ([]byte, error) {
+	e := jx.Encoder{}
+	s.Encode(&e)
+	return e.Bytes(), nil
+}
+
+// UnmarshalJSON implements stdjson.Unmarshaler.
+func (s *OptNilSzWhyEntitiesResponseRawData) UnmarshalJSON(data []byte) error {
+	d := jx.DecodeBytes(data)
+	return s.Decode(d)
+}
+
+// Encode encodes SzWhyEntityResponseRawData as json.
+func (o OptNilSzWhyEntityResponseRawData) Encode(e *jx.Encoder) {
+	if !o.Set {
+		return
+	}
+	if o.Null {
+		e.Null()
+		return
+	}
+	o.Value.Encode(e)
+}
+
+// Decode decodes SzWhyEntityResponseRawData from json.
+func (o *OptNilSzWhyEntityResponseRawData) Decode(d *jx.Decoder) error {
+	if o == nil {
+		return errors.New("invalid: unable to decode OptNilSzWhyEntityResponseRawData to nil")
+	}
+	if d.Next() == jx.Null {
+		if err := d.Null(); err != nil {
+			return err
+		}
+
+		var v SzWhyEntityResponseRawData
+		o.Value = v
+		o.Set = true
+		o.Null = true
+		return nil
+	}
+	o.Set = true
+	o.Null = false
+	o.Value = make(SzWhyEntityResponseRawData)
+	if err := o.Value.Decode(d); err != nil {
+		return err
+	}
+	return nil
+}
+
+// MarshalJSON implements stdjson.Marshaler.
+func (s OptNilSzWhyEntityResponseRawData) MarshalJSON() ([]byte, error) {
+	e := jx.Encoder{}
+	s.Encode(&e)
+	return e.Bytes(), nil
+}
+
+// UnmarshalJSON implements stdjson.Unmarshaler.
+func (s *OptNilSzWhyEntityResponseRawData) UnmarshalJSON(data []byte) error {
 	d := jx.DecodeBytes(data)
 	return s.Decode(d)
 }
@@ -2353,6 +3253,56 @@ func (s OptNilSzWhyMatchInfoFeatureScores) MarshalJSON() ([]byte, error) {
 
 // UnmarshalJSON implements stdjson.Unmarshaler.
 func (s *OptNilSzWhyMatchInfoFeatureScores) UnmarshalJSON(data []byte) error {
+	d := jx.DecodeBytes(data)
+	return s.Decode(d)
+}
+
+// Encode encodes SzWhyRecordsResponseRawData as json.
+func (o OptNilSzWhyRecordsResponseRawData) Encode(e *jx.Encoder) {
+	if !o.Set {
+		return
+	}
+	if o.Null {
+		e.Null()
+		return
+	}
+	o.Value.Encode(e)
+}
+
+// Decode decodes SzWhyRecordsResponseRawData from json.
+func (o *OptNilSzWhyRecordsResponseRawData) Decode(d *jx.Decoder) error {
+	if o == nil {
+		return errors.New("invalid: unable to decode OptNilSzWhyRecordsResponseRawData to nil")
+	}
+	if d.Next() == jx.Null {
+		if err := d.Null(); err != nil {
+			return err
+		}
+
+		var v SzWhyRecordsResponseRawData
+		o.Value = v
+		o.Set = true
+		o.Null = true
+		return nil
+	}
+	o.Set = true
+	o.Null = false
+	o.Value = make(SzWhyRecordsResponseRawData)
+	if err := o.Value.Decode(d); err != nil {
+		return err
+	}
+	return nil
+}
+
+// MarshalJSON implements stdjson.Marshaler.
+func (s OptNilSzWhyRecordsResponseRawData) MarshalJSON() ([]byte, error) {
+	e := jx.Encoder{}
+	s.Encode(&e)
+	return e.Bytes(), nil
+}
+
+// UnmarshalJSON implements stdjson.Unmarshaler.
+func (s *OptNilSzWhyRecordsResponseRawData) UnmarshalJSON(data []byte) error {
 	d := jx.DecodeBytes(data)
 	return s.Decode(d)
 }
@@ -2487,6 +3437,40 @@ func (s OptSzAttributeSearchResponseData) MarshalJSON() ([]byte, error) {
 
 // UnmarshalJSON implements stdjson.Unmarshaler.
 func (s *OptSzAttributeSearchResponseData) UnmarshalJSON(data []byte) error {
+	d := jx.DecodeBytes(data)
+	return s.Decode(d)
+}
+
+// Encode encodes SzAttributeSearchResultFeatures as json.
+func (o OptSzAttributeSearchResultFeatures) Encode(e *jx.Encoder) {
+	if !o.Set {
+		return
+	}
+	o.Value.Encode(e)
+}
+
+// Decode decodes SzAttributeSearchResultFeatures from json.
+func (o *OptSzAttributeSearchResultFeatures) Decode(d *jx.Decoder) error {
+	if o == nil {
+		return errors.New("invalid: unable to decode OptSzAttributeSearchResultFeatures to nil")
+	}
+	o.Set = true
+	o.Value = make(SzAttributeSearchResultFeatures)
+	if err := o.Value.Decode(d); err != nil {
+		return err
+	}
+	return nil
+}
+
+// MarshalJSON implements stdjson.Marshaler.
+func (s OptSzAttributeSearchResultFeatures) MarshalJSON() ([]byte, error) {
+	e := jx.Encoder{}
+	s.Encode(&e)
+	return e.Bytes(), nil
+}
+
+// UnmarshalJSON implements stdjson.Unmarshaler.
+func (s *OptSzAttributeSearchResultFeatures) UnmarshalJSON(data []byte) error {
 	d := jx.DecodeBytes(data)
 	return s.Decode(d)
 }
@@ -3617,6 +4601,40 @@ func (s *OptSzReevaluateResponseData) UnmarshalJSON(data []byte) error {
 	return s.Decode(d)
 }
 
+// Encode encodes SzRelatedEntityFeatures as json.
+func (o OptSzRelatedEntityFeatures) Encode(e *jx.Encoder) {
+	if !o.Set {
+		return
+	}
+	o.Value.Encode(e)
+}
+
+// Decode decodes SzRelatedEntityFeatures from json.
+func (o *OptSzRelatedEntityFeatures) Decode(d *jx.Decoder) error {
+	if o == nil {
+		return errors.New("invalid: unable to decode OptSzRelatedEntityFeatures to nil")
+	}
+	o.Set = true
+	o.Value = make(SzRelatedEntityFeatures)
+	if err := o.Value.Decode(d); err != nil {
+		return err
+	}
+	return nil
+}
+
+// MarshalJSON implements stdjson.Marshaler.
+func (s OptSzRelatedEntityFeatures) MarshalJSON() ([]byte, error) {
+	e := jx.Encoder{}
+	s.Encode(&e)
+	return e.Bytes(), nil
+}
+
+// UnmarshalJSON implements stdjson.Unmarshaler.
+func (s *OptSzRelatedEntityFeatures) UnmarshalJSON(data []byte) error {
+	d := jx.DecodeBytes(data)
+	return s.Decode(d)
+}
+
 // Encode encodes SzRelationDirection as json.
 func (o OptSzRelationDirection) Encode(e *jx.Encoder) {
 	if !o.Set {
@@ -4713,6 +5731,24 @@ func (s *SzAttributeSearchResponse) Encode(e *jx.Encoder) {
 // encodeFields encodes fields.
 func (s *SzAttributeSearchResponse) encodeFields(e *jx.Encoder) {
 	{
+		if s.Meta.Set {
+			e.FieldStart("meta")
+			s.Meta.Encode(e)
+		}
+	}
+	{
+		if s.Links.Set {
+			e.FieldStart("links")
+			s.Links.Encode(e)
+		}
+	}
+	{
+		if s.RawData.Set {
+			e.FieldStart("rawData")
+			s.RawData.Encode(e)
+		}
+	}
+	{
 		if s.Data.Set {
 			e.FieldStart("data")
 			s.Data.Encode(e)
@@ -4720,8 +5756,11 @@ func (s *SzAttributeSearchResponse) encodeFields(e *jx.Encoder) {
 	}
 }
 
-var jsonFieldsNameOfSzAttributeSearchResponse = [1]string{
-	0: "data",
+var jsonFieldsNameOfSzAttributeSearchResponse = [4]string{
+	0: "meta",
+	1: "links",
+	2: "rawData",
+	3: "data",
 }
 
 // Decode decodes SzAttributeSearchResponse from json.
@@ -4732,6 +5771,36 @@ func (s *SzAttributeSearchResponse) Decode(d *jx.Decoder) error {
 
 	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
 		switch string(k) {
+		case "meta":
+			if err := func() error {
+				s.Meta.Reset()
+				if err := s.Meta.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"meta\"")
+			}
+		case "links":
+			if err := func() error {
+				s.Links.Reset()
+				if err := s.Links.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"links\"")
+			}
+		case "rawData":
+			if err := func() error {
+				s.RawData.Reset()
+				if err := s.RawData.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"rawData\"")
+			}
 		case "data":
 			if err := func() error {
 				s.Data.Reset()
@@ -4841,6 +5910,64 @@ func (s *SzAttributeSearchResponseData) UnmarshalJSON(data []byte) error {
 }
 
 // Encode implements json.Marshaler.
+func (s SzAttributeSearchResponseRawData) Encode(e *jx.Encoder) {
+	e.ObjStart()
+	s.encodeFields(e)
+	e.ObjEnd()
+}
+
+// encodeFields implements json.Marshaler.
+func (s SzAttributeSearchResponseRawData) encodeFields(e *jx.Encoder) {
+	for k, elem := range s {
+		e.FieldStart(k)
+
+		if len(elem) != 0 {
+			e.Raw(elem)
+		}
+	}
+}
+
+// Decode decodes SzAttributeSearchResponseRawData from json.
+func (s *SzAttributeSearchResponseRawData) Decode(d *jx.Decoder) error {
+	if s == nil {
+		return errors.New("invalid: unable to decode SzAttributeSearchResponseRawData to nil")
+	}
+	m := s.init()
+	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
+		var elem jx.Raw
+		if err := func() error {
+			v, err := d.RawAppend(nil)
+			elem = jx.Raw(v)
+			if err != nil {
+				return err
+			}
+			return nil
+		}(); err != nil {
+			return errors.Wrapf(err, "decode field %q", k)
+		}
+		m[string(k)] = elem
+		return nil
+	}); err != nil {
+		return errors.Wrap(err, "decode SzAttributeSearchResponseRawData")
+	}
+
+	return nil
+}
+
+// MarshalJSON implements stdjson.Marshaler.
+func (s SzAttributeSearchResponseRawData) MarshalJSON() ([]byte, error) {
+	e := jx.Encoder{}
+	s.Encode(&e)
+	return e.Bytes(), nil
+}
+
+// UnmarshalJSON implements stdjson.Unmarshaler.
+func (s *SzAttributeSearchResponseRawData) UnmarshalJSON(data []byte) error {
+	d := jx.DecodeBytes(data)
+	return s.Decode(d)
+}
+
+// Encode implements json.Marshaler.
 func (s *SzAttributeSearchResult) Encode(e *jx.Encoder) {
 	e.ObjStart()
 	s.encodeFields(e)
@@ -4849,6 +5976,150 @@ func (s *SzAttributeSearchResult) Encode(e *jx.Encoder) {
 
 // encodeFields encodes fields.
 func (s *SzAttributeSearchResult) encodeFields(e *jx.Encoder) {
+	{
+		if s.EntityId.Set {
+			e.FieldStart("entityId")
+			s.EntityId.Encode(e)
+		}
+	}
+	{
+		if s.EntityName.Set {
+			e.FieldStart("entityName")
+			s.EntityName.Encode(e)
+		}
+	}
+	{
+		if s.BestName.Set {
+			e.FieldStart("bestName")
+			s.BestName.Encode(e)
+		}
+	}
+	{
+		if s.RecordSummaries != nil {
+			e.FieldStart("recordSummaries")
+			e.ArrStart()
+			for _, elem := range s.RecordSummaries {
+				elem.Encode(e)
+			}
+			e.ArrEnd()
+		}
+	}
+	{
+		if s.NameData != nil {
+			e.FieldStart("nameData")
+			e.ArrStart()
+			for _, elem := range s.NameData {
+				e.Str(elem)
+			}
+			e.ArrEnd()
+		}
+	}
+	{
+		if s.CharacteristicData != nil {
+			e.FieldStart("characteristicData")
+			e.ArrStart()
+			for _, elem := range s.CharacteristicData {
+				e.Str(elem)
+			}
+			e.ArrEnd()
+		}
+	}
+	{
+		if s.AddressData != nil {
+			e.FieldStart("addressData")
+			e.ArrStart()
+			for _, elem := range s.AddressData {
+				e.Str(elem)
+			}
+			e.ArrEnd()
+		}
+	}
+	{
+		if s.PhoneData != nil {
+			e.FieldStart("phoneData")
+			e.ArrStart()
+			for _, elem := range s.PhoneData {
+				e.Str(elem)
+			}
+			e.ArrEnd()
+		}
+	}
+	{
+		if s.IdentifierData != nil {
+			e.FieldStart("identifierData")
+			e.ArrStart()
+			for _, elem := range s.IdentifierData {
+				e.Str(elem)
+			}
+			e.ArrEnd()
+		}
+	}
+	{
+		if s.RelationshipData != nil {
+			e.FieldStart("relationshipData")
+			e.ArrStart()
+			for _, elem := range s.RelationshipData {
+				e.Str(elem)
+			}
+			e.ArrEnd()
+		}
+	}
+	{
+		if s.OtherData != nil {
+			e.FieldStart("otherData")
+			e.ArrStart()
+			for _, elem := range s.OtherData {
+				e.Str(elem)
+			}
+			e.ArrEnd()
+		}
+	}
+	{
+		if s.Records != nil {
+			e.FieldStart("records")
+			e.ArrStart()
+			for _, elem := range s.Records {
+				elem.Encode(e)
+			}
+			e.ArrEnd()
+		}
+	}
+	{
+		if s.Features.Set {
+			e.FieldStart("features")
+			s.Features.Encode(e)
+		}
+	}
+	{
+		if s.Partial.Set {
+			e.FieldStart("partial")
+			s.Partial.Encode(e)
+		}
+	}
+	{
+		if s.LastSeenTimestamp.Set {
+			e.FieldStart("lastSeenTimestamp")
+			s.LastSeenTimestamp.Encode(e, json.EncodeDateTime)
+		}
+	}
+	{
+		if s.MatchLevel.Set {
+			e.FieldStart("matchLevel")
+			s.MatchLevel.Encode(e)
+		}
+	}
+	{
+		if s.MatchKey.Set {
+			e.FieldStart("matchKey")
+			s.MatchKey.Encode(e)
+		}
+	}
+	{
+		if s.ResolutionRuleCode.Set {
+			e.FieldStart("resolutionRuleCode")
+			s.ResolutionRuleCode.Encode(e)
+		}
+	}
 	{
 		if s.ResultType.Set {
 			e.FieldStart("resultType")
@@ -4879,11 +6150,29 @@ func (s *SzAttributeSearchResult) encodeFields(e *jx.Encoder) {
 	}
 }
 
-var jsonFieldsNameOfSzAttributeSearchResult = [4]string{
-	0: "resultType",
-	1: "bestNameScore",
-	2: "featureScores",
-	3: "relatedEntities",
+var jsonFieldsNameOfSzAttributeSearchResult = [22]string{
+	0:  "entityId",
+	1:  "entityName",
+	2:  "bestName",
+	3:  "recordSummaries",
+	4:  "nameData",
+	5:  "characteristicData",
+	6:  "addressData",
+	7:  "phoneData",
+	8:  "identifierData",
+	9:  "relationshipData",
+	10: "otherData",
+	11: "records",
+	12: "features",
+	13: "partial",
+	14: "lastSeenTimestamp",
+	15: "matchLevel",
+	16: "matchKey",
+	17: "resolutionRuleCode",
+	18: "resultType",
+	19: "bestNameScore",
+	20: "featureScores",
+	21: "relatedEntities",
 }
 
 // Decode decodes SzAttributeSearchResult from json.
@@ -4894,6 +6183,263 @@ func (s *SzAttributeSearchResult) Decode(d *jx.Decoder) error {
 
 	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
 		switch string(k) {
+		case "entityId":
+			if err := func() error {
+				s.EntityId.Reset()
+				if err := s.EntityId.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"entityId\"")
+			}
+		case "entityName":
+			if err := func() error {
+				s.EntityName.Reset()
+				if err := s.EntityName.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"entityName\"")
+			}
+		case "bestName":
+			if err := func() error {
+				s.BestName.Reset()
+				if err := s.BestName.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"bestName\"")
+			}
+		case "recordSummaries":
+			if err := func() error {
+				s.RecordSummaries = make([]SzDataSourceRecordSummary, 0)
+				if err := d.Arr(func(d *jx.Decoder) error {
+					var elem SzDataSourceRecordSummary
+					if err := elem.Decode(d); err != nil {
+						return err
+					}
+					s.RecordSummaries = append(s.RecordSummaries, elem)
+					return nil
+				}); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"recordSummaries\"")
+			}
+		case "nameData":
+			if err := func() error {
+				s.NameData = make([]string, 0)
+				if err := d.Arr(func(d *jx.Decoder) error {
+					var elem string
+					v, err := d.Str()
+					elem = string(v)
+					if err != nil {
+						return err
+					}
+					s.NameData = append(s.NameData, elem)
+					return nil
+				}); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"nameData\"")
+			}
+		case "characteristicData":
+			if err := func() error {
+				s.CharacteristicData = make([]string, 0)
+				if err := d.Arr(func(d *jx.Decoder) error {
+					var elem string
+					v, err := d.Str()
+					elem = string(v)
+					if err != nil {
+						return err
+					}
+					s.CharacteristicData = append(s.CharacteristicData, elem)
+					return nil
+				}); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"characteristicData\"")
+			}
+		case "addressData":
+			if err := func() error {
+				s.AddressData = make([]string, 0)
+				if err := d.Arr(func(d *jx.Decoder) error {
+					var elem string
+					v, err := d.Str()
+					elem = string(v)
+					if err != nil {
+						return err
+					}
+					s.AddressData = append(s.AddressData, elem)
+					return nil
+				}); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"addressData\"")
+			}
+		case "phoneData":
+			if err := func() error {
+				s.PhoneData = make([]string, 0)
+				if err := d.Arr(func(d *jx.Decoder) error {
+					var elem string
+					v, err := d.Str()
+					elem = string(v)
+					if err != nil {
+						return err
+					}
+					s.PhoneData = append(s.PhoneData, elem)
+					return nil
+				}); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"phoneData\"")
+			}
+		case "identifierData":
+			if err := func() error {
+				s.IdentifierData = make([]string, 0)
+				if err := d.Arr(func(d *jx.Decoder) error {
+					var elem string
+					v, err := d.Str()
+					elem = string(v)
+					if err != nil {
+						return err
+					}
+					s.IdentifierData = append(s.IdentifierData, elem)
+					return nil
+				}); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"identifierData\"")
+			}
+		case "relationshipData":
+			if err := func() error {
+				s.RelationshipData = make([]string, 0)
+				if err := d.Arr(func(d *jx.Decoder) error {
+					var elem string
+					v, err := d.Str()
+					elem = string(v)
+					if err != nil {
+						return err
+					}
+					s.RelationshipData = append(s.RelationshipData, elem)
+					return nil
+				}); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"relationshipData\"")
+			}
+		case "otherData":
+			if err := func() error {
+				s.OtherData = make([]string, 0)
+				if err := d.Arr(func(d *jx.Decoder) error {
+					var elem string
+					v, err := d.Str()
+					elem = string(v)
+					if err != nil {
+						return err
+					}
+					s.OtherData = append(s.OtherData, elem)
+					return nil
+				}); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"otherData\"")
+			}
+		case "records":
+			if err := func() error {
+				s.Records = make([]SzMatchedRecord, 0)
+				if err := d.Arr(func(d *jx.Decoder) error {
+					var elem SzMatchedRecord
+					if err := elem.Decode(d); err != nil {
+						return err
+					}
+					s.Records = append(s.Records, elem)
+					return nil
+				}); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"records\"")
+			}
+		case "features":
+			if err := func() error {
+				s.Features.Reset()
+				if err := s.Features.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"features\"")
+			}
+		case "partial":
+			if err := func() error {
+				s.Partial.Reset()
+				if err := s.Partial.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"partial\"")
+			}
+		case "lastSeenTimestamp":
+			if err := func() error {
+				s.LastSeenTimestamp.Reset()
+				if err := s.LastSeenTimestamp.Decode(d, json.DecodeDateTime); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"lastSeenTimestamp\"")
+			}
+		case "matchLevel":
+			if err := func() error {
+				s.MatchLevel.Reset()
+				if err := s.MatchLevel.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"matchLevel\"")
+			}
+		case "matchKey":
+			if err := func() error {
+				s.MatchKey.Reset()
+				if err := s.MatchKey.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"matchKey\"")
+			}
+		case "resolutionRuleCode":
+			if err := func() error {
+				s.ResolutionRuleCode.Reset()
+				if err := s.ResolutionRuleCode.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"resolutionRuleCode\"")
+			}
 		case "resultType":
 			if err := func() error {
 				s.ResultType.Reset()
@@ -5027,6 +6573,72 @@ func (s SzAttributeSearchResultFeatureScores) MarshalJSON() ([]byte, error) {
 
 // UnmarshalJSON implements stdjson.Unmarshaler.
 func (s *SzAttributeSearchResultFeatureScores) UnmarshalJSON(data []byte) error {
+	d := jx.DecodeBytes(data)
+	return s.Decode(d)
+}
+
+// Encode implements json.Marshaler.
+func (s SzAttributeSearchResultFeatures) Encode(e *jx.Encoder) {
+	e.ObjStart()
+	s.encodeFields(e)
+	e.ObjEnd()
+}
+
+// encodeFields implements json.Marshaler.
+func (s SzAttributeSearchResultFeatures) encodeFields(e *jx.Encoder) {
+	for k, elem := range s {
+		e.FieldStart(k)
+
+		e.ArrStart()
+		for _, elem := range elem {
+			elem.Encode(e)
+		}
+		e.ArrEnd()
+	}
+}
+
+// Decode decodes SzAttributeSearchResultFeatures from json.
+func (s *SzAttributeSearchResultFeatures) Decode(d *jx.Decoder) error {
+	if s == nil {
+		return errors.New("invalid: unable to decode SzAttributeSearchResultFeatures to nil")
+	}
+	m := s.init()
+	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
+		var elem []SzEntityFeature
+		if err := func() error {
+			elem = make([]SzEntityFeature, 0)
+			if err := d.Arr(func(d *jx.Decoder) error {
+				var elemElem SzEntityFeature
+				if err := elemElem.Decode(d); err != nil {
+					return err
+				}
+				elem = append(elem, elemElem)
+				return nil
+			}); err != nil {
+				return err
+			}
+			return nil
+		}(); err != nil {
+			return errors.Wrapf(err, "decode field %q", k)
+		}
+		m[string(k)] = elem
+		return nil
+	}); err != nil {
+		return errors.Wrap(err, "decode SzAttributeSearchResultFeatures")
+	}
+
+	return nil
+}
+
+// MarshalJSON implements stdjson.Marshaler.
+func (s SzAttributeSearchResultFeatures) MarshalJSON() ([]byte, error) {
+	e := jx.Encoder{}
+	s.Encode(&e)
+	return e.Bytes(), nil
+}
+
+// UnmarshalJSON implements stdjson.Unmarshaler.
+func (s *SzAttributeSearchResultFeatures) UnmarshalJSON(data []byte) error {
 	d := jx.DecodeBytes(data)
 	return s.Decode(d)
 }
@@ -5250,6 +6862,24 @@ func (s *SzAttributeTypeResponse) Encode(e *jx.Encoder) {
 // encodeFields encodes fields.
 func (s *SzAttributeTypeResponse) encodeFields(e *jx.Encoder) {
 	{
+		if s.Meta.Set {
+			e.FieldStart("meta")
+			s.Meta.Encode(e)
+		}
+	}
+	{
+		if s.Links.Set {
+			e.FieldStart("links")
+			s.Links.Encode(e)
+		}
+	}
+	{
+		if s.RawData.Set {
+			e.FieldStart("rawData")
+			s.RawData.Encode(e)
+		}
+	}
+	{
 		if s.Data.Set {
 			e.FieldStart("data")
 			s.Data.Encode(e)
@@ -5257,8 +6887,11 @@ func (s *SzAttributeTypeResponse) encodeFields(e *jx.Encoder) {
 	}
 }
 
-var jsonFieldsNameOfSzAttributeTypeResponse = [1]string{
-	0: "data",
+var jsonFieldsNameOfSzAttributeTypeResponse = [4]string{
+	0: "meta",
+	1: "links",
+	2: "rawData",
+	3: "data",
 }
 
 // Decode decodes SzAttributeTypeResponse from json.
@@ -5269,6 +6902,36 @@ func (s *SzAttributeTypeResponse) Decode(d *jx.Decoder) error {
 
 	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
 		switch string(k) {
+		case "meta":
+			if err := func() error {
+				s.Meta.Reset()
+				if err := s.Meta.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"meta\"")
+			}
+		case "links":
+			if err := func() error {
+				s.Links.Reset()
+				if err := s.Links.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"links\"")
+			}
+		case "rawData":
+			if err := func() error {
+				s.RawData.Reset()
+				if err := s.RawData.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"rawData\"")
+			}
 		case "data":
 			if err := func() error {
 				s.Data.Reset()
@@ -5367,6 +7030,64 @@ func (s *SzAttributeTypeResponseData) UnmarshalJSON(data []byte) error {
 }
 
 // Encode implements json.Marshaler.
+func (s SzAttributeTypeResponseRawData) Encode(e *jx.Encoder) {
+	e.ObjStart()
+	s.encodeFields(e)
+	e.ObjEnd()
+}
+
+// encodeFields implements json.Marshaler.
+func (s SzAttributeTypeResponseRawData) encodeFields(e *jx.Encoder) {
+	for k, elem := range s {
+		e.FieldStart(k)
+
+		if len(elem) != 0 {
+			e.Raw(elem)
+		}
+	}
+}
+
+// Decode decodes SzAttributeTypeResponseRawData from json.
+func (s *SzAttributeTypeResponseRawData) Decode(d *jx.Decoder) error {
+	if s == nil {
+		return errors.New("invalid: unable to decode SzAttributeTypeResponseRawData to nil")
+	}
+	m := s.init()
+	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
+		var elem jx.Raw
+		if err := func() error {
+			v, err := d.RawAppend(nil)
+			elem = jx.Raw(v)
+			if err != nil {
+				return err
+			}
+			return nil
+		}(); err != nil {
+			return errors.Wrapf(err, "decode field %q", k)
+		}
+		m[string(k)] = elem
+		return nil
+	}); err != nil {
+		return errors.Wrap(err, "decode SzAttributeTypeResponseRawData")
+	}
+
+	return nil
+}
+
+// MarshalJSON implements stdjson.Marshaler.
+func (s SzAttributeTypeResponseRawData) MarshalJSON() ([]byte, error) {
+	e := jx.Encoder{}
+	s.Encode(&e)
+	return e.Bytes(), nil
+}
+
+// UnmarshalJSON implements stdjson.Unmarshaler.
+func (s *SzAttributeTypeResponseRawData) UnmarshalJSON(data []byte) error {
+	d := jx.DecodeBytes(data)
+	return s.Decode(d)
+}
+
+// Encode implements json.Marshaler.
 func (s *SzAttributeTypesResponse) Encode(e *jx.Encoder) {
 	e.ObjStart()
 	s.encodeFields(e)
@@ -5376,6 +7097,24 @@ func (s *SzAttributeTypesResponse) Encode(e *jx.Encoder) {
 // encodeFields encodes fields.
 func (s *SzAttributeTypesResponse) encodeFields(e *jx.Encoder) {
 	{
+		if s.Meta.Set {
+			e.FieldStart("meta")
+			s.Meta.Encode(e)
+		}
+	}
+	{
+		if s.Links.Set {
+			e.FieldStart("links")
+			s.Links.Encode(e)
+		}
+	}
+	{
+		if s.RawData.Set {
+			e.FieldStart("rawData")
+			s.RawData.Encode(e)
+		}
+	}
+	{
 		if s.Data.Set {
 			e.FieldStart("data")
 			s.Data.Encode(e)
@@ -5383,8 +7122,11 @@ func (s *SzAttributeTypesResponse) encodeFields(e *jx.Encoder) {
 	}
 }
 
-var jsonFieldsNameOfSzAttributeTypesResponse = [1]string{
-	0: "data",
+var jsonFieldsNameOfSzAttributeTypesResponse = [4]string{
+	0: "meta",
+	1: "links",
+	2: "rawData",
+	3: "data",
 }
 
 // Decode decodes SzAttributeTypesResponse from json.
@@ -5395,6 +7137,36 @@ func (s *SzAttributeTypesResponse) Decode(d *jx.Decoder) error {
 
 	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
 		switch string(k) {
+		case "meta":
+			if err := func() error {
+				s.Meta.Reset()
+				if err := s.Meta.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"meta\"")
+			}
+		case "links":
+			if err := func() error {
+				s.Links.Reset()
+				if err := s.Links.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"links\"")
+			}
+		case "rawData":
+			if err := func() error {
+				s.RawData.Reset()
+				if err := s.RawData.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"rawData\"")
+			}
 		case "data":
 			if err := func() error {
 				s.Data.Reset()
@@ -5499,6 +7271,64 @@ func (s *SzAttributeTypesResponseData) MarshalJSON() ([]byte, error) {
 
 // UnmarshalJSON implements stdjson.Unmarshaler.
 func (s *SzAttributeTypesResponseData) UnmarshalJSON(data []byte) error {
+	d := jx.DecodeBytes(data)
+	return s.Decode(d)
+}
+
+// Encode implements json.Marshaler.
+func (s SzAttributeTypesResponseRawData) Encode(e *jx.Encoder) {
+	e.ObjStart()
+	s.encodeFields(e)
+	e.ObjEnd()
+}
+
+// encodeFields implements json.Marshaler.
+func (s SzAttributeTypesResponseRawData) encodeFields(e *jx.Encoder) {
+	for k, elem := range s {
+		e.FieldStart(k)
+
+		if len(elem) != 0 {
+			e.Raw(elem)
+		}
+	}
+}
+
+// Decode decodes SzAttributeTypesResponseRawData from json.
+func (s *SzAttributeTypesResponseRawData) Decode(d *jx.Decoder) error {
+	if s == nil {
+		return errors.New("invalid: unable to decode SzAttributeTypesResponseRawData to nil")
+	}
+	m := s.init()
+	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
+		var elem jx.Raw
+		if err := func() error {
+			v, err := d.RawAppend(nil)
+			elem = jx.Raw(v)
+			if err != nil {
+				return err
+			}
+			return nil
+		}(); err != nil {
+			return errors.Wrapf(err, "decode field %q", k)
+		}
+		m[string(k)] = elem
+		return nil
+	}); err != nil {
+		return errors.Wrap(err, "decode SzAttributeTypesResponseRawData")
+	}
+
+	return nil
+}
+
+// MarshalJSON implements stdjson.Marshaler.
+func (s SzAttributeTypesResponseRawData) MarshalJSON() ([]byte, error) {
+	e := jx.Encoder{}
+	s.Encode(&e)
+	return e.Bytes(), nil
+}
+
+// UnmarshalJSON implements stdjson.Unmarshaler.
+func (s *SzAttributeTypesResponseRawData) UnmarshalJSON(data []byte) error {
 	d := jx.DecodeBytes(data)
 	return s.Decode(d)
 }
@@ -6903,6 +8733,24 @@ func (s *SzDataSourceResponse) Encode(e *jx.Encoder) {
 // encodeFields encodes fields.
 func (s *SzDataSourceResponse) encodeFields(e *jx.Encoder) {
 	{
+		if s.Meta.Set {
+			e.FieldStart("meta")
+			s.Meta.Encode(e)
+		}
+	}
+	{
+		if s.Links.Set {
+			e.FieldStart("links")
+			s.Links.Encode(e)
+		}
+	}
+	{
+		if s.RawData.Set {
+			e.FieldStart("rawData")
+			s.RawData.Encode(e)
+		}
+	}
+	{
 		if s.Data.Set {
 			e.FieldStart("data")
 			s.Data.Encode(e)
@@ -6910,8 +8758,11 @@ func (s *SzDataSourceResponse) encodeFields(e *jx.Encoder) {
 	}
 }
 
-var jsonFieldsNameOfSzDataSourceResponse = [1]string{
-	0: "data",
+var jsonFieldsNameOfSzDataSourceResponse = [4]string{
+	0: "meta",
+	1: "links",
+	2: "rawData",
+	3: "data",
 }
 
 // Decode decodes SzDataSourceResponse from json.
@@ -6922,6 +8773,36 @@ func (s *SzDataSourceResponse) Decode(d *jx.Decoder) error {
 
 	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
 		switch string(k) {
+		case "meta":
+			if err := func() error {
+				s.Meta.Reset()
+				if err := s.Meta.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"meta\"")
+			}
+		case "links":
+			if err := func() error {
+				s.Links.Reset()
+				if err := s.Links.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"links\"")
+			}
+		case "rawData":
+			if err := func() error {
+				s.RawData.Reset()
+				if err := s.RawData.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"rawData\"")
+			}
 		case "data":
 			if err := func() error {
 				s.Data.Reset()
@@ -7020,6 +8901,64 @@ func (s *SzDataSourceResponseData) UnmarshalJSON(data []byte) error {
 }
 
 // Encode implements json.Marshaler.
+func (s SzDataSourceResponseRawData) Encode(e *jx.Encoder) {
+	e.ObjStart()
+	s.encodeFields(e)
+	e.ObjEnd()
+}
+
+// encodeFields implements json.Marshaler.
+func (s SzDataSourceResponseRawData) encodeFields(e *jx.Encoder) {
+	for k, elem := range s {
+		e.FieldStart(k)
+
+		if len(elem) != 0 {
+			e.Raw(elem)
+		}
+	}
+}
+
+// Decode decodes SzDataSourceResponseRawData from json.
+func (s *SzDataSourceResponseRawData) Decode(d *jx.Decoder) error {
+	if s == nil {
+		return errors.New("invalid: unable to decode SzDataSourceResponseRawData to nil")
+	}
+	m := s.init()
+	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
+		var elem jx.Raw
+		if err := func() error {
+			v, err := d.RawAppend(nil)
+			elem = jx.Raw(v)
+			if err != nil {
+				return err
+			}
+			return nil
+		}(); err != nil {
+			return errors.Wrapf(err, "decode field %q", k)
+		}
+		m[string(k)] = elem
+		return nil
+	}); err != nil {
+		return errors.Wrap(err, "decode SzDataSourceResponseRawData")
+	}
+
+	return nil
+}
+
+// MarshalJSON implements stdjson.Marshaler.
+func (s SzDataSourceResponseRawData) MarshalJSON() ([]byte, error) {
+	e := jx.Encoder{}
+	s.Encode(&e)
+	return e.Bytes(), nil
+}
+
+// UnmarshalJSON implements stdjson.Unmarshaler.
+func (s *SzDataSourceResponseRawData) UnmarshalJSON(data []byte) error {
+	d := jx.DecodeBytes(data)
+	return s.Decode(d)
+}
+
+// Encode implements json.Marshaler.
 func (s *SzDataSourcesResponse) Encode(e *jx.Encoder) {
 	e.ObjStart()
 	s.encodeFields(e)
@@ -7029,6 +8968,24 @@ func (s *SzDataSourcesResponse) Encode(e *jx.Encoder) {
 // encodeFields encodes fields.
 func (s *SzDataSourcesResponse) encodeFields(e *jx.Encoder) {
 	{
+		if s.Meta.Set {
+			e.FieldStart("meta")
+			s.Meta.Encode(e)
+		}
+	}
+	{
+		if s.Links.Set {
+			e.FieldStart("links")
+			s.Links.Encode(e)
+		}
+	}
+	{
+		if s.RawData.Set {
+			e.FieldStart("rawData")
+			s.RawData.Encode(e)
+		}
+	}
+	{
 		if s.Data.Set {
 			e.FieldStart("data")
 			s.Data.Encode(e)
@@ -7036,8 +8993,11 @@ func (s *SzDataSourcesResponse) encodeFields(e *jx.Encoder) {
 	}
 }
 
-var jsonFieldsNameOfSzDataSourcesResponse = [1]string{
-	0: "data",
+var jsonFieldsNameOfSzDataSourcesResponse = [4]string{
+	0: "meta",
+	1: "links",
+	2: "rawData",
+	3: "data",
 }
 
 // Decode decodes SzDataSourcesResponse from json.
@@ -7048,6 +9008,36 @@ func (s *SzDataSourcesResponse) Decode(d *jx.Decoder) error {
 
 	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
 		switch string(k) {
+		case "meta":
+			if err := func() error {
+				s.Meta.Reset()
+				if err := s.Meta.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"meta\"")
+			}
+		case "links":
+			if err := func() error {
+				s.Links.Reset()
+				if err := s.Links.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"links\"")
+			}
+		case "rawData":
+			if err := func() error {
+				s.RawData.Reset()
+				if err := s.RawData.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"rawData\"")
+			}
 		case "data":
 			if err := func() error {
 				s.Data.Reset()
@@ -7230,6 +9220,64 @@ func (s *SzDataSourcesResponseDataDataSourceDetails) UnmarshalJSON(data []byte) 
 }
 
 // Encode implements json.Marshaler.
+func (s SzDataSourcesResponseRawData) Encode(e *jx.Encoder) {
+	e.ObjStart()
+	s.encodeFields(e)
+	e.ObjEnd()
+}
+
+// encodeFields implements json.Marshaler.
+func (s SzDataSourcesResponseRawData) encodeFields(e *jx.Encoder) {
+	for k, elem := range s {
+		e.FieldStart(k)
+
+		if len(elem) != 0 {
+			e.Raw(elem)
+		}
+	}
+}
+
+// Decode decodes SzDataSourcesResponseRawData from json.
+func (s *SzDataSourcesResponseRawData) Decode(d *jx.Decoder) error {
+	if s == nil {
+		return errors.New("invalid: unable to decode SzDataSourcesResponseRawData to nil")
+	}
+	m := s.init()
+	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
+		var elem jx.Raw
+		if err := func() error {
+			v, err := d.RawAppend(nil)
+			elem = jx.Raw(v)
+			if err != nil {
+				return err
+			}
+			return nil
+		}(); err != nil {
+			return errors.Wrapf(err, "decode field %q", k)
+		}
+		m[string(k)] = elem
+		return nil
+	}); err != nil {
+		return errors.Wrap(err, "decode SzDataSourcesResponseRawData")
+	}
+
+	return nil
+}
+
+// MarshalJSON implements stdjson.Marshaler.
+func (s SzDataSourcesResponseRawData) MarshalJSON() ([]byte, error) {
+	e := jx.Encoder{}
+	s.Encode(&e)
+	return e.Bytes(), nil
+}
+
+// UnmarshalJSON implements stdjson.Unmarshaler.
+func (s *SzDataSourcesResponseRawData) UnmarshalJSON(data []byte) error {
+	d := jx.DecodeBytes(data)
+	return s.Decode(d)
+}
+
+// Encode implements json.Marshaler.
 func (s *SzDeleteRecordResponse) Encode(e *jx.Encoder) {
 	e.ObjStart()
 	s.encodeFields(e)
@@ -7239,6 +9287,24 @@ func (s *SzDeleteRecordResponse) Encode(e *jx.Encoder) {
 // encodeFields encodes fields.
 func (s *SzDeleteRecordResponse) encodeFields(e *jx.Encoder) {
 	{
+		if s.Meta.Set {
+			e.FieldStart("meta")
+			s.Meta.Encode(e)
+		}
+	}
+	{
+		if s.Links.Set {
+			e.FieldStart("links")
+			s.Links.Encode(e)
+		}
+	}
+	{
+		if s.RawData.Set {
+			e.FieldStart("rawData")
+			s.RawData.Encode(e)
+		}
+	}
+	{
 		if s.Data.Set {
 			e.FieldStart("data")
 			s.Data.Encode(e)
@@ -7246,8 +9312,11 @@ func (s *SzDeleteRecordResponse) encodeFields(e *jx.Encoder) {
 	}
 }
 
-var jsonFieldsNameOfSzDeleteRecordResponse = [1]string{
-	0: "data",
+var jsonFieldsNameOfSzDeleteRecordResponse = [4]string{
+	0: "meta",
+	1: "links",
+	2: "rawData",
+	3: "data",
 }
 
 // Decode decodes SzDeleteRecordResponse from json.
@@ -7258,6 +9327,36 @@ func (s *SzDeleteRecordResponse) Decode(d *jx.Decoder) error {
 
 	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
 		switch string(k) {
+		case "meta":
+			if err := func() error {
+				s.Meta.Reset()
+				if err := s.Meta.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"meta\"")
+			}
+		case "links":
+			if err := func() error {
+				s.Links.Reset()
+				if err := s.Links.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"links\"")
+			}
+		case "rawData":
+			if err := func() error {
+				s.RawData.Reset()
+				if err := s.RawData.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"rawData\"")
+			}
 		case "data":
 			if err := func() error {
 				s.Data.Reset()
@@ -7351,6 +9450,64 @@ func (s *SzDeleteRecordResponseData) MarshalJSON() ([]byte, error) {
 
 // UnmarshalJSON implements stdjson.Unmarshaler.
 func (s *SzDeleteRecordResponseData) UnmarshalJSON(data []byte) error {
+	d := jx.DecodeBytes(data)
+	return s.Decode(d)
+}
+
+// Encode implements json.Marshaler.
+func (s SzDeleteRecordResponseRawData) Encode(e *jx.Encoder) {
+	e.ObjStart()
+	s.encodeFields(e)
+	e.ObjEnd()
+}
+
+// encodeFields implements json.Marshaler.
+func (s SzDeleteRecordResponseRawData) encodeFields(e *jx.Encoder) {
+	for k, elem := range s {
+		e.FieldStart(k)
+
+		if len(elem) != 0 {
+			e.Raw(elem)
+		}
+	}
+}
+
+// Decode decodes SzDeleteRecordResponseRawData from json.
+func (s *SzDeleteRecordResponseRawData) Decode(d *jx.Decoder) error {
+	if s == nil {
+		return errors.New("invalid: unable to decode SzDeleteRecordResponseRawData to nil")
+	}
+	m := s.init()
+	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
+		var elem jx.Raw
+		if err := func() error {
+			v, err := d.RawAppend(nil)
+			elem = jx.Raw(v)
+			if err != nil {
+				return err
+			}
+			return nil
+		}(); err != nil {
+			return errors.Wrapf(err, "decode field %q", k)
+		}
+		m[string(k)] = elem
+		return nil
+	}); err != nil {
+		return errors.Wrap(err, "decode SzDeleteRecordResponseRawData")
+	}
+
+	return nil
+}
+
+// MarshalJSON implements stdjson.Marshaler.
+func (s SzDeleteRecordResponseRawData) MarshalJSON() ([]byte, error) {
+	e := jx.Encoder{}
+	s.Encode(&e)
+	return e.Bytes(), nil
+}
+
+// UnmarshalJSON implements stdjson.Unmarshaler.
+func (s *SzDeleteRecordResponseRawData) UnmarshalJSON(data []byte) error {
 	d := jx.DecodeBytes(data)
 	return s.Decode(d)
 }
@@ -8126,6 +10283,24 @@ func (s *SzEntityNetworkResponse) Encode(e *jx.Encoder) {
 // encodeFields encodes fields.
 func (s *SzEntityNetworkResponse) encodeFields(e *jx.Encoder) {
 	{
+		if s.Meta.Set {
+			e.FieldStart("meta")
+			s.Meta.Encode(e)
+		}
+	}
+	{
+		if s.Links.Set {
+			e.FieldStart("links")
+			s.Links.Encode(e)
+		}
+	}
+	{
+		if s.RawData.Set {
+			e.FieldStart("rawData")
+			s.RawData.Encode(e)
+		}
+	}
+	{
 		if s.Data.Set {
 			e.FieldStart("data")
 			s.Data.Encode(e)
@@ -8133,8 +10308,11 @@ func (s *SzEntityNetworkResponse) encodeFields(e *jx.Encoder) {
 	}
 }
 
-var jsonFieldsNameOfSzEntityNetworkResponse = [1]string{
-	0: "data",
+var jsonFieldsNameOfSzEntityNetworkResponse = [4]string{
+	0: "meta",
+	1: "links",
+	2: "rawData",
+	3: "data",
 }
 
 // Decode decodes SzEntityNetworkResponse from json.
@@ -8145,6 +10323,36 @@ func (s *SzEntityNetworkResponse) Decode(d *jx.Decoder) error {
 
 	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
 		switch string(k) {
+		case "meta":
+			if err := func() error {
+				s.Meta.Reset()
+				if err := s.Meta.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"meta\"")
+			}
+		case "links":
+			if err := func() error {
+				s.Links.Reset()
+				if err := s.Links.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"links\"")
+			}
+		case "rawData":
+			if err := func() error {
+				s.RawData.Reset()
+				if err := s.RawData.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"rawData\"")
+			}
 		case "data":
 			if err := func() error {
 				s.Data.Reset()
@@ -8175,6 +10383,64 @@ func (s *SzEntityNetworkResponse) MarshalJSON() ([]byte, error) {
 
 // UnmarshalJSON implements stdjson.Unmarshaler.
 func (s *SzEntityNetworkResponse) UnmarshalJSON(data []byte) error {
+	d := jx.DecodeBytes(data)
+	return s.Decode(d)
+}
+
+// Encode implements json.Marshaler.
+func (s SzEntityNetworkResponseRawData) Encode(e *jx.Encoder) {
+	e.ObjStart()
+	s.encodeFields(e)
+	e.ObjEnd()
+}
+
+// encodeFields implements json.Marshaler.
+func (s SzEntityNetworkResponseRawData) encodeFields(e *jx.Encoder) {
+	for k, elem := range s {
+		e.FieldStart(k)
+
+		if len(elem) != 0 {
+			e.Raw(elem)
+		}
+	}
+}
+
+// Decode decodes SzEntityNetworkResponseRawData from json.
+func (s *SzEntityNetworkResponseRawData) Decode(d *jx.Decoder) error {
+	if s == nil {
+		return errors.New("invalid: unable to decode SzEntityNetworkResponseRawData to nil")
+	}
+	m := s.init()
+	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
+		var elem jx.Raw
+		if err := func() error {
+			v, err := d.RawAppend(nil)
+			elem = jx.Raw(v)
+			if err != nil {
+				return err
+			}
+			return nil
+		}(); err != nil {
+			return errors.Wrapf(err, "decode field %q", k)
+		}
+		m[string(k)] = elem
+		return nil
+	}); err != nil {
+		return errors.Wrap(err, "decode SzEntityNetworkResponseRawData")
+	}
+
+	return nil
+}
+
+// MarshalJSON implements stdjson.Marshaler.
+func (s SzEntityNetworkResponseRawData) MarshalJSON() ([]byte, error) {
+	e := jx.Encoder{}
+	s.Encode(&e)
+	return e.Bytes(), nil
+}
+
+// UnmarshalJSON implements stdjson.Unmarshaler.
+func (s *SzEntityNetworkResponseRawData) UnmarshalJSON(data []byte) error {
 	d := jx.DecodeBytes(data)
 	return s.Decode(d)
 }
@@ -8377,6 +10643,24 @@ func (s *SzEntityPathResponse) Encode(e *jx.Encoder) {
 // encodeFields encodes fields.
 func (s *SzEntityPathResponse) encodeFields(e *jx.Encoder) {
 	{
+		if s.Meta.Set {
+			e.FieldStart("meta")
+			s.Meta.Encode(e)
+		}
+	}
+	{
+		if s.Links.Set {
+			e.FieldStart("links")
+			s.Links.Encode(e)
+		}
+	}
+	{
+		if s.RawData.Set {
+			e.FieldStart("rawData")
+			s.RawData.Encode(e)
+		}
+	}
+	{
 		if s.Data.Set {
 			e.FieldStart("data")
 			s.Data.Encode(e)
@@ -8384,8 +10668,11 @@ func (s *SzEntityPathResponse) encodeFields(e *jx.Encoder) {
 	}
 }
 
-var jsonFieldsNameOfSzEntityPathResponse = [1]string{
-	0: "data",
+var jsonFieldsNameOfSzEntityPathResponse = [4]string{
+	0: "meta",
+	1: "links",
+	2: "rawData",
+	3: "data",
 }
 
 // Decode decodes SzEntityPathResponse from json.
@@ -8396,6 +10683,36 @@ func (s *SzEntityPathResponse) Decode(d *jx.Decoder) error {
 
 	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
 		switch string(k) {
+		case "meta":
+			if err := func() error {
+				s.Meta.Reset()
+				if err := s.Meta.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"meta\"")
+			}
+		case "links":
+			if err := func() error {
+				s.Links.Reset()
+				if err := s.Links.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"links\"")
+			}
+		case "rawData":
+			if err := func() error {
+				s.RawData.Reset()
+				if err := s.RawData.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"rawData\"")
+			}
 		case "data":
 			if err := func() error {
 				s.Data.Reset()
@@ -8426,6 +10743,64 @@ func (s *SzEntityPathResponse) MarshalJSON() ([]byte, error) {
 
 // UnmarshalJSON implements stdjson.Unmarshaler.
 func (s *SzEntityPathResponse) UnmarshalJSON(data []byte) error {
+	d := jx.DecodeBytes(data)
+	return s.Decode(d)
+}
+
+// Encode implements json.Marshaler.
+func (s SzEntityPathResponseRawData) Encode(e *jx.Encoder) {
+	e.ObjStart()
+	s.encodeFields(e)
+	e.ObjEnd()
+}
+
+// encodeFields implements json.Marshaler.
+func (s SzEntityPathResponseRawData) encodeFields(e *jx.Encoder) {
+	for k, elem := range s {
+		e.FieldStart(k)
+
+		if len(elem) != 0 {
+			e.Raw(elem)
+		}
+	}
+}
+
+// Decode decodes SzEntityPathResponseRawData from json.
+func (s *SzEntityPathResponseRawData) Decode(d *jx.Decoder) error {
+	if s == nil {
+		return errors.New("invalid: unable to decode SzEntityPathResponseRawData to nil")
+	}
+	m := s.init()
+	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
+		var elem jx.Raw
+		if err := func() error {
+			v, err := d.RawAppend(nil)
+			elem = jx.Raw(v)
+			if err != nil {
+				return err
+			}
+			return nil
+		}(); err != nil {
+			return errors.Wrapf(err, "decode field %q", k)
+		}
+		m[string(k)] = elem
+		return nil
+	}); err != nil {
+		return errors.Wrap(err, "decode SzEntityPathResponseRawData")
+	}
+
+	return nil
+}
+
+// MarshalJSON implements stdjson.Marshaler.
+func (s SzEntityPathResponseRawData) MarshalJSON() ([]byte, error) {
+	e := jx.Encoder{}
+	s.Encode(&e)
+	return e.Bytes(), nil
+}
+
+// UnmarshalJSON implements stdjson.Unmarshaler.
+func (s *SzEntityPathResponseRawData) UnmarshalJSON(data []byte) error {
 	d := jx.DecodeBytes(data)
 	return s.Decode(d)
 }
@@ -8839,6 +11214,24 @@ func (s *SzEntityResponse) Encode(e *jx.Encoder) {
 // encodeFields encodes fields.
 func (s *SzEntityResponse) encodeFields(e *jx.Encoder) {
 	{
+		if s.Meta.Set {
+			e.FieldStart("meta")
+			s.Meta.Encode(e)
+		}
+	}
+	{
+		if s.Links.Set {
+			e.FieldStart("links")
+			s.Links.Encode(e)
+		}
+	}
+	{
+		if s.RawData.Set {
+			e.FieldStart("rawData")
+			s.RawData.Encode(e)
+		}
+	}
+	{
 		if s.Data.Set {
 			e.FieldStart("data")
 			s.Data.Encode(e)
@@ -8846,8 +11239,11 @@ func (s *SzEntityResponse) encodeFields(e *jx.Encoder) {
 	}
 }
 
-var jsonFieldsNameOfSzEntityResponse = [1]string{
-	0: "data",
+var jsonFieldsNameOfSzEntityResponse = [4]string{
+	0: "meta",
+	1: "links",
+	2: "rawData",
+	3: "data",
 }
 
 // Decode decodes SzEntityResponse from json.
@@ -8858,6 +11254,36 @@ func (s *SzEntityResponse) Decode(d *jx.Decoder) error {
 
 	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
 		switch string(k) {
+		case "meta":
+			if err := func() error {
+				s.Meta.Reset()
+				if err := s.Meta.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"meta\"")
+			}
+		case "links":
+			if err := func() error {
+				s.Links.Reset()
+				if err := s.Links.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"links\"")
+			}
+		case "rawData":
+			if err := func() error {
+				s.RawData.Reset()
+				if err := s.RawData.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"rawData\"")
+			}
 		case "data":
 			if err := func() error {
 				s.Data.Reset()
@@ -8888,6 +11314,64 @@ func (s *SzEntityResponse) MarshalJSON() ([]byte, error) {
 
 // UnmarshalJSON implements stdjson.Unmarshaler.
 func (s *SzEntityResponse) UnmarshalJSON(data []byte) error {
+	d := jx.DecodeBytes(data)
+	return s.Decode(d)
+}
+
+// Encode implements json.Marshaler.
+func (s SzEntityResponseRawData) Encode(e *jx.Encoder) {
+	e.ObjStart()
+	s.encodeFields(e)
+	e.ObjEnd()
+}
+
+// encodeFields implements json.Marshaler.
+func (s SzEntityResponseRawData) encodeFields(e *jx.Encoder) {
+	for k, elem := range s {
+		e.FieldStart(k)
+
+		if len(elem) != 0 {
+			e.Raw(elem)
+		}
+	}
+}
+
+// Decode decodes SzEntityResponseRawData from json.
+func (s *SzEntityResponseRawData) Decode(d *jx.Decoder) error {
+	if s == nil {
+		return errors.New("invalid: unable to decode SzEntityResponseRawData to nil")
+	}
+	m := s.init()
+	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
+		var elem jx.Raw
+		if err := func() error {
+			v, err := d.RawAppend(nil)
+			elem = jx.Raw(v)
+			if err != nil {
+				return err
+			}
+			return nil
+		}(); err != nil {
+			return errors.Wrapf(err, "decode field %q", k)
+		}
+		m[string(k)] = elem
+		return nil
+	}); err != nil {
+		return errors.Wrap(err, "decode SzEntityResponseRawData")
+	}
+
+	return nil
+}
+
+// MarshalJSON implements stdjson.Marshaler.
+func (s SzEntityResponseRawData) MarshalJSON() ([]byte, error) {
+	e := jx.Encoder{}
+	s.Encode(&e)
+	return e.Bytes(), nil
+}
+
+// UnmarshalJSON implements stdjson.Unmarshaler.
+func (s *SzEntityResponseRawData) UnmarshalJSON(data []byte) error {
 	d := jx.DecodeBytes(data)
 	return s.Decode(d)
 }
@@ -9583,6 +12067,24 @@ func (s *SzHowEntityResponse) Encode(e *jx.Encoder) {
 // encodeFields encodes fields.
 func (s *SzHowEntityResponse) encodeFields(e *jx.Encoder) {
 	{
+		if s.Meta.Set {
+			e.FieldStart("meta")
+			s.Meta.Encode(e)
+		}
+	}
+	{
+		if s.Links.Set {
+			e.FieldStart("links")
+			s.Links.Encode(e)
+		}
+	}
+	{
+		if s.RawData.Set {
+			e.FieldStart("rawData")
+			s.RawData.Encode(e)
+		}
+	}
+	{
 		if s.Data.Set {
 			e.FieldStart("data")
 			s.Data.Encode(e)
@@ -9590,8 +12092,11 @@ func (s *SzHowEntityResponse) encodeFields(e *jx.Encoder) {
 	}
 }
 
-var jsonFieldsNameOfSzHowEntityResponse = [1]string{
-	0: "data",
+var jsonFieldsNameOfSzHowEntityResponse = [4]string{
+	0: "meta",
+	1: "links",
+	2: "rawData",
+	3: "data",
 }
 
 // Decode decodes SzHowEntityResponse from json.
@@ -9602,6 +12107,36 @@ func (s *SzHowEntityResponse) Decode(d *jx.Decoder) error {
 
 	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
 		switch string(k) {
+		case "meta":
+			if err := func() error {
+				s.Meta.Reset()
+				if err := s.Meta.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"meta\"")
+			}
+		case "links":
+			if err := func() error {
+				s.Links.Reset()
+				if err := s.Links.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"links\"")
+			}
+		case "rawData":
+			if err := func() error {
+				s.RawData.Reset()
+				if err := s.RawData.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"rawData\"")
+			}
 		case "data":
 			if err := func() error {
 				s.Data.Reset()
@@ -9632,6 +12167,64 @@ func (s *SzHowEntityResponse) MarshalJSON() ([]byte, error) {
 
 // UnmarshalJSON implements stdjson.Unmarshaler.
 func (s *SzHowEntityResponse) UnmarshalJSON(data []byte) error {
+	d := jx.DecodeBytes(data)
+	return s.Decode(d)
+}
+
+// Encode implements json.Marshaler.
+func (s SzHowEntityResponseRawData) Encode(e *jx.Encoder) {
+	e.ObjStart()
+	s.encodeFields(e)
+	e.ObjEnd()
+}
+
+// encodeFields implements json.Marshaler.
+func (s SzHowEntityResponseRawData) encodeFields(e *jx.Encoder) {
+	for k, elem := range s {
+		e.FieldStart(k)
+
+		if len(elem) != 0 {
+			e.Raw(elem)
+		}
+	}
+}
+
+// Decode decodes SzHowEntityResponseRawData from json.
+func (s *SzHowEntityResponseRawData) Decode(d *jx.Decoder) error {
+	if s == nil {
+		return errors.New("invalid: unable to decode SzHowEntityResponseRawData to nil")
+	}
+	m := s.init()
+	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
+		var elem jx.Raw
+		if err := func() error {
+			v, err := d.RawAppend(nil)
+			elem = jx.Raw(v)
+			if err != nil {
+				return err
+			}
+			return nil
+		}(); err != nil {
+			return errors.Wrapf(err, "decode field %q", k)
+		}
+		m[string(k)] = elem
+		return nil
+	}); err != nil {
+		return errors.Wrap(err, "decode SzHowEntityResponseRawData")
+	}
+
+	return nil
+}
+
+// MarshalJSON implements stdjson.Marshaler.
+func (s SzHowEntityResponseRawData) MarshalJSON() ([]byte, error) {
+	e := jx.Encoder{}
+	s.Encode(&e)
+	return e.Bytes(), nil
+}
+
+// UnmarshalJSON implements stdjson.Unmarshaler.
+func (s *SzHowEntityResponseRawData) UnmarshalJSON(data []byte) error {
 	d := jx.DecodeBytes(data)
 	return s.Decode(d)
 }
@@ -10182,6 +12775,24 @@ func (s *SzLicenseResponse) Encode(e *jx.Encoder) {
 // encodeFields encodes fields.
 func (s *SzLicenseResponse) encodeFields(e *jx.Encoder) {
 	{
+		if s.Meta.Set {
+			e.FieldStart("meta")
+			s.Meta.Encode(e)
+		}
+	}
+	{
+		if s.Links.Set {
+			e.FieldStart("links")
+			s.Links.Encode(e)
+		}
+	}
+	{
+		if s.RawData.Set {
+			e.FieldStart("rawData")
+			s.RawData.Encode(e)
+		}
+	}
+	{
 		if s.Data.Set {
 			e.FieldStart("data")
 			s.Data.Encode(e)
@@ -10189,8 +12800,11 @@ func (s *SzLicenseResponse) encodeFields(e *jx.Encoder) {
 	}
 }
 
-var jsonFieldsNameOfSzLicenseResponse = [1]string{
-	0: "data",
+var jsonFieldsNameOfSzLicenseResponse = [4]string{
+	0: "meta",
+	1: "links",
+	2: "rawData",
+	3: "data",
 }
 
 // Decode decodes SzLicenseResponse from json.
@@ -10201,6 +12815,36 @@ func (s *SzLicenseResponse) Decode(d *jx.Decoder) error {
 
 	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
 		switch string(k) {
+		case "meta":
+			if err := func() error {
+				s.Meta.Reset()
+				if err := s.Meta.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"meta\"")
+			}
+		case "links":
+			if err := func() error {
+				s.Links.Reset()
+				if err := s.Links.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"links\"")
+			}
+		case "rawData":
+			if err := func() error {
+				s.RawData.Reset()
+				if err := s.RawData.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"rawData\"")
+			}
 		case "data":
 			if err := func() error {
 				s.Data.Reset()
@@ -10299,6 +12943,64 @@ func (s *SzLicenseResponseData) UnmarshalJSON(data []byte) error {
 }
 
 // Encode implements json.Marshaler.
+func (s SzLicenseResponseRawData) Encode(e *jx.Encoder) {
+	e.ObjStart()
+	s.encodeFields(e)
+	e.ObjEnd()
+}
+
+// encodeFields implements json.Marshaler.
+func (s SzLicenseResponseRawData) encodeFields(e *jx.Encoder) {
+	for k, elem := range s {
+		e.FieldStart(k)
+
+		if len(elem) != 0 {
+			e.Raw(elem)
+		}
+	}
+}
+
+// Decode decodes SzLicenseResponseRawData from json.
+func (s *SzLicenseResponseRawData) Decode(d *jx.Decoder) error {
+	if s == nil {
+		return errors.New("invalid: unable to decode SzLicenseResponseRawData to nil")
+	}
+	m := s.init()
+	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
+		var elem jx.Raw
+		if err := func() error {
+			v, err := d.RawAppend(nil)
+			elem = jx.Raw(v)
+			if err != nil {
+				return err
+			}
+			return nil
+		}(); err != nil {
+			return errors.Wrapf(err, "decode field %q", k)
+		}
+		m[string(k)] = elem
+		return nil
+	}); err != nil {
+		return errors.Wrap(err, "decode SzLicenseResponseRawData")
+	}
+
+	return nil
+}
+
+// MarshalJSON implements stdjson.Marshaler.
+func (s SzLicenseResponseRawData) MarshalJSON() ([]byte, error) {
+	e := jx.Encoder{}
+	s.Encode(&e)
+	return e.Bytes(), nil
+}
+
+// UnmarshalJSON implements stdjson.Unmarshaler.
+func (s *SzLicenseResponseRawData) UnmarshalJSON(data []byte) error {
+	d := jx.DecodeBytes(data)
+	return s.Decode(d)
+}
+
+// Encode implements json.Marshaler.
 func (s *SzLinks) Encode(e *jx.Encoder) {
 	e.ObjStart()
 	s.encodeFields(e)
@@ -10388,6 +13090,24 @@ func (s *SzLoadRecordResponse) Encode(e *jx.Encoder) {
 // encodeFields encodes fields.
 func (s *SzLoadRecordResponse) encodeFields(e *jx.Encoder) {
 	{
+		if s.Meta.Set {
+			e.FieldStart("meta")
+			s.Meta.Encode(e)
+		}
+	}
+	{
+		if s.Links.Set {
+			e.FieldStart("links")
+			s.Links.Encode(e)
+		}
+	}
+	{
+		if s.RawData.Set {
+			e.FieldStart("rawData")
+			s.RawData.Encode(e)
+		}
+	}
+	{
 		if s.Data.Set {
 			e.FieldStart("data")
 			s.Data.Encode(e)
@@ -10395,8 +13115,11 @@ func (s *SzLoadRecordResponse) encodeFields(e *jx.Encoder) {
 	}
 }
 
-var jsonFieldsNameOfSzLoadRecordResponse = [1]string{
-	0: "data",
+var jsonFieldsNameOfSzLoadRecordResponse = [4]string{
+	0: "meta",
+	1: "links",
+	2: "rawData",
+	3: "data",
 }
 
 // Decode decodes SzLoadRecordResponse from json.
@@ -10407,6 +13130,36 @@ func (s *SzLoadRecordResponse) Decode(d *jx.Decoder) error {
 
 	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
 		switch string(k) {
+		case "meta":
+			if err := func() error {
+				s.Meta.Reset()
+				if err := s.Meta.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"meta\"")
+			}
+		case "links":
+			if err := func() error {
+				s.Links.Reset()
+				if err := s.Links.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"links\"")
+			}
+		case "rawData":
+			if err := func() error {
+				s.RawData.Reset()
+				if err := s.RawData.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"rawData\"")
+			}
 		case "data":
 			if err := func() error {
 				s.Data.Reset()
@@ -10517,6 +13270,64 @@ func (s *SzLoadRecordResponseData) MarshalJSON() ([]byte, error) {
 
 // UnmarshalJSON implements stdjson.Unmarshaler.
 func (s *SzLoadRecordResponseData) UnmarshalJSON(data []byte) error {
+	d := jx.DecodeBytes(data)
+	return s.Decode(d)
+}
+
+// Encode implements json.Marshaler.
+func (s SzLoadRecordResponseRawData) Encode(e *jx.Encoder) {
+	e.ObjStart()
+	s.encodeFields(e)
+	e.ObjEnd()
+}
+
+// encodeFields implements json.Marshaler.
+func (s SzLoadRecordResponseRawData) encodeFields(e *jx.Encoder) {
+	for k, elem := range s {
+		e.FieldStart(k)
+
+		if len(elem) != 0 {
+			e.Raw(elem)
+		}
+	}
+}
+
+// Decode decodes SzLoadRecordResponseRawData from json.
+func (s *SzLoadRecordResponseRawData) Decode(d *jx.Decoder) error {
+	if s == nil {
+		return errors.New("invalid: unable to decode SzLoadRecordResponseRawData to nil")
+	}
+	m := s.init()
+	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
+		var elem jx.Raw
+		if err := func() error {
+			v, err := d.RawAppend(nil)
+			elem = jx.Raw(v)
+			if err != nil {
+				return err
+			}
+			return nil
+		}(); err != nil {
+			return errors.Wrapf(err, "decode field %q", k)
+		}
+		m[string(k)] = elem
+		return nil
+	}); err != nil {
+		return errors.Wrap(err, "decode SzLoadRecordResponseRawData")
+	}
+
+	return nil
+}
+
+// MarshalJSON implements stdjson.Marshaler.
+func (s SzLoadRecordResponseRawData) MarshalJSON() ([]byte, error) {
+	e := jx.Encoder{}
+	s.Encode(&e)
+	return e.Bytes(), nil
+}
+
+// UnmarshalJSON implements stdjson.Unmarshaler.
+func (s *SzLoadRecordResponseRawData) UnmarshalJSON(data []byte) error {
 	d := jx.DecodeBytes(data)
 	return s.Decode(d)
 }
@@ -11466,6 +14277,24 @@ func (s *SzRecordResponse) Encode(e *jx.Encoder) {
 // encodeFields encodes fields.
 func (s *SzRecordResponse) encodeFields(e *jx.Encoder) {
 	{
+		if s.Meta.Set {
+			e.FieldStart("meta")
+			s.Meta.Encode(e)
+		}
+	}
+	{
+		if s.Links.Set {
+			e.FieldStart("links")
+			s.Links.Encode(e)
+		}
+	}
+	{
+		if s.RawData.Set {
+			e.FieldStart("rawData")
+			s.RawData.Encode(e)
+		}
+	}
+	{
 		if s.Data.Set {
 			e.FieldStart("data")
 			s.Data.Encode(e)
@@ -11473,8 +14302,11 @@ func (s *SzRecordResponse) encodeFields(e *jx.Encoder) {
 	}
 }
 
-var jsonFieldsNameOfSzRecordResponse = [1]string{
-	0: "data",
+var jsonFieldsNameOfSzRecordResponse = [4]string{
+	0: "meta",
+	1: "links",
+	2: "rawData",
+	3: "data",
 }
 
 // Decode decodes SzRecordResponse from json.
@@ -11485,6 +14317,36 @@ func (s *SzRecordResponse) Decode(d *jx.Decoder) error {
 
 	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
 		switch string(k) {
+		case "meta":
+			if err := func() error {
+				s.Meta.Reset()
+				if err := s.Meta.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"meta\"")
+			}
+		case "links":
+			if err := func() error {
+				s.Links.Reset()
+				if err := s.Links.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"links\"")
+			}
+		case "rawData":
+			if err := func() error {
+				s.RawData.Reset()
+				if err := s.RawData.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"rawData\"")
+			}
 		case "data":
 			if err := func() error {
 				s.Data.Reset()
@@ -11583,6 +14445,64 @@ func (s *SzRecordResponseData) UnmarshalJSON(data []byte) error {
 }
 
 // Encode implements json.Marshaler.
+func (s SzRecordResponseRawData) Encode(e *jx.Encoder) {
+	e.ObjStart()
+	s.encodeFields(e)
+	e.ObjEnd()
+}
+
+// encodeFields implements json.Marshaler.
+func (s SzRecordResponseRawData) encodeFields(e *jx.Encoder) {
+	for k, elem := range s {
+		e.FieldStart(k)
+
+		if len(elem) != 0 {
+			e.Raw(elem)
+		}
+	}
+}
+
+// Decode decodes SzRecordResponseRawData from json.
+func (s *SzRecordResponseRawData) Decode(d *jx.Decoder) error {
+	if s == nil {
+		return errors.New("invalid: unable to decode SzRecordResponseRawData to nil")
+	}
+	m := s.init()
+	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
+		var elem jx.Raw
+		if err := func() error {
+			v, err := d.RawAppend(nil)
+			elem = jx.Raw(v)
+			if err != nil {
+				return err
+			}
+			return nil
+		}(); err != nil {
+			return errors.Wrapf(err, "decode field %q", k)
+		}
+		m[string(k)] = elem
+		return nil
+	}); err != nil {
+		return errors.Wrap(err, "decode SzRecordResponseRawData")
+	}
+
+	return nil
+}
+
+// MarshalJSON implements stdjson.Marshaler.
+func (s SzRecordResponseRawData) MarshalJSON() ([]byte, error) {
+	e := jx.Encoder{}
+	s.Encode(&e)
+	return e.Bytes(), nil
+}
+
+// UnmarshalJSON implements stdjson.Unmarshaler.
+func (s *SzRecordResponseRawData) UnmarshalJSON(data []byte) error {
+	d := jx.DecodeBytes(data)
+	return s.Decode(d)
+}
+
+// Encode implements json.Marshaler.
 func (s *SzReevaluateResponse) Encode(e *jx.Encoder) {
 	e.ObjStart()
 	s.encodeFields(e)
@@ -11592,6 +14512,24 @@ func (s *SzReevaluateResponse) Encode(e *jx.Encoder) {
 // encodeFields encodes fields.
 func (s *SzReevaluateResponse) encodeFields(e *jx.Encoder) {
 	{
+		if s.Meta.Set {
+			e.FieldStart("meta")
+			s.Meta.Encode(e)
+		}
+	}
+	{
+		if s.Links.Set {
+			e.FieldStart("links")
+			s.Links.Encode(e)
+		}
+	}
+	{
+		if s.RawData.Set {
+			e.FieldStart("rawData")
+			s.RawData.Encode(e)
+		}
+	}
+	{
 		if s.Data.Set {
 			e.FieldStart("data")
 			s.Data.Encode(e)
@@ -11599,8 +14537,11 @@ func (s *SzReevaluateResponse) encodeFields(e *jx.Encoder) {
 	}
 }
 
-var jsonFieldsNameOfSzReevaluateResponse = [1]string{
-	0: "data",
+var jsonFieldsNameOfSzReevaluateResponse = [4]string{
+	0: "meta",
+	1: "links",
+	2: "rawData",
+	3: "data",
 }
 
 // Decode decodes SzReevaluateResponse from json.
@@ -11611,6 +14552,36 @@ func (s *SzReevaluateResponse) Decode(d *jx.Decoder) error {
 
 	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
 		switch string(k) {
+		case "meta":
+			if err := func() error {
+				s.Meta.Reset()
+				if err := s.Meta.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"meta\"")
+			}
+		case "links":
+			if err := func() error {
+				s.Links.Reset()
+				if err := s.Links.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"links\"")
+			}
+		case "rawData":
+			if err := func() error {
+				s.RawData.Reset()
+				if err := s.RawData.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"rawData\"")
+			}
 		case "data":
 			if err := func() error {
 				s.Data.Reset()
@@ -11709,6 +14680,64 @@ func (s *SzReevaluateResponseData) UnmarshalJSON(data []byte) error {
 }
 
 // Encode implements json.Marshaler.
+func (s SzReevaluateResponseRawData) Encode(e *jx.Encoder) {
+	e.ObjStart()
+	s.encodeFields(e)
+	e.ObjEnd()
+}
+
+// encodeFields implements json.Marshaler.
+func (s SzReevaluateResponseRawData) encodeFields(e *jx.Encoder) {
+	for k, elem := range s {
+		e.FieldStart(k)
+
+		if len(elem) != 0 {
+			e.Raw(elem)
+		}
+	}
+}
+
+// Decode decodes SzReevaluateResponseRawData from json.
+func (s *SzReevaluateResponseRawData) Decode(d *jx.Decoder) error {
+	if s == nil {
+		return errors.New("invalid: unable to decode SzReevaluateResponseRawData to nil")
+	}
+	m := s.init()
+	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
+		var elem jx.Raw
+		if err := func() error {
+			v, err := d.RawAppend(nil)
+			elem = jx.Raw(v)
+			if err != nil {
+				return err
+			}
+			return nil
+		}(); err != nil {
+			return errors.Wrapf(err, "decode field %q", k)
+		}
+		m[string(k)] = elem
+		return nil
+	}); err != nil {
+		return errors.Wrap(err, "decode SzReevaluateResponseRawData")
+	}
+
+	return nil
+}
+
+// MarshalJSON implements stdjson.Marshaler.
+func (s SzReevaluateResponseRawData) MarshalJSON() ([]byte, error) {
+	e := jx.Encoder{}
+	s.Encode(&e)
+	return e.Bytes(), nil
+}
+
+// UnmarshalJSON implements stdjson.Unmarshaler.
+func (s *SzReevaluateResponseRawData) UnmarshalJSON(data []byte) error {
+	d := jx.DecodeBytes(data)
+	return s.Decode(d)
+}
+
+// Encode implements json.Marshaler.
 func (s *SzRelatedEntity) Encode(e *jx.Encoder) {
 	e.ObjStart()
 	s.encodeFields(e)
@@ -11717,6 +14746,150 @@ func (s *SzRelatedEntity) Encode(e *jx.Encoder) {
 
 // encodeFields encodes fields.
 func (s *SzRelatedEntity) encodeFields(e *jx.Encoder) {
+	{
+		if s.EntityId.Set {
+			e.FieldStart("entityId")
+			s.EntityId.Encode(e)
+		}
+	}
+	{
+		if s.EntityName.Set {
+			e.FieldStart("entityName")
+			s.EntityName.Encode(e)
+		}
+	}
+	{
+		if s.BestName.Set {
+			e.FieldStart("bestName")
+			s.BestName.Encode(e)
+		}
+	}
+	{
+		if s.RecordSummaries != nil {
+			e.FieldStart("recordSummaries")
+			e.ArrStart()
+			for _, elem := range s.RecordSummaries {
+				elem.Encode(e)
+			}
+			e.ArrEnd()
+		}
+	}
+	{
+		if s.NameData != nil {
+			e.FieldStart("nameData")
+			e.ArrStart()
+			for _, elem := range s.NameData {
+				e.Str(elem)
+			}
+			e.ArrEnd()
+		}
+	}
+	{
+		if s.CharacteristicData != nil {
+			e.FieldStart("characteristicData")
+			e.ArrStart()
+			for _, elem := range s.CharacteristicData {
+				e.Str(elem)
+			}
+			e.ArrEnd()
+		}
+	}
+	{
+		if s.AddressData != nil {
+			e.FieldStart("addressData")
+			e.ArrStart()
+			for _, elem := range s.AddressData {
+				e.Str(elem)
+			}
+			e.ArrEnd()
+		}
+	}
+	{
+		if s.PhoneData != nil {
+			e.FieldStart("phoneData")
+			e.ArrStart()
+			for _, elem := range s.PhoneData {
+				e.Str(elem)
+			}
+			e.ArrEnd()
+		}
+	}
+	{
+		if s.IdentifierData != nil {
+			e.FieldStart("identifierData")
+			e.ArrStart()
+			for _, elem := range s.IdentifierData {
+				e.Str(elem)
+			}
+			e.ArrEnd()
+		}
+	}
+	{
+		if s.RelationshipData != nil {
+			e.FieldStart("relationshipData")
+			e.ArrStart()
+			for _, elem := range s.RelationshipData {
+				e.Str(elem)
+			}
+			e.ArrEnd()
+		}
+	}
+	{
+		if s.OtherData != nil {
+			e.FieldStart("otherData")
+			e.ArrStart()
+			for _, elem := range s.OtherData {
+				e.Str(elem)
+			}
+			e.ArrEnd()
+		}
+	}
+	{
+		if s.Records != nil {
+			e.FieldStart("records")
+			e.ArrStart()
+			for _, elem := range s.Records {
+				elem.Encode(e)
+			}
+			e.ArrEnd()
+		}
+	}
+	{
+		if s.Features.Set {
+			e.FieldStart("features")
+			s.Features.Encode(e)
+		}
+	}
+	{
+		if s.Partial.Set {
+			e.FieldStart("partial")
+			s.Partial.Encode(e)
+		}
+	}
+	{
+		if s.LastSeenTimestamp.Set {
+			e.FieldStart("lastSeenTimestamp")
+			s.LastSeenTimestamp.Encode(e, json.EncodeDateTime)
+		}
+	}
+	{
+		if s.MatchLevel.Set {
+			e.FieldStart("matchLevel")
+			s.MatchLevel.Encode(e)
+		}
+	}
+	{
+		if s.MatchKey.Set {
+			e.FieldStart("matchKey")
+			s.MatchKey.Encode(e)
+		}
+	}
+	{
+		if s.ResolutionRuleCode.Set {
+			e.FieldStart("resolutionRuleCode")
+			s.ResolutionRuleCode.Encode(e)
+		}
+	}
 	{
 		if s.Disclosed.Set {
 			e.FieldStart("disclosed")
@@ -11737,10 +14910,28 @@ func (s *SzRelatedEntity) encodeFields(e *jx.Encoder) {
 	}
 }
 
-var jsonFieldsNameOfSzRelatedEntity = [3]string{
-	0: "disclosed",
-	1: "ambiguous",
-	2: "relationType",
+var jsonFieldsNameOfSzRelatedEntity = [21]string{
+	0:  "entityId",
+	1:  "entityName",
+	2:  "bestName",
+	3:  "recordSummaries",
+	4:  "nameData",
+	5:  "characteristicData",
+	6:  "addressData",
+	7:  "phoneData",
+	8:  "identifierData",
+	9:  "relationshipData",
+	10: "otherData",
+	11: "records",
+	12: "features",
+	13: "partial",
+	14: "lastSeenTimestamp",
+	15: "matchLevel",
+	16: "matchKey",
+	17: "resolutionRuleCode",
+	18: "disclosed",
+	19: "ambiguous",
+	20: "relationType",
 }
 
 // Decode decodes SzRelatedEntity from json.
@@ -11751,6 +14942,263 @@ func (s *SzRelatedEntity) Decode(d *jx.Decoder) error {
 
 	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
 		switch string(k) {
+		case "entityId":
+			if err := func() error {
+				s.EntityId.Reset()
+				if err := s.EntityId.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"entityId\"")
+			}
+		case "entityName":
+			if err := func() error {
+				s.EntityName.Reset()
+				if err := s.EntityName.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"entityName\"")
+			}
+		case "bestName":
+			if err := func() error {
+				s.BestName.Reset()
+				if err := s.BestName.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"bestName\"")
+			}
+		case "recordSummaries":
+			if err := func() error {
+				s.RecordSummaries = make([]SzDataSourceRecordSummary, 0)
+				if err := d.Arr(func(d *jx.Decoder) error {
+					var elem SzDataSourceRecordSummary
+					if err := elem.Decode(d); err != nil {
+						return err
+					}
+					s.RecordSummaries = append(s.RecordSummaries, elem)
+					return nil
+				}); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"recordSummaries\"")
+			}
+		case "nameData":
+			if err := func() error {
+				s.NameData = make([]string, 0)
+				if err := d.Arr(func(d *jx.Decoder) error {
+					var elem string
+					v, err := d.Str()
+					elem = string(v)
+					if err != nil {
+						return err
+					}
+					s.NameData = append(s.NameData, elem)
+					return nil
+				}); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"nameData\"")
+			}
+		case "characteristicData":
+			if err := func() error {
+				s.CharacteristicData = make([]string, 0)
+				if err := d.Arr(func(d *jx.Decoder) error {
+					var elem string
+					v, err := d.Str()
+					elem = string(v)
+					if err != nil {
+						return err
+					}
+					s.CharacteristicData = append(s.CharacteristicData, elem)
+					return nil
+				}); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"characteristicData\"")
+			}
+		case "addressData":
+			if err := func() error {
+				s.AddressData = make([]string, 0)
+				if err := d.Arr(func(d *jx.Decoder) error {
+					var elem string
+					v, err := d.Str()
+					elem = string(v)
+					if err != nil {
+						return err
+					}
+					s.AddressData = append(s.AddressData, elem)
+					return nil
+				}); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"addressData\"")
+			}
+		case "phoneData":
+			if err := func() error {
+				s.PhoneData = make([]string, 0)
+				if err := d.Arr(func(d *jx.Decoder) error {
+					var elem string
+					v, err := d.Str()
+					elem = string(v)
+					if err != nil {
+						return err
+					}
+					s.PhoneData = append(s.PhoneData, elem)
+					return nil
+				}); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"phoneData\"")
+			}
+		case "identifierData":
+			if err := func() error {
+				s.IdentifierData = make([]string, 0)
+				if err := d.Arr(func(d *jx.Decoder) error {
+					var elem string
+					v, err := d.Str()
+					elem = string(v)
+					if err != nil {
+						return err
+					}
+					s.IdentifierData = append(s.IdentifierData, elem)
+					return nil
+				}); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"identifierData\"")
+			}
+		case "relationshipData":
+			if err := func() error {
+				s.RelationshipData = make([]string, 0)
+				if err := d.Arr(func(d *jx.Decoder) error {
+					var elem string
+					v, err := d.Str()
+					elem = string(v)
+					if err != nil {
+						return err
+					}
+					s.RelationshipData = append(s.RelationshipData, elem)
+					return nil
+				}); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"relationshipData\"")
+			}
+		case "otherData":
+			if err := func() error {
+				s.OtherData = make([]string, 0)
+				if err := d.Arr(func(d *jx.Decoder) error {
+					var elem string
+					v, err := d.Str()
+					elem = string(v)
+					if err != nil {
+						return err
+					}
+					s.OtherData = append(s.OtherData, elem)
+					return nil
+				}); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"otherData\"")
+			}
+		case "records":
+			if err := func() error {
+				s.Records = make([]SzMatchedRecord, 0)
+				if err := d.Arr(func(d *jx.Decoder) error {
+					var elem SzMatchedRecord
+					if err := elem.Decode(d); err != nil {
+						return err
+					}
+					s.Records = append(s.Records, elem)
+					return nil
+				}); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"records\"")
+			}
+		case "features":
+			if err := func() error {
+				s.Features.Reset()
+				if err := s.Features.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"features\"")
+			}
+		case "partial":
+			if err := func() error {
+				s.Partial.Reset()
+				if err := s.Partial.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"partial\"")
+			}
+		case "lastSeenTimestamp":
+			if err := func() error {
+				s.LastSeenTimestamp.Reset()
+				if err := s.LastSeenTimestamp.Decode(d, json.DecodeDateTime); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"lastSeenTimestamp\"")
+			}
+		case "matchLevel":
+			if err := func() error {
+				s.MatchLevel.Reset()
+				if err := s.MatchLevel.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"matchLevel\"")
+			}
+		case "matchKey":
+			if err := func() error {
+				s.MatchKey.Reset()
+				if err := s.MatchKey.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"matchKey\"")
+			}
+		case "resolutionRuleCode":
+			if err := func() error {
+				s.ResolutionRuleCode.Reset()
+				if err := s.ResolutionRuleCode.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"resolutionRuleCode\"")
+			}
 		case "disclosed":
 			if err := func() error {
 				s.Disclosed.Reset()
@@ -11801,6 +15249,72 @@ func (s *SzRelatedEntity) MarshalJSON() ([]byte, error) {
 
 // UnmarshalJSON implements stdjson.Unmarshaler.
 func (s *SzRelatedEntity) UnmarshalJSON(data []byte) error {
+	d := jx.DecodeBytes(data)
+	return s.Decode(d)
+}
+
+// Encode implements json.Marshaler.
+func (s SzRelatedEntityFeatures) Encode(e *jx.Encoder) {
+	e.ObjStart()
+	s.encodeFields(e)
+	e.ObjEnd()
+}
+
+// encodeFields implements json.Marshaler.
+func (s SzRelatedEntityFeatures) encodeFields(e *jx.Encoder) {
+	for k, elem := range s {
+		e.FieldStart(k)
+
+		e.ArrStart()
+		for _, elem := range elem {
+			elem.Encode(e)
+		}
+		e.ArrEnd()
+	}
+}
+
+// Decode decodes SzRelatedEntityFeatures from json.
+func (s *SzRelatedEntityFeatures) Decode(d *jx.Decoder) error {
+	if s == nil {
+		return errors.New("invalid: unable to decode SzRelatedEntityFeatures to nil")
+	}
+	m := s.init()
+	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
+		var elem []SzEntityFeature
+		if err := func() error {
+			elem = make([]SzEntityFeature, 0)
+			if err := d.Arr(func(d *jx.Decoder) error {
+				var elemElem SzEntityFeature
+				if err := elemElem.Decode(d); err != nil {
+					return err
+				}
+				elem = append(elem, elemElem)
+				return nil
+			}); err != nil {
+				return err
+			}
+			return nil
+		}(); err != nil {
+			return errors.Wrapf(err, "decode field %q", k)
+		}
+		m[string(k)] = elem
+		return nil
+	}); err != nil {
+		return errors.Wrap(err, "decode SzRelatedEntityFeatures")
+	}
+
+	return nil
+}
+
+// MarshalJSON implements stdjson.Marshaler.
+func (s SzRelatedEntityFeatures) MarshalJSON() ([]byte, error) {
+	e := jx.Encoder{}
+	s.Encode(&e)
+	return e.Bytes(), nil
+}
+
+// UnmarshalJSON implements stdjson.Unmarshaler.
+func (s *SzRelatedEntityFeatures) UnmarshalJSON(data []byte) error {
 	d := jx.DecodeBytes(data)
 	return s.Decode(d)
 }
@@ -13767,6 +17281,24 @@ func (s *SzVersionResponse) Encode(e *jx.Encoder) {
 // encodeFields encodes fields.
 func (s *SzVersionResponse) encodeFields(e *jx.Encoder) {
 	{
+		if s.Meta.Set {
+			e.FieldStart("meta")
+			s.Meta.Encode(e)
+		}
+	}
+	{
+		if s.Links.Set {
+			e.FieldStart("links")
+			s.Links.Encode(e)
+		}
+	}
+	{
+		if s.RawData.Set {
+			e.FieldStart("rawData")
+			s.RawData.Encode(e)
+		}
+	}
+	{
 		if s.Data.Set {
 			e.FieldStart("data")
 			s.Data.Encode(e)
@@ -13774,8 +17306,11 @@ func (s *SzVersionResponse) encodeFields(e *jx.Encoder) {
 	}
 }
 
-var jsonFieldsNameOfSzVersionResponse = [1]string{
-	0: "data",
+var jsonFieldsNameOfSzVersionResponse = [4]string{
+	0: "meta",
+	1: "links",
+	2: "rawData",
+	3: "data",
 }
 
 // Decode decodes SzVersionResponse from json.
@@ -13786,6 +17321,36 @@ func (s *SzVersionResponse) Decode(d *jx.Decoder) error {
 
 	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
 		switch string(k) {
+		case "meta":
+			if err := func() error {
+				s.Meta.Reset()
+				if err := s.Meta.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"meta\"")
+			}
+		case "links":
+			if err := func() error {
+				s.Links.Reset()
+				if err := s.Links.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"links\"")
+			}
+		case "rawData":
+			if err := func() error {
+				s.RawData.Reset()
+				if err := s.RawData.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"rawData\"")
+			}
 		case "data":
 			if err := func() error {
 				s.Data.Reset()
@@ -13816,6 +17381,64 @@ func (s *SzVersionResponse) MarshalJSON() ([]byte, error) {
 
 // UnmarshalJSON implements stdjson.Unmarshaler.
 func (s *SzVersionResponse) UnmarshalJSON(data []byte) error {
+	d := jx.DecodeBytes(data)
+	return s.Decode(d)
+}
+
+// Encode implements json.Marshaler.
+func (s SzVersionResponseRawData) Encode(e *jx.Encoder) {
+	e.ObjStart()
+	s.encodeFields(e)
+	e.ObjEnd()
+}
+
+// encodeFields implements json.Marshaler.
+func (s SzVersionResponseRawData) encodeFields(e *jx.Encoder) {
+	for k, elem := range s {
+		e.FieldStart(k)
+
+		if len(elem) != 0 {
+			e.Raw(elem)
+		}
+	}
+}
+
+// Decode decodes SzVersionResponseRawData from json.
+func (s *SzVersionResponseRawData) Decode(d *jx.Decoder) error {
+	if s == nil {
+		return errors.New("invalid: unable to decode SzVersionResponseRawData to nil")
+	}
+	m := s.init()
+	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
+		var elem jx.Raw
+		if err := func() error {
+			v, err := d.RawAppend(nil)
+			elem = jx.Raw(v)
+			if err != nil {
+				return err
+			}
+			return nil
+		}(); err != nil {
+			return errors.Wrapf(err, "decode field %q", k)
+		}
+		m[string(k)] = elem
+		return nil
+	}); err != nil {
+		return errors.Wrap(err, "decode SzVersionResponseRawData")
+	}
+
+	return nil
+}
+
+// MarshalJSON implements stdjson.Marshaler.
+func (s SzVersionResponseRawData) MarshalJSON() ([]byte, error) {
+	e := jx.Encoder{}
+	s.Encode(&e)
+	return e.Bytes(), nil
+}
+
+// UnmarshalJSON implements stdjson.Unmarshaler.
+func (s *SzVersionResponseRawData) UnmarshalJSON(data []byte) error {
 	d := jx.DecodeBytes(data)
 	return s.Decode(d)
 }
@@ -14098,6 +17721,24 @@ func (s *SzVirtualEntityResponse) Encode(e *jx.Encoder) {
 // encodeFields encodes fields.
 func (s *SzVirtualEntityResponse) encodeFields(e *jx.Encoder) {
 	{
+		if s.Meta.Set {
+			e.FieldStart("meta")
+			s.Meta.Encode(e)
+		}
+	}
+	{
+		if s.Links.Set {
+			e.FieldStart("links")
+			s.Links.Encode(e)
+		}
+	}
+	{
+		if s.RawData.Set {
+			e.FieldStart("rawData")
+			s.RawData.Encode(e)
+		}
+	}
+	{
 		if s.Data.Set {
 			e.FieldStart("data")
 			s.Data.Encode(e)
@@ -14105,8 +17746,11 @@ func (s *SzVirtualEntityResponse) encodeFields(e *jx.Encoder) {
 	}
 }
 
-var jsonFieldsNameOfSzVirtualEntityResponse = [1]string{
-	0: "data",
+var jsonFieldsNameOfSzVirtualEntityResponse = [4]string{
+	0: "meta",
+	1: "links",
+	2: "rawData",
+	3: "data",
 }
 
 // Decode decodes SzVirtualEntityResponse from json.
@@ -14117,6 +17761,36 @@ func (s *SzVirtualEntityResponse) Decode(d *jx.Decoder) error {
 
 	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
 		switch string(k) {
+		case "meta":
+			if err := func() error {
+				s.Meta.Reset()
+				if err := s.Meta.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"meta\"")
+			}
+		case "links":
+			if err := func() error {
+				s.Links.Reset()
+				if err := s.Links.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"links\"")
+			}
+		case "rawData":
+			if err := func() error {
+				s.RawData.Reset()
+				if err := s.RawData.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"rawData\"")
+			}
 		case "data":
 			if err := func() error {
 				s.Data.Reset()
@@ -14152,6 +17826,64 @@ func (s *SzVirtualEntityResponse) UnmarshalJSON(data []byte) error {
 }
 
 // Encode implements json.Marshaler.
+func (s SzVirtualEntityResponseRawData) Encode(e *jx.Encoder) {
+	e.ObjStart()
+	s.encodeFields(e)
+	e.ObjEnd()
+}
+
+// encodeFields implements json.Marshaler.
+func (s SzVirtualEntityResponseRawData) encodeFields(e *jx.Encoder) {
+	for k, elem := range s {
+		e.FieldStart(k)
+
+		if len(elem) != 0 {
+			e.Raw(elem)
+		}
+	}
+}
+
+// Decode decodes SzVirtualEntityResponseRawData from json.
+func (s *SzVirtualEntityResponseRawData) Decode(d *jx.Decoder) error {
+	if s == nil {
+		return errors.New("invalid: unable to decode SzVirtualEntityResponseRawData to nil")
+	}
+	m := s.init()
+	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
+		var elem jx.Raw
+		if err := func() error {
+			v, err := d.RawAppend(nil)
+			elem = jx.Raw(v)
+			if err != nil {
+				return err
+			}
+			return nil
+		}(); err != nil {
+			return errors.Wrapf(err, "decode field %q", k)
+		}
+		m[string(k)] = elem
+		return nil
+	}); err != nil {
+		return errors.Wrap(err, "decode SzVirtualEntityResponseRawData")
+	}
+
+	return nil
+}
+
+// MarshalJSON implements stdjson.Marshaler.
+func (s SzVirtualEntityResponseRawData) MarshalJSON() ([]byte, error) {
+	e := jx.Encoder{}
+	s.Encode(&e)
+	return e.Bytes(), nil
+}
+
+// UnmarshalJSON implements stdjson.Unmarshaler.
+func (s *SzVirtualEntityResponseRawData) UnmarshalJSON(data []byte) error {
+	d := jx.DecodeBytes(data)
+	return s.Decode(d)
+}
+
+// Encode implements json.Marshaler.
 func (s *SzWhyEntitiesResponse) Encode(e *jx.Encoder) {
 	e.ObjStart()
 	s.encodeFields(e)
@@ -14161,6 +17893,24 @@ func (s *SzWhyEntitiesResponse) Encode(e *jx.Encoder) {
 // encodeFields encodes fields.
 func (s *SzWhyEntitiesResponse) encodeFields(e *jx.Encoder) {
 	{
+		if s.Meta.Set {
+			e.FieldStart("meta")
+			s.Meta.Encode(e)
+		}
+	}
+	{
+		if s.Links.Set {
+			e.FieldStart("links")
+			s.Links.Encode(e)
+		}
+	}
+	{
+		if s.RawData.Set {
+			e.FieldStart("rawData")
+			s.RawData.Encode(e)
+		}
+	}
+	{
 		if s.Data.Set {
 			e.FieldStart("data")
 			s.Data.Encode(e)
@@ -14168,8 +17918,11 @@ func (s *SzWhyEntitiesResponse) encodeFields(e *jx.Encoder) {
 	}
 }
 
-var jsonFieldsNameOfSzWhyEntitiesResponse = [1]string{
-	0: "data",
+var jsonFieldsNameOfSzWhyEntitiesResponse = [4]string{
+	0: "meta",
+	1: "links",
+	2: "rawData",
+	3: "data",
 }
 
 // Decode decodes SzWhyEntitiesResponse from json.
@@ -14180,6 +17933,36 @@ func (s *SzWhyEntitiesResponse) Decode(d *jx.Decoder) error {
 
 	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
 		switch string(k) {
+		case "meta":
+			if err := func() error {
+				s.Meta.Reset()
+				if err := s.Meta.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"meta\"")
+			}
+		case "links":
+			if err := func() error {
+				s.Links.Reset()
+				if err := s.Links.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"links\"")
+			}
+		case "rawData":
+			if err := func() error {
+				s.RawData.Reset()
+				if err := s.RawData.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"rawData\"")
+			}
 		case "data":
 			if err := func() error {
 				s.Data.Reset()
@@ -14306,6 +18089,64 @@ func (s *SzWhyEntitiesResponseData) UnmarshalJSON(data []byte) error {
 }
 
 // Encode implements json.Marshaler.
+func (s SzWhyEntitiesResponseRawData) Encode(e *jx.Encoder) {
+	e.ObjStart()
+	s.encodeFields(e)
+	e.ObjEnd()
+}
+
+// encodeFields implements json.Marshaler.
+func (s SzWhyEntitiesResponseRawData) encodeFields(e *jx.Encoder) {
+	for k, elem := range s {
+		e.FieldStart(k)
+
+		if len(elem) != 0 {
+			e.Raw(elem)
+		}
+	}
+}
+
+// Decode decodes SzWhyEntitiesResponseRawData from json.
+func (s *SzWhyEntitiesResponseRawData) Decode(d *jx.Decoder) error {
+	if s == nil {
+		return errors.New("invalid: unable to decode SzWhyEntitiesResponseRawData to nil")
+	}
+	m := s.init()
+	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
+		var elem jx.Raw
+		if err := func() error {
+			v, err := d.RawAppend(nil)
+			elem = jx.Raw(v)
+			if err != nil {
+				return err
+			}
+			return nil
+		}(); err != nil {
+			return errors.Wrapf(err, "decode field %q", k)
+		}
+		m[string(k)] = elem
+		return nil
+	}); err != nil {
+		return errors.Wrap(err, "decode SzWhyEntitiesResponseRawData")
+	}
+
+	return nil
+}
+
+// MarshalJSON implements stdjson.Marshaler.
+func (s SzWhyEntitiesResponseRawData) MarshalJSON() ([]byte, error) {
+	e := jx.Encoder{}
+	s.Encode(&e)
+	return e.Bytes(), nil
+}
+
+// UnmarshalJSON implements stdjson.Unmarshaler.
+func (s *SzWhyEntitiesResponseRawData) UnmarshalJSON(data []byte) error {
+	d := jx.DecodeBytes(data)
+	return s.Decode(d)
+}
+
+// Encode implements json.Marshaler.
 func (s *SzWhyEntitiesResult) Encode(e *jx.Encoder) {
 	e.ObjStart()
 	s.encodeFields(e)
@@ -14412,6 +18253,24 @@ func (s *SzWhyEntityResponse) Encode(e *jx.Encoder) {
 // encodeFields encodes fields.
 func (s *SzWhyEntityResponse) encodeFields(e *jx.Encoder) {
 	{
+		if s.Meta.Set {
+			e.FieldStart("meta")
+			s.Meta.Encode(e)
+		}
+	}
+	{
+		if s.Links.Set {
+			e.FieldStart("links")
+			s.Links.Encode(e)
+		}
+	}
+	{
+		if s.RawData.Set {
+			e.FieldStart("rawData")
+			s.RawData.Encode(e)
+		}
+	}
+	{
 		if s.Data.Set {
 			e.FieldStart("data")
 			s.Data.Encode(e)
@@ -14419,8 +18278,11 @@ func (s *SzWhyEntityResponse) encodeFields(e *jx.Encoder) {
 	}
 }
 
-var jsonFieldsNameOfSzWhyEntityResponse = [1]string{
-	0: "data",
+var jsonFieldsNameOfSzWhyEntityResponse = [4]string{
+	0: "meta",
+	1: "links",
+	2: "rawData",
+	3: "data",
 }
 
 // Decode decodes SzWhyEntityResponse from json.
@@ -14431,6 +18293,36 @@ func (s *SzWhyEntityResponse) Decode(d *jx.Decoder) error {
 
 	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
 		switch string(k) {
+		case "meta":
+			if err := func() error {
+				s.Meta.Reset()
+				if err := s.Meta.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"meta\"")
+			}
+		case "links":
+			if err := func() error {
+				s.Links.Reset()
+				if err := s.Links.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"links\"")
+			}
+		case "rawData":
+			if err := func() error {
+				s.RawData.Reset()
+				if err := s.RawData.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"rawData\"")
+			}
 		case "data":
 			if err := func() error {
 				s.Data.Reset()
@@ -14563,6 +18455,64 @@ func (s *SzWhyEntityResponseData) MarshalJSON() ([]byte, error) {
 
 // UnmarshalJSON implements stdjson.Unmarshaler.
 func (s *SzWhyEntityResponseData) UnmarshalJSON(data []byte) error {
+	d := jx.DecodeBytes(data)
+	return s.Decode(d)
+}
+
+// Encode implements json.Marshaler.
+func (s SzWhyEntityResponseRawData) Encode(e *jx.Encoder) {
+	e.ObjStart()
+	s.encodeFields(e)
+	e.ObjEnd()
+}
+
+// encodeFields implements json.Marshaler.
+func (s SzWhyEntityResponseRawData) encodeFields(e *jx.Encoder) {
+	for k, elem := range s {
+		e.FieldStart(k)
+
+		if len(elem) != 0 {
+			e.Raw(elem)
+		}
+	}
+}
+
+// Decode decodes SzWhyEntityResponseRawData from json.
+func (s *SzWhyEntityResponseRawData) Decode(d *jx.Decoder) error {
+	if s == nil {
+		return errors.New("invalid: unable to decode SzWhyEntityResponseRawData to nil")
+	}
+	m := s.init()
+	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
+		var elem jx.Raw
+		if err := func() error {
+			v, err := d.RawAppend(nil)
+			elem = jx.Raw(v)
+			if err != nil {
+				return err
+			}
+			return nil
+		}(); err != nil {
+			return errors.Wrapf(err, "decode field %q", k)
+		}
+		m[string(k)] = elem
+		return nil
+	}); err != nil {
+		return errors.Wrap(err, "decode SzWhyEntityResponseRawData")
+	}
+
+	return nil
+}
+
+// MarshalJSON implements stdjson.Marshaler.
+func (s SzWhyEntityResponseRawData) MarshalJSON() ([]byte, error) {
+	e := jx.Encoder{}
+	s.Encode(&e)
+	return e.Bytes(), nil
+}
+
+// UnmarshalJSON implements stdjson.Unmarshaler.
+func (s *SzWhyEntityResponseRawData) UnmarshalJSON(data []byte) error {
 	d := jx.DecodeBytes(data)
 	return s.Decode(d)
 }
@@ -14981,6 +18931,24 @@ func (s *SzWhyRecordsResponse) Encode(e *jx.Encoder) {
 // encodeFields encodes fields.
 func (s *SzWhyRecordsResponse) encodeFields(e *jx.Encoder) {
 	{
+		if s.Meta.Set {
+			e.FieldStart("meta")
+			s.Meta.Encode(e)
+		}
+	}
+	{
+		if s.Links.Set {
+			e.FieldStart("links")
+			s.Links.Encode(e)
+		}
+	}
+	{
+		if s.RawData.Set {
+			e.FieldStart("rawData")
+			s.RawData.Encode(e)
+		}
+	}
+	{
 		if s.Data.Set {
 			e.FieldStart("data")
 			s.Data.Encode(e)
@@ -14988,8 +18956,11 @@ func (s *SzWhyRecordsResponse) encodeFields(e *jx.Encoder) {
 	}
 }
 
-var jsonFieldsNameOfSzWhyRecordsResponse = [1]string{
-	0: "data",
+var jsonFieldsNameOfSzWhyRecordsResponse = [4]string{
+	0: "meta",
+	1: "links",
+	2: "rawData",
+	3: "data",
 }
 
 // Decode decodes SzWhyRecordsResponse from json.
@@ -15000,6 +18971,36 @@ func (s *SzWhyRecordsResponse) Decode(d *jx.Decoder) error {
 
 	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
 		switch string(k) {
+		case "meta":
+			if err := func() error {
+				s.Meta.Reset()
+				if err := s.Meta.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"meta\"")
+			}
+		case "links":
+			if err := func() error {
+				s.Links.Reset()
+				if err := s.Links.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"links\"")
+			}
+		case "rawData":
+			if err := func() error {
+				s.RawData.Reset()
+				if err := s.RawData.Decode(d); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return errors.Wrap(err, "decode field \"rawData\"")
+			}
 		case "data":
 			if err := func() error {
 				s.Data.Reset()
@@ -15121,6 +19122,64 @@ func (s *SzWhyRecordsResponseData) MarshalJSON() ([]byte, error) {
 
 // UnmarshalJSON implements stdjson.Unmarshaler.
 func (s *SzWhyRecordsResponseData) UnmarshalJSON(data []byte) error {
+	d := jx.DecodeBytes(data)
+	return s.Decode(d)
+}
+
+// Encode implements json.Marshaler.
+func (s SzWhyRecordsResponseRawData) Encode(e *jx.Encoder) {
+	e.ObjStart()
+	s.encodeFields(e)
+	e.ObjEnd()
+}
+
+// encodeFields implements json.Marshaler.
+func (s SzWhyRecordsResponseRawData) encodeFields(e *jx.Encoder) {
+	for k, elem := range s {
+		e.FieldStart(k)
+
+		if len(elem) != 0 {
+			e.Raw(elem)
+		}
+	}
+}
+
+// Decode decodes SzWhyRecordsResponseRawData from json.
+func (s *SzWhyRecordsResponseRawData) Decode(d *jx.Decoder) error {
+	if s == nil {
+		return errors.New("invalid: unable to decode SzWhyRecordsResponseRawData to nil")
+	}
+	m := s.init()
+	if err := d.ObjBytes(func(d *jx.Decoder, k []byte) error {
+		var elem jx.Raw
+		if err := func() error {
+			v, err := d.RawAppend(nil)
+			elem = jx.Raw(v)
+			if err != nil {
+				return err
+			}
+			return nil
+		}(); err != nil {
+			return errors.Wrapf(err, "decode field %q", k)
+		}
+		m[string(k)] = elem
+		return nil
+	}); err != nil {
+		return errors.Wrap(err, "decode SzWhyRecordsResponseRawData")
+	}
+
+	return nil
+}
+
+// MarshalJSON implements stdjson.Marshaler.
+func (s SzWhyRecordsResponseRawData) MarshalJSON() ([]byte, error) {
+	e := jx.Encoder{}
+	s.Encode(&e)
+	return e.Bytes(), nil
+}
+
+// UnmarshalJSON implements stdjson.Unmarshaler.
+func (s *SzWhyRecordsResponseRawData) UnmarshalJSON(data []byte) error {
 	d := jx.DecodeBytes(data)
 	return s.Decode(d)
 }

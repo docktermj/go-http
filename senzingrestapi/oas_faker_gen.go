@@ -29,19 +29,19 @@ func (s *AddDataSourcesApplicationJSONInternalServerError) SetFake() {
 
 // SetFake set fake values.
 func (s *AddDataSourcesReqApplicationJSON) SetFake() {
-	var elem []SzDataSourceDescriptor
+	var variant []SzDataSourceDescriptor
 
 	{
-		elem = nil
+		variant = nil
 		for i := 0; i < 0; i++ {
-			var elemX SzDataSourceDescriptor // See https://github.com/ogen-go/ogen/issues/923
+			var elem SzDataSourceDescriptor
 			{
-				elemX.SetFake()
+				elem.SetFake()
 			}
-			elem = append(elem, elemX)
+			variant = append(variant, elem)
 		}
 	}
-	s.SetSzDataSourceDescriptorArray(elem)
+	s.SetSzDataSourceDescriptorArray(variant)
 }
 
 // SetFake set fake values.
@@ -430,7 +430,43 @@ func (s *OptNilStringArray) SetFake() {
 }
 
 // SetFake set fake values.
+func (s *OptNilSzAttributeSearchResponseRawData) SetFake() {
+	s.Null = true
+	s.Set = true
+}
+
+// SetFake set fake values.
 func (s *OptNilSzAttributeSearchResultFeatureScores) SetFake() {
+	s.Null = true
+	s.Set = true
+}
+
+// SetFake set fake values.
+func (s *OptNilSzAttributeTypeResponseRawData) SetFake() {
+	s.Null = true
+	s.Set = true
+}
+
+// SetFake set fake values.
+func (s *OptNilSzAttributeTypesResponseRawData) SetFake() {
+	s.Null = true
+	s.Set = true
+}
+
+// SetFake set fake values.
+func (s *OptNilSzDataSourceResponseRawData) SetFake() {
+	s.Null = true
+	s.Set = true
+}
+
+// SetFake set fake values.
+func (s *OptNilSzDataSourcesResponseRawData) SetFake() {
+	s.Null = true
+	s.Set = true
+}
+
+// SetFake set fake values.
+func (s *OptNilSzDeleteRecordResponseRawData) SetFake() {
 	s.Null = true
 	s.Set = true
 }
@@ -442,7 +478,31 @@ func (s *OptNilSzDisclosedRelationArray) SetFake() {
 }
 
 // SetFake set fake values.
+func (s *OptNilSzEntityNetworkResponseRawData) SetFake() {
+	s.Null = true
+	s.Set = true
+}
+
+// SetFake set fake values.
+func (s *OptNilSzEntityPathResponseRawData) SetFake() {
+	s.Null = true
+	s.Set = true
+}
+
+// SetFake set fake values.
+func (s *OptNilSzEntityResponseRawData) SetFake() {
+	s.Null = true
+	s.Set = true
+}
+
+// SetFake set fake values.
 func (s *OptNilSzFeatureReferenceArray) SetFake() {
+	s.Null = true
+	s.Set = true
+}
+
+// SetFake set fake values.
+func (s *OptNilSzHowEntityResponseRawData) SetFake() {
 	s.Null = true
 	s.Set = true
 }
@@ -454,13 +514,61 @@ func (s *OptNilSzHowMatchInfoFeatureScores) SetFake() {
 }
 
 // SetFake set fake values.
+func (s *OptNilSzLicenseResponseRawData) SetFake() {
+	s.Null = true
+	s.Set = true
+}
+
+// SetFake set fake values.
+func (s *OptNilSzLoadRecordResponseRawData) SetFake() {
+	s.Null = true
+	s.Set = true
+}
+
+// SetFake set fake values.
 func (s *OptNilSzMetaTimings) SetFake() {
 	s.Null = true
 	s.Set = true
 }
 
 // SetFake set fake values.
+func (s *OptNilSzRecordResponseRawData) SetFake() {
+	s.Null = true
+	s.Set = true
+}
+
+// SetFake set fake values.
+func (s *OptNilSzReevaluateResponseRawData) SetFake() {
+	s.Null = true
+	s.Set = true
+}
+
+// SetFake set fake values.
 func (s *OptNilSzResponseWithRawDataRawData) SetFake() {
+	s.Null = true
+	s.Set = true
+}
+
+// SetFake set fake values.
+func (s *OptNilSzVersionResponseRawData) SetFake() {
+	s.Null = true
+	s.Set = true
+}
+
+// SetFake set fake values.
+func (s *OptNilSzVirtualEntityResponseRawData) SetFake() {
+	s.Null = true
+	s.Set = true
+}
+
+// SetFake set fake values.
+func (s *OptNilSzWhyEntitiesResponseRawData) SetFake() {
+	s.Null = true
+	s.Set = true
+}
+
+// SetFake set fake values.
+func (s *OptNilSzWhyEntityResponseRawData) SetFake() {
 	s.Null = true
 	s.Set = true
 }
@@ -473,6 +581,12 @@ func (s *OptNilSzWhyMatchInfoCandidateKeys) SetFake() {
 
 // SetFake set fake values.
 func (s *OptNilSzWhyMatchInfoFeatureScores) SetFake() {
+	s.Null = true
+	s.Set = true
+}
+
+// SetFake set fake values.
+func (s *OptNilSzWhyRecordsResponseRawData) SetFake() {
 	s.Null = true
 	s.Set = true
 }
@@ -507,6 +621,15 @@ func (s *OptSzAttributeNecessity) SetFake() {
 // SetFake set fake values.
 func (s *OptSzAttributeSearchResponseData) SetFake() {
 	var elem SzAttributeSearchResponseData
+	{
+		elem.SetFake()
+	}
+	s.SetTo(elem)
+}
+
+// SetFake set fake values.
+func (s *OptSzAttributeSearchResultFeatures) SetFake() {
+	var elem SzAttributeSearchResultFeatures
 	{
 		elem.SetFake()
 	}
@@ -820,6 +943,15 @@ func (s *OptSzReevaluateResponseData) SetFake() {
 }
 
 // SetFake set fake values.
+func (s *OptSzRelatedEntityFeatures) SetFake() {
+	var elem SzRelatedEntityFeatures
+	{
+		elem.SetFake()
+	}
+	s.SetTo(elem)
+}
+
+// SetFake set fake values.
 func (s *OptSzRelationDirection) SetFake() {
 	var elem SzRelationDirection
 	{
@@ -1087,6 +1219,21 @@ func (s *SzAttributeNecessity) SetFake() {
 func (s *SzAttributeSearchResponse) SetFake() {
 	{
 		{
+			s.Meta.SetFake()
+		}
+	}
+	{
+		{
+			s.Links.SetFake()
+		}
+	}
+	{
+		{
+			s.RawData.SetFake()
+		}
+	}
+	{
+		{
 			s.Data.SetFake()
 		}
 	}
@@ -1109,7 +1256,171 @@ func (s *SzAttributeSearchResponseData) SetFake() {
 }
 
 // SetFake set fake values.
+func (s *SzAttributeSearchResponseRawData) SetFake() {
+	var (
+		elem jx.Raw
+		m    map[string]jx.Raw = s.init()
+	)
+	for i := 0; i < 0; i++ {
+		m[fmt.Sprintf("fake%d", i)] = elem
+	}
+}
+
+// SetFake set fake values.
 func (s *SzAttributeSearchResult) SetFake() {
+	{
+		{
+			s.EntityId.SetFake()
+		}
+	}
+	{
+		{
+			s.EntityName.SetFake()
+		}
+	}
+	{
+		{
+			s.BestName.SetFake()
+		}
+	}
+	{
+		{
+			s.RecordSummaries = nil
+			for i := 0; i < 0; i++ {
+				var elem SzDataSourceRecordSummary
+				{
+					elem.SetFake()
+				}
+				s.RecordSummaries = append(s.RecordSummaries, elem)
+			}
+		}
+	}
+	{
+		{
+			s.NameData = nil
+			for i := 0; i < 0; i++ {
+				var elem string
+				{
+					elem = "string"
+				}
+				s.NameData = append(s.NameData, elem)
+			}
+		}
+	}
+	{
+		{
+			s.CharacteristicData = nil
+			for i := 0; i < 0; i++ {
+				var elem string
+				{
+					elem = "string"
+				}
+				s.CharacteristicData = append(s.CharacteristicData, elem)
+			}
+		}
+	}
+	{
+		{
+			s.AddressData = nil
+			for i := 0; i < 0; i++ {
+				var elem string
+				{
+					elem = "string"
+				}
+				s.AddressData = append(s.AddressData, elem)
+			}
+		}
+	}
+	{
+		{
+			s.PhoneData = nil
+			for i := 0; i < 0; i++ {
+				var elem string
+				{
+					elem = "string"
+				}
+				s.PhoneData = append(s.PhoneData, elem)
+			}
+		}
+	}
+	{
+		{
+			s.IdentifierData = nil
+			for i := 0; i < 0; i++ {
+				var elem string
+				{
+					elem = "string"
+				}
+				s.IdentifierData = append(s.IdentifierData, elem)
+			}
+		}
+	}
+	{
+		{
+			s.RelationshipData = nil
+			for i := 0; i < 0; i++ {
+				var elem string
+				{
+					elem = "string"
+				}
+				s.RelationshipData = append(s.RelationshipData, elem)
+			}
+		}
+	}
+	{
+		{
+			s.OtherData = nil
+			for i := 0; i < 0; i++ {
+				var elem string
+				{
+					elem = "string"
+				}
+				s.OtherData = append(s.OtherData, elem)
+			}
+		}
+	}
+	{
+		{
+			s.Records = nil
+			for i := 0; i < 0; i++ {
+				var elem SzMatchedRecord
+				{
+					elem.SetFake()
+				}
+				s.Records = append(s.Records, elem)
+			}
+		}
+	}
+	{
+		{
+			s.Features.SetFake()
+		}
+	}
+	{
+		{
+			s.Partial.SetFake()
+		}
+	}
+	{
+		{
+			s.LastSeenTimestamp.SetFake()
+		}
+	}
+	{
+		{
+			s.MatchLevel.SetFake()
+		}
+	}
+	{
+		{
+			s.MatchKey.SetFake()
+		}
+	}
+	{
+		{
+			s.ResolutionRuleCode.SetFake()
+		}
+	}
 	{
 		{
 			s.ResultType.SetFake()
@@ -1144,6 +1455,17 @@ func (s *SzAttributeSearchResultFeatureScores) SetFake() {
 	var (
 		elem []SzSearchFeatureScore
 		m    map[string][]SzSearchFeatureScore = s.init()
+	)
+	for i := 0; i < 0; i++ {
+		m[fmt.Sprintf("fake%d", i)] = elem
+	}
+}
+
+// SetFake set fake values.
+func (s *SzAttributeSearchResultFeatures) SetFake() {
+	var (
+		elem []SzEntityFeature
+		m    map[string][]SzEntityFeature = s.init()
 	)
 	for i := 0; i < 0; i++ {
 		m[fmt.Sprintf("fake%d", i)] = elem
@@ -1198,6 +1520,21 @@ func (s *SzAttributeType) SetFake() {
 func (s *SzAttributeTypeResponse) SetFake() {
 	{
 		{
+			s.Meta.SetFake()
+		}
+	}
+	{
+		{
+			s.Links.SetFake()
+		}
+	}
+	{
+		{
+			s.RawData.SetFake()
+		}
+	}
+	{
+		{
 			s.Data.SetFake()
 		}
 	}
@@ -1213,7 +1550,33 @@ func (s *SzAttributeTypeResponseData) SetFake() {
 }
 
 // SetFake set fake values.
+func (s *SzAttributeTypeResponseRawData) SetFake() {
+	var (
+		elem jx.Raw
+		m    map[string]jx.Raw = s.init()
+	)
+	for i := 0; i < 0; i++ {
+		m[fmt.Sprintf("fake%d", i)] = elem
+	}
+}
+
+// SetFake set fake values.
 func (s *SzAttributeTypesResponse) SetFake() {
+	{
+		{
+			s.Meta.SetFake()
+		}
+	}
+	{
+		{
+			s.Links.SetFake()
+		}
+	}
+	{
+		{
+			s.RawData.SetFake()
+		}
+	}
 	{
 		{
 			s.Data.SetFake()
@@ -1234,6 +1597,17 @@ func (s *SzAttributeTypesResponseData) SetFake() {
 				s.AttributeTypes = append(s.AttributeTypes, elem)
 			}
 		}
+	}
+}
+
+// SetFake set fake values.
+func (s *SzAttributeTypesResponseRawData) SetFake() {
+	var (
+		elem jx.Raw
+		m    map[string]jx.Raw = s.init()
+	)
+	for i := 0; i < 0; i++ {
+		m[fmt.Sprintf("fake%d", i)] = elem
 	}
 }
 
@@ -1498,12 +1872,12 @@ func (s *SzDataSourceBulkLoadResult) SetFake() {
 
 // SetFake set fake values.
 func (s *SzDataSourceDescriptor) SetFake() {
-	var elem string
+	var variant string
 
 	{
-		elem = "string"
+		variant = "string"
 	}
-	s.SetString(elem)
+	s.SetString(variant)
 }
 
 // SetFake set fake values.
@@ -1548,6 +1922,21 @@ func (s *SzDataSourceRecordSummary) SetFake() {
 func (s *SzDataSourceResponse) SetFake() {
 	{
 		{
+			s.Meta.SetFake()
+		}
+	}
+	{
+		{
+			s.Links.SetFake()
+		}
+	}
+	{
+		{
+			s.RawData.SetFake()
+		}
+	}
+	{
+		{
 			s.Data.SetFake()
 		}
 	}
@@ -1563,7 +1952,33 @@ func (s *SzDataSourceResponseData) SetFake() {
 }
 
 // SetFake set fake values.
+func (s *SzDataSourceResponseRawData) SetFake() {
+	var (
+		elem jx.Raw
+		m    map[string]jx.Raw = s.init()
+	)
+	for i := 0; i < 0; i++ {
+		m[fmt.Sprintf("fake%d", i)] = elem
+	}
+}
+
+// SetFake set fake values.
 func (s *SzDataSourcesResponse) SetFake() {
+	{
+		{
+			s.Meta.SetFake()
+		}
+	}
+	{
+		{
+			s.Links.SetFake()
+		}
+	}
+	{
+		{
+			s.RawData.SetFake()
+		}
+	}
 	{
 		{
 			s.Data.SetFake()
@@ -1604,7 +2019,33 @@ func (s *SzDataSourcesResponseDataDataSourceDetails) SetFake() {
 }
 
 // SetFake set fake values.
+func (s *SzDataSourcesResponseRawData) SetFake() {
+	var (
+		elem jx.Raw
+		m    map[string]jx.Raw = s.init()
+	)
+	for i := 0; i < 0; i++ {
+		m[fmt.Sprintf("fake%d", i)] = elem
+	}
+}
+
+// SetFake set fake values.
 func (s *SzDeleteRecordResponse) SetFake() {
+	{
+		{
+			s.Meta.SetFake()
+		}
+	}
+	{
+		{
+			s.Links.SetFake()
+		}
+	}
+	{
+		{
+			s.RawData.SetFake()
+		}
+	}
 	{
 		{
 			s.Data.SetFake()
@@ -1618,6 +2059,17 @@ func (s *SzDeleteRecordResponseData) SetFake() {
 		{
 			s.Info.SetFake()
 		}
+	}
+}
+
+// SetFake set fake values.
+func (s *SzDeleteRecordResponseRawData) SetFake() {
+	var (
+		elem jx.Raw
+		m    map[string]jx.Raw = s.init()
+	)
+	for i := 0; i < 0; i++ {
+		m[fmt.Sprintf("fake%d", i)] = elem
 	}
 }
 
@@ -1820,8 +2272,34 @@ func (s *SzEntityNetworkData) SetFake() {
 func (s *SzEntityNetworkResponse) SetFake() {
 	{
 		{
+			s.Meta.SetFake()
+		}
+	}
+	{
+		{
+			s.Links.SetFake()
+		}
+	}
+	{
+		{
+			s.RawData.SetFake()
+		}
+	}
+	{
+		{
 			s.Data.SetFake()
 		}
+	}
+}
+
+// SetFake set fake values.
+func (s *SzEntityNetworkResponseRawData) SetFake() {
+	var (
+		elem jx.Raw
+		m    map[string]jx.Raw = s.init()
+	)
+	for i := 0; i < 0; i++ {
+		m[fmt.Sprintf("fake%d", i)] = elem
 	}
 }
 
@@ -1869,8 +2347,34 @@ func (s *SzEntityPathData) SetFake() {
 func (s *SzEntityPathResponse) SetFake() {
 	{
 		{
+			s.Meta.SetFake()
+		}
+	}
+	{
+		{
+			s.Links.SetFake()
+		}
+	}
+	{
+		{
+			s.RawData.SetFake()
+		}
+	}
+	{
+		{
 			s.Data.SetFake()
 		}
+	}
+}
+
+// SetFake set fake values.
+func (s *SzEntityPathResponseRawData) SetFake() {
+	var (
+		elem jx.Raw
+		m    map[string]jx.Raw = s.init()
+	)
+	for i := 0; i < 0; i++ {
+		m[fmt.Sprintf("fake%d", i)] = elem
 	}
 }
 
@@ -2002,8 +2506,34 @@ func (s *SzEntityRecordOriginalSourceData) SetFake() {
 func (s *SzEntityResponse) SetFake() {
 	{
 		{
+			s.Meta.SetFake()
+		}
+	}
+	{
+		{
+			s.Links.SetFake()
+		}
+	}
+	{
+		{
+			s.RawData.SetFake()
+		}
+	}
+	{
+		{
 			s.Data.SetFake()
 		}
+	}
+}
+
+// SetFake set fake values.
+func (s *SzEntityResponseRawData) SetFake() {
+	var (
+		elem jx.Raw
+		m    map[string]jx.Raw = s.init()
+	)
+	for i := 0; i < 0; i++ {
+		m[fmt.Sprintf("fake%d", i)] = elem
 	}
 }
 
@@ -2168,8 +2698,34 @@ func (s *SzFlaggedRecord) SetFake() {
 func (s *SzHowEntityResponse) SetFake() {
 	{
 		{
+			s.Meta.SetFake()
+		}
+	}
+	{
+		{
+			s.Links.SetFake()
+		}
+	}
+	{
+		{
+			s.RawData.SetFake()
+		}
+	}
+	{
+		{
 			s.Data.SetFake()
 		}
+	}
+}
+
+// SetFake set fake values.
+func (s *SzHowEntityResponseRawData) SetFake() {
+	var (
+		elem jx.Raw
+		m    map[string]jx.Raw = s.init()
+	)
+	for i := 0; i < 0; i++ {
+		m[fmt.Sprintf("fake%d", i)] = elem
 	}
 }
 
@@ -2288,6 +2844,21 @@ func (s *SzLicenseInfo) SetFake() {
 func (s *SzLicenseResponse) SetFake() {
 	{
 		{
+			s.Meta.SetFake()
+		}
+	}
+	{
+		{
+			s.Links.SetFake()
+		}
+	}
+	{
+		{
+			s.RawData.SetFake()
+		}
+	}
+	{
+		{
 			s.Data.SetFake()
 		}
 	}
@@ -2299,6 +2870,17 @@ func (s *SzLicenseResponseData) SetFake() {
 		{
 			s.License.SetFake()
 		}
+	}
+}
+
+// SetFake set fake values.
+func (s *SzLicenseResponseRawData) SetFake() {
+	var (
+		elem jx.Raw
+		m    map[string]jx.Raw = s.init()
+	)
+	for i := 0; i < 0; i++ {
+		m[fmt.Sprintf("fake%d", i)] = elem
 	}
 }
 
@@ -2320,6 +2902,21 @@ func (s *SzLinks) SetFake() {
 func (s *SzLoadRecordResponse) SetFake() {
 	{
 		{
+			s.Meta.SetFake()
+		}
+	}
+	{
+		{
+			s.Links.SetFake()
+		}
+	}
+	{
+		{
+			s.RawData.SetFake()
+		}
+	}
+	{
+		{
 			s.Data.SetFake()
 		}
 	}
@@ -2336,6 +2933,17 @@ func (s *SzLoadRecordResponseData) SetFake() {
 		{
 			s.Info.SetFake()
 		}
+	}
+}
+
+// SetFake set fake values.
+func (s *SzLoadRecordResponseRawData) SetFake() {
+	var (
+		elem jx.Raw
+		m    map[string]jx.Raw = s.init()
+	)
+	for i := 0; i < 0; i++ {
+		m[fmt.Sprintf("fake%d", i)] = elem
 	}
 }
 
@@ -2591,6 +3199,21 @@ func (s *SzNameScoring) SetFake() {
 func (s *SzRecordResponse) SetFake() {
 	{
 		{
+			s.Meta.SetFake()
+		}
+	}
+	{
+		{
+			s.Links.SetFake()
+		}
+	}
+	{
+		{
+			s.RawData.SetFake()
+		}
+	}
+	{
+		{
 			s.Data.SetFake()
 		}
 	}
@@ -2606,7 +3229,33 @@ func (s *SzRecordResponseData) SetFake() {
 }
 
 // SetFake set fake values.
+func (s *SzRecordResponseRawData) SetFake() {
+	var (
+		elem jx.Raw
+		m    map[string]jx.Raw = s.init()
+	)
+	for i := 0; i < 0; i++ {
+		m[fmt.Sprintf("fake%d", i)] = elem
+	}
+}
+
+// SetFake set fake values.
 func (s *SzReevaluateResponse) SetFake() {
+	{
+		{
+			s.Meta.SetFake()
+		}
+	}
+	{
+		{
+			s.Links.SetFake()
+		}
+	}
+	{
+		{
+			s.RawData.SetFake()
+		}
+	}
 	{
 		{
 			s.Data.SetFake()
@@ -2624,7 +3273,171 @@ func (s *SzReevaluateResponseData) SetFake() {
 }
 
 // SetFake set fake values.
+func (s *SzReevaluateResponseRawData) SetFake() {
+	var (
+		elem jx.Raw
+		m    map[string]jx.Raw = s.init()
+	)
+	for i := 0; i < 0; i++ {
+		m[fmt.Sprintf("fake%d", i)] = elem
+	}
+}
+
+// SetFake set fake values.
 func (s *SzRelatedEntity) SetFake() {
+	{
+		{
+			s.EntityId.SetFake()
+		}
+	}
+	{
+		{
+			s.EntityName.SetFake()
+		}
+	}
+	{
+		{
+			s.BestName.SetFake()
+		}
+	}
+	{
+		{
+			s.RecordSummaries = nil
+			for i := 0; i < 0; i++ {
+				var elem SzDataSourceRecordSummary
+				{
+					elem.SetFake()
+				}
+				s.RecordSummaries = append(s.RecordSummaries, elem)
+			}
+		}
+	}
+	{
+		{
+			s.NameData = nil
+			for i := 0; i < 0; i++ {
+				var elem string
+				{
+					elem = "string"
+				}
+				s.NameData = append(s.NameData, elem)
+			}
+		}
+	}
+	{
+		{
+			s.CharacteristicData = nil
+			for i := 0; i < 0; i++ {
+				var elem string
+				{
+					elem = "string"
+				}
+				s.CharacteristicData = append(s.CharacteristicData, elem)
+			}
+		}
+	}
+	{
+		{
+			s.AddressData = nil
+			for i := 0; i < 0; i++ {
+				var elem string
+				{
+					elem = "string"
+				}
+				s.AddressData = append(s.AddressData, elem)
+			}
+		}
+	}
+	{
+		{
+			s.PhoneData = nil
+			for i := 0; i < 0; i++ {
+				var elem string
+				{
+					elem = "string"
+				}
+				s.PhoneData = append(s.PhoneData, elem)
+			}
+		}
+	}
+	{
+		{
+			s.IdentifierData = nil
+			for i := 0; i < 0; i++ {
+				var elem string
+				{
+					elem = "string"
+				}
+				s.IdentifierData = append(s.IdentifierData, elem)
+			}
+		}
+	}
+	{
+		{
+			s.RelationshipData = nil
+			for i := 0; i < 0; i++ {
+				var elem string
+				{
+					elem = "string"
+				}
+				s.RelationshipData = append(s.RelationshipData, elem)
+			}
+		}
+	}
+	{
+		{
+			s.OtherData = nil
+			for i := 0; i < 0; i++ {
+				var elem string
+				{
+					elem = "string"
+				}
+				s.OtherData = append(s.OtherData, elem)
+			}
+		}
+	}
+	{
+		{
+			s.Records = nil
+			for i := 0; i < 0; i++ {
+				var elem SzMatchedRecord
+				{
+					elem.SetFake()
+				}
+				s.Records = append(s.Records, elem)
+			}
+		}
+	}
+	{
+		{
+			s.Features.SetFake()
+		}
+	}
+	{
+		{
+			s.Partial.SetFake()
+		}
+	}
+	{
+		{
+			s.LastSeenTimestamp.SetFake()
+		}
+	}
+	{
+		{
+			s.MatchLevel.SetFake()
+		}
+	}
+	{
+		{
+			s.MatchKey.SetFake()
+		}
+	}
+	{
+		{
+			s.ResolutionRuleCode.SetFake()
+		}
+	}
 	{
 		{
 			s.Disclosed.SetFake()
@@ -2639,6 +3452,17 @@ func (s *SzRelatedEntity) SetFake() {
 		{
 			s.RelationType.SetFake()
 		}
+	}
+}
+
+// SetFake set fake values.
+func (s *SzRelatedEntityFeatures) SetFake() {
+	var (
+		elem []SzEntityFeature
+		m    map[string][]SzEntityFeature = s.init()
+	)
+	for i := 0; i < 0; i++ {
+		m[fmt.Sprintf("fake%d", i)] = elem
 	}
 }
 
@@ -3104,8 +3928,34 @@ func (s *SzVersionInfo) SetFake() {
 func (s *SzVersionResponse) SetFake() {
 	{
 		{
+			s.Meta.SetFake()
+		}
+	}
+	{
+		{
+			s.Links.SetFake()
+		}
+	}
+	{
+		{
+			s.RawData.SetFake()
+		}
+	}
+	{
+		{
 			s.Data.SetFake()
 		}
+	}
+}
+
+// SetFake set fake values.
+func (s *SzVersionResponseRawData) SetFake() {
+	var (
+		elem jx.Raw
+		m    map[string]jx.Raw = s.init()
+	)
+	for i := 0; i < 0; i++ {
+		m[fmt.Sprintf("fake%d", i)] = elem
 	}
 }
 
@@ -3167,13 +4017,54 @@ func (s *SzVirtualEntityRecord) SetFake() {
 func (s *SzVirtualEntityResponse) SetFake() {
 	{
 		{
+			s.Meta.SetFake()
+		}
+	}
+	{
+		{
+			s.Links.SetFake()
+		}
+	}
+	{
+		{
+			s.RawData.SetFake()
+		}
+	}
+	{
+		{
 			s.Data.SetFake()
 		}
 	}
 }
 
 // SetFake set fake values.
+func (s *SzVirtualEntityResponseRawData) SetFake() {
+	var (
+		elem jx.Raw
+		m    map[string]jx.Raw = s.init()
+	)
+	for i := 0; i < 0; i++ {
+		m[fmt.Sprintf("fake%d", i)] = elem
+	}
+}
+
+// SetFake set fake values.
 func (s *SzWhyEntitiesResponse) SetFake() {
+	{
+		{
+			s.Meta.SetFake()
+		}
+	}
+	{
+		{
+			s.Links.SetFake()
+		}
+	}
+	{
+		{
+			s.RawData.SetFake()
+		}
+	}
 	{
 		{
 			s.Data.SetFake()
@@ -3203,6 +4094,17 @@ func (s *SzWhyEntitiesResponseData) SetFake() {
 }
 
 // SetFake set fake values.
+func (s *SzWhyEntitiesResponseRawData) SetFake() {
+	var (
+		elem jx.Raw
+		m    map[string]jx.Raw = s.init()
+	)
+	for i := 0; i < 0; i++ {
+		m[fmt.Sprintf("fake%d", i)] = elem
+	}
+}
+
+// SetFake set fake values.
 func (s *SzWhyEntitiesResult) SetFake() {
 	{
 		{
@@ -3223,6 +4125,21 @@ func (s *SzWhyEntitiesResult) SetFake() {
 
 // SetFake set fake values.
 func (s *SzWhyEntityResponse) SetFake() {
+	{
+		{
+			s.Meta.SetFake()
+		}
+	}
+	{
+		{
+			s.Links.SetFake()
+		}
+	}
+	{
+		{
+			s.RawData.SetFake()
+		}
+	}
 	{
 		{
 			s.Data.SetFake()
@@ -3255,6 +4172,17 @@ func (s *SzWhyEntityResponseData) SetFake() {
 				s.Entities = append(s.Entities, elem)
 			}
 		}
+	}
+}
+
+// SetFake set fake values.
+func (s *SzWhyEntityResponseRawData) SetFake() {
+	var (
+		elem jx.Raw
+		m    map[string]jx.Raw = s.init()
+	)
+	for i := 0; i < 0; i++ {
+		m[fmt.Sprintf("fake%d", i)] = elem
 	}
 }
 
@@ -3341,6 +4269,21 @@ func (s *SzWhyPerspective) SetFake() {
 func (s *SzWhyRecordsResponse) SetFake() {
 	{
 		{
+			s.Meta.SetFake()
+		}
+	}
+	{
+		{
+			s.Links.SetFake()
+		}
+	}
+	{
+		{
+			s.RawData.SetFake()
+		}
+	}
+	{
+		{
 			s.Data.SetFake()
 		}
 	}
@@ -3364,6 +4307,17 @@ func (s *SzWhyRecordsResponseData) SetFake() {
 				s.Entities = append(s.Entities, elem)
 			}
 		}
+	}
+}
+
+// SetFake set fake values.
+func (s *SzWhyRecordsResponseRawData) SetFake() {
+	var (
+		elem jx.Raw
+		m    map[string]jx.Raw = s.init()
+	)
+	for i := 0; i < 0; i++ {
+		m[fmt.Sprintf("fake%d", i)] = elem
 	}
 }
 

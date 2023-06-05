@@ -760,6 +760,20 @@ func TestSzAttributeSearchResponseData_EncodeDecode(t *testing.T) {
 	var typ2 SzAttributeSearchResponseData
 	require.NoError(t, typ2.Decode(jx.DecodeBytes(data)))
 }
+func TestSzAttributeSearchResponseRawData_EncodeDecode(t *testing.T) {
+	var typ SzAttributeSearchResponseRawData
+	typ = make(SzAttributeSearchResponseRawData)
+	typ.SetFake()
+
+	e := jx.Encoder{}
+	typ.Encode(&e)
+	data := e.Bytes()
+	require.True(t, std.Valid(data), "Encoded: %s", data)
+
+	var typ2 SzAttributeSearchResponseRawData
+	typ2 = make(SzAttributeSearchResponseRawData)
+	require.NoError(t, typ2.Decode(jx.DecodeBytes(data)))
+}
 func TestSzAttributeSearchResult_EncodeDecode(t *testing.T) {
 	var typ SzAttributeSearchResult
 	typ.SetFake()
@@ -784,6 +798,20 @@ func TestSzAttributeSearchResultFeatureScores_EncodeDecode(t *testing.T) {
 
 	var typ2 SzAttributeSearchResultFeatureScores
 	typ2 = make(SzAttributeSearchResultFeatureScores)
+	require.NoError(t, typ2.Decode(jx.DecodeBytes(data)))
+}
+func TestSzAttributeSearchResultFeatures_EncodeDecode(t *testing.T) {
+	var typ SzAttributeSearchResultFeatures
+	typ = make(SzAttributeSearchResultFeatures)
+	typ.SetFake()
+
+	e := jx.Encoder{}
+	typ.Encode(&e)
+	data := e.Bytes()
+	require.True(t, std.Valid(data), "Encoded: %s", data)
+
+	var typ2 SzAttributeSearchResultFeatures
+	typ2 = make(SzAttributeSearchResultFeatures)
 	require.NoError(t, typ2.Decode(jx.DecodeBytes(data)))
 }
 func TestSzAttributeSearchResultType_EncodeDecode(t *testing.T) {
@@ -834,6 +862,20 @@ func TestSzAttributeTypeResponseData_EncodeDecode(t *testing.T) {
 	var typ2 SzAttributeTypeResponseData
 	require.NoError(t, typ2.Decode(jx.DecodeBytes(data)))
 }
+func TestSzAttributeTypeResponseRawData_EncodeDecode(t *testing.T) {
+	var typ SzAttributeTypeResponseRawData
+	typ = make(SzAttributeTypeResponseRawData)
+	typ.SetFake()
+
+	e := jx.Encoder{}
+	typ.Encode(&e)
+	data := e.Bytes()
+	require.True(t, std.Valid(data), "Encoded: %s", data)
+
+	var typ2 SzAttributeTypeResponseRawData
+	typ2 = make(SzAttributeTypeResponseRawData)
+	require.NoError(t, typ2.Decode(jx.DecodeBytes(data)))
+}
 func TestSzAttributeTypesResponse_EncodeDecode(t *testing.T) {
 	var typ SzAttributeTypesResponse
 	typ.SetFake()
@@ -856,6 +898,20 @@ func TestSzAttributeTypesResponseData_EncodeDecode(t *testing.T) {
 	require.True(t, std.Valid(data), "Encoded: %s", data)
 
 	var typ2 SzAttributeTypesResponseData
+	require.NoError(t, typ2.Decode(jx.DecodeBytes(data)))
+}
+func TestSzAttributeTypesResponseRawData_EncodeDecode(t *testing.T) {
+	var typ SzAttributeTypesResponseRawData
+	typ = make(SzAttributeTypesResponseRawData)
+	typ.SetFake()
+
+	e := jx.Encoder{}
+	typ.Encode(&e)
+	data := e.Bytes()
+	require.True(t, std.Valid(data), "Encoded: %s", data)
+
+	var typ2 SzAttributeTypesResponseRawData
+	typ2 = make(SzAttributeTypesResponseRawData)
 	require.NoError(t, typ2.Decode(jx.DecodeBytes(data)))
 }
 func TestSzBaseResponse_EncodeDecode(t *testing.T) {
@@ -1038,6 +1094,20 @@ func TestSzDataSourceResponseData_EncodeDecode(t *testing.T) {
 	var typ2 SzDataSourceResponseData
 	require.NoError(t, typ2.Decode(jx.DecodeBytes(data)))
 }
+func TestSzDataSourceResponseRawData_EncodeDecode(t *testing.T) {
+	var typ SzDataSourceResponseRawData
+	typ = make(SzDataSourceResponseRawData)
+	typ.SetFake()
+
+	e := jx.Encoder{}
+	typ.Encode(&e)
+	data := e.Bytes()
+	require.True(t, std.Valid(data), "Encoded: %s", data)
+
+	var typ2 SzDataSourceResponseRawData
+	typ2 = make(SzDataSourceResponseRawData)
+	require.NoError(t, typ2.Decode(jx.DecodeBytes(data)))
+}
 func TestSzDataSourcesResponse_EncodeDecode(t *testing.T) {
 	var typ SzDataSourcesResponse
 	typ.SetFake()
@@ -1076,6 +1146,20 @@ func TestSzDataSourcesResponseDataDataSourceDetails_EncodeDecode(t *testing.T) {
 	typ2 = make(SzDataSourcesResponseDataDataSourceDetails)
 	require.NoError(t, typ2.Decode(jx.DecodeBytes(data)))
 }
+func TestSzDataSourcesResponseRawData_EncodeDecode(t *testing.T) {
+	var typ SzDataSourcesResponseRawData
+	typ = make(SzDataSourcesResponseRawData)
+	typ.SetFake()
+
+	e := jx.Encoder{}
+	typ.Encode(&e)
+	data := e.Bytes()
+	require.True(t, std.Valid(data), "Encoded: %s", data)
+
+	var typ2 SzDataSourcesResponseRawData
+	typ2 = make(SzDataSourcesResponseRawData)
+	require.NoError(t, typ2.Decode(jx.DecodeBytes(data)))
+}
 func TestSzDeleteRecordResponse_EncodeDecode(t *testing.T) {
 	var typ SzDeleteRecordResponse
 	typ.SetFake()
@@ -1098,6 +1182,20 @@ func TestSzDeleteRecordResponseData_EncodeDecode(t *testing.T) {
 	require.True(t, std.Valid(data), "Encoded: %s", data)
 
 	var typ2 SzDeleteRecordResponseData
+	require.NoError(t, typ2.Decode(jx.DecodeBytes(data)))
+}
+func TestSzDeleteRecordResponseRawData_EncodeDecode(t *testing.T) {
+	var typ SzDeleteRecordResponseRawData
+	typ = make(SzDeleteRecordResponseRawData)
+	typ.SetFake()
+
+	e := jx.Encoder{}
+	typ.Encode(&e)
+	data := e.Bytes()
+	require.True(t, std.Valid(data), "Encoded: %s", data)
+
+	var typ2 SzDeleteRecordResponseRawData
+	typ2 = make(SzDeleteRecordResponseRawData)
 	require.NoError(t, typ2.Decode(jx.DecodeBytes(data)))
 }
 func TestSzDisclosedRelation_EncodeDecode(t *testing.T) {
@@ -1184,6 +1282,20 @@ func TestSzEntityNetworkResponse_EncodeDecode(t *testing.T) {
 	var typ2 SzEntityNetworkResponse
 	require.NoError(t, typ2.Decode(jx.DecodeBytes(data)))
 }
+func TestSzEntityNetworkResponseRawData_EncodeDecode(t *testing.T) {
+	var typ SzEntityNetworkResponseRawData
+	typ = make(SzEntityNetworkResponseRawData)
+	typ.SetFake()
+
+	e := jx.Encoder{}
+	typ.Encode(&e)
+	data := e.Bytes()
+	require.True(t, std.Valid(data), "Encoded: %s", data)
+
+	var typ2 SzEntityNetworkResponseRawData
+	typ2 = make(SzEntityNetworkResponseRawData)
+	require.NoError(t, typ2.Decode(jx.DecodeBytes(data)))
+}
 func TestSzEntityPath_EncodeDecode(t *testing.T) {
 	var typ SzEntityPath
 	typ.SetFake()
@@ -1218,6 +1330,20 @@ func TestSzEntityPathResponse_EncodeDecode(t *testing.T) {
 	require.True(t, std.Valid(data), "Encoded: %s", data)
 
 	var typ2 SzEntityPathResponse
+	require.NoError(t, typ2.Decode(jx.DecodeBytes(data)))
+}
+func TestSzEntityPathResponseRawData_EncodeDecode(t *testing.T) {
+	var typ SzEntityPathResponseRawData
+	typ = make(SzEntityPathResponseRawData)
+	typ.SetFake()
+
+	e := jx.Encoder{}
+	typ.Encode(&e)
+	data := e.Bytes()
+	require.True(t, std.Valid(data), "Encoded: %s", data)
+
+	var typ2 SzEntityPathResponseRawData
+	typ2 = make(SzEntityPathResponseRawData)
 	require.NoError(t, typ2.Decode(jx.DecodeBytes(data)))
 }
 func TestSzEntityRecord_EncodeDecode(t *testing.T) {
@@ -1256,6 +1382,20 @@ func TestSzEntityResponse_EncodeDecode(t *testing.T) {
 	require.True(t, std.Valid(data), "Encoded: %s", data)
 
 	var typ2 SzEntityResponse
+	require.NoError(t, typ2.Decode(jx.DecodeBytes(data)))
+}
+func TestSzEntityResponseRawData_EncodeDecode(t *testing.T) {
+	var typ SzEntityResponseRawData
+	typ = make(SzEntityResponseRawData)
+	typ.SetFake()
+
+	e := jx.Encoder{}
+	typ.Encode(&e)
+	data := e.Bytes()
+	require.True(t, std.Valid(data), "Encoded: %s", data)
+
+	var typ2 SzEntityResponseRawData
+	typ2 = make(SzEntityResponseRawData)
 	require.NoError(t, typ2.Decode(jx.DecodeBytes(data)))
 }
 func TestSzError_EncodeDecode(t *testing.T) {
@@ -1340,6 +1480,20 @@ func TestSzHowEntityResponse_EncodeDecode(t *testing.T) {
 	require.True(t, std.Valid(data), "Encoded: %s", data)
 
 	var typ2 SzHowEntityResponse
+	require.NoError(t, typ2.Decode(jx.DecodeBytes(data)))
+}
+func TestSzHowEntityResponseRawData_EncodeDecode(t *testing.T) {
+	var typ SzHowEntityResponseRawData
+	typ = make(SzHowEntityResponseRawData)
+	typ.SetFake()
+
+	e := jx.Encoder{}
+	typ.Encode(&e)
+	data := e.Bytes()
+	require.True(t, std.Valid(data), "Encoded: %s", data)
+
+	var typ2 SzHowEntityResponseRawData
+	typ2 = make(SzHowEntityResponseRawData)
 	require.NoError(t, typ2.Decode(jx.DecodeBytes(data)))
 }
 func TestSzHowEntityResult_EncodeDecode(t *testing.T) {
@@ -1442,6 +1596,20 @@ func TestSzLicenseResponseData_EncodeDecode(t *testing.T) {
 	var typ2 SzLicenseResponseData
 	require.NoError(t, typ2.Decode(jx.DecodeBytes(data)))
 }
+func TestSzLicenseResponseRawData_EncodeDecode(t *testing.T) {
+	var typ SzLicenseResponseRawData
+	typ = make(SzLicenseResponseRawData)
+	typ.SetFake()
+
+	e := jx.Encoder{}
+	typ.Encode(&e)
+	data := e.Bytes()
+	require.True(t, std.Valid(data), "Encoded: %s", data)
+
+	var typ2 SzLicenseResponseRawData
+	typ2 = make(SzLicenseResponseRawData)
+	require.NoError(t, typ2.Decode(jx.DecodeBytes(data)))
+}
 func TestSzLinks_EncodeDecode(t *testing.T) {
 	var typ SzLinks
 	typ.SetFake()
@@ -1476,6 +1644,20 @@ func TestSzLoadRecordResponseData_EncodeDecode(t *testing.T) {
 	require.True(t, std.Valid(data), "Encoded: %s", data)
 
 	var typ2 SzLoadRecordResponseData
+	require.NoError(t, typ2.Decode(jx.DecodeBytes(data)))
+}
+func TestSzLoadRecordResponseRawData_EncodeDecode(t *testing.T) {
+	var typ SzLoadRecordResponseRawData
+	typ = make(SzLoadRecordResponseRawData)
+	typ.SetFake()
+
+	e := jx.Encoder{}
+	typ.Encode(&e)
+	data := e.Bytes()
+	require.True(t, std.Valid(data), "Encoded: %s", data)
+
+	var typ2 SzLoadRecordResponseRawData
+	typ2 = make(SzLoadRecordResponseRawData)
 	require.NoError(t, typ2.Decode(jx.DecodeBytes(data)))
 }
 func TestSzMatchLevel_EncodeDecode(t *testing.T) {
@@ -1578,6 +1760,20 @@ func TestSzRecordResponseData_EncodeDecode(t *testing.T) {
 	var typ2 SzRecordResponseData
 	require.NoError(t, typ2.Decode(jx.DecodeBytes(data)))
 }
+func TestSzRecordResponseRawData_EncodeDecode(t *testing.T) {
+	var typ SzRecordResponseRawData
+	typ = make(SzRecordResponseRawData)
+	typ.SetFake()
+
+	e := jx.Encoder{}
+	typ.Encode(&e)
+	data := e.Bytes()
+	require.True(t, std.Valid(data), "Encoded: %s", data)
+
+	var typ2 SzRecordResponseRawData
+	typ2 = make(SzRecordResponseRawData)
+	require.NoError(t, typ2.Decode(jx.DecodeBytes(data)))
+}
 func TestSzReevaluateResponse_EncodeDecode(t *testing.T) {
 	var typ SzReevaluateResponse
 	typ.SetFake()
@@ -1602,6 +1798,20 @@ func TestSzReevaluateResponseData_EncodeDecode(t *testing.T) {
 	var typ2 SzReevaluateResponseData
 	require.NoError(t, typ2.Decode(jx.DecodeBytes(data)))
 }
+func TestSzReevaluateResponseRawData_EncodeDecode(t *testing.T) {
+	var typ SzReevaluateResponseRawData
+	typ = make(SzReevaluateResponseRawData)
+	typ.SetFake()
+
+	e := jx.Encoder{}
+	typ.Encode(&e)
+	data := e.Bytes()
+	require.True(t, std.Valid(data), "Encoded: %s", data)
+
+	var typ2 SzReevaluateResponseRawData
+	typ2 = make(SzReevaluateResponseRawData)
+	require.NoError(t, typ2.Decode(jx.DecodeBytes(data)))
+}
 func TestSzRelatedEntity_EncodeDecode(t *testing.T) {
 	var typ SzRelatedEntity
 	typ.SetFake()
@@ -1612,6 +1822,20 @@ func TestSzRelatedEntity_EncodeDecode(t *testing.T) {
 	require.True(t, std.Valid(data), "Encoded: %s", data)
 
 	var typ2 SzRelatedEntity
+	require.NoError(t, typ2.Decode(jx.DecodeBytes(data)))
+}
+func TestSzRelatedEntityFeatures_EncodeDecode(t *testing.T) {
+	var typ SzRelatedEntityFeatures
+	typ = make(SzRelatedEntityFeatures)
+	typ.SetFake()
+
+	e := jx.Encoder{}
+	typ.Encode(&e)
+	data := e.Bytes()
+	require.True(t, std.Valid(data), "Encoded: %s", data)
+
+	var typ2 SzRelatedEntityFeatures
+	typ2 = make(SzRelatedEntityFeatures)
 	require.NoError(t, typ2.Decode(jx.DecodeBytes(data)))
 }
 func TestSzRelatedFeatures_EncodeDecode(t *testing.T) {
@@ -1834,6 +2058,20 @@ func TestSzVersionResponse_EncodeDecode(t *testing.T) {
 	var typ2 SzVersionResponse
 	require.NoError(t, typ2.Decode(jx.DecodeBytes(data)))
 }
+func TestSzVersionResponseRawData_EncodeDecode(t *testing.T) {
+	var typ SzVersionResponseRawData
+	typ = make(SzVersionResponseRawData)
+	typ.SetFake()
+
+	e := jx.Encoder{}
+	typ.Encode(&e)
+	data := e.Bytes()
+	require.True(t, std.Valid(data), "Encoded: %s", data)
+
+	var typ2 SzVersionResponseRawData
+	typ2 = make(SzVersionResponseRawData)
+	require.NoError(t, typ2.Decode(jx.DecodeBytes(data)))
+}
 func TestSzVirtualEntity_EncodeDecode(t *testing.T) {
 	var typ SzVirtualEntity
 	typ.SetFake()
@@ -1882,6 +2120,20 @@ func TestSzVirtualEntityResponse_EncodeDecode(t *testing.T) {
 	var typ2 SzVirtualEntityResponse
 	require.NoError(t, typ2.Decode(jx.DecodeBytes(data)))
 }
+func TestSzVirtualEntityResponseRawData_EncodeDecode(t *testing.T) {
+	var typ SzVirtualEntityResponseRawData
+	typ = make(SzVirtualEntityResponseRawData)
+	typ.SetFake()
+
+	e := jx.Encoder{}
+	typ.Encode(&e)
+	data := e.Bytes()
+	require.True(t, std.Valid(data), "Encoded: %s", data)
+
+	var typ2 SzVirtualEntityResponseRawData
+	typ2 = make(SzVirtualEntityResponseRawData)
+	require.NoError(t, typ2.Decode(jx.DecodeBytes(data)))
+}
 func TestSzWhyEntitiesResponse_EncodeDecode(t *testing.T) {
 	var typ SzWhyEntitiesResponse
 	typ.SetFake()
@@ -1904,6 +2156,20 @@ func TestSzWhyEntitiesResponseData_EncodeDecode(t *testing.T) {
 	require.True(t, std.Valid(data), "Encoded: %s", data)
 
 	var typ2 SzWhyEntitiesResponseData
+	require.NoError(t, typ2.Decode(jx.DecodeBytes(data)))
+}
+func TestSzWhyEntitiesResponseRawData_EncodeDecode(t *testing.T) {
+	var typ SzWhyEntitiesResponseRawData
+	typ = make(SzWhyEntitiesResponseRawData)
+	typ.SetFake()
+
+	e := jx.Encoder{}
+	typ.Encode(&e)
+	data := e.Bytes()
+	require.True(t, std.Valid(data), "Encoded: %s", data)
+
+	var typ2 SzWhyEntitiesResponseRawData
+	typ2 = make(SzWhyEntitiesResponseRawData)
 	require.NoError(t, typ2.Decode(jx.DecodeBytes(data)))
 }
 func TestSzWhyEntitiesResult_EncodeDecode(t *testing.T) {
@@ -1940,6 +2206,20 @@ func TestSzWhyEntityResponseData_EncodeDecode(t *testing.T) {
 	require.True(t, std.Valid(data), "Encoded: %s", data)
 
 	var typ2 SzWhyEntityResponseData
+	require.NoError(t, typ2.Decode(jx.DecodeBytes(data)))
+}
+func TestSzWhyEntityResponseRawData_EncodeDecode(t *testing.T) {
+	var typ SzWhyEntityResponseRawData
+	typ = make(SzWhyEntityResponseRawData)
+	typ.SetFake()
+
+	e := jx.Encoder{}
+	typ.Encode(&e)
+	data := e.Bytes()
+	require.True(t, std.Valid(data), "Encoded: %s", data)
+
+	var typ2 SzWhyEntityResponseRawData
+	typ2 = make(SzWhyEntityResponseRawData)
 	require.NoError(t, typ2.Decode(jx.DecodeBytes(data)))
 }
 func TestSzWhyEntityResult_EncodeDecode(t *testing.T) {
@@ -2028,6 +2308,20 @@ func TestSzWhyRecordsResponseData_EncodeDecode(t *testing.T) {
 	require.True(t, std.Valid(data), "Encoded: %s", data)
 
 	var typ2 SzWhyRecordsResponseData
+	require.NoError(t, typ2.Decode(jx.DecodeBytes(data)))
+}
+func TestSzWhyRecordsResponseRawData_EncodeDecode(t *testing.T) {
+	var typ SzWhyRecordsResponseRawData
+	typ = make(SzWhyRecordsResponseRawData)
+	typ.SetFake()
+
+	e := jx.Encoder{}
+	typ.Encode(&e)
+	data := e.Bytes()
+	require.True(t, std.Valid(data), "Encoded: %s", data)
+
+	var typ2 SzWhyRecordsResponseRawData
+	typ2 = make(SzWhyRecordsResponseRawData)
 	require.NoError(t, typ2.Decode(jx.DecodeBytes(data)))
 }
 func TestSzWhyRecordsResult_EncodeDecode(t *testing.T) {

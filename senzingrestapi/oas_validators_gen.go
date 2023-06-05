@@ -344,6 +344,24 @@ func (s SzAttributeNecessity) Validate() error {
 func (s *SzAttributeSearchResponse) Validate() error {
 	var failures []validate.FieldError
 	if err := func() error {
+		if s.Meta.Set {
+			if err := func() error {
+				if err := s.Meta.Value.Validate(); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return err
+			}
+		}
+		return nil
+	}(); err != nil {
+		failures = append(failures, validate.FieldError{
+			Name:  "meta",
+			Error: err,
+		})
+	}
+	if err := func() error {
 		if s.Data.Set {
 			if err := func() error {
 				if err := s.Data.Value.Validate(); err != nil {
@@ -400,6 +418,74 @@ func (s *SzAttributeSearchResponseData) Validate() error {
 }
 func (s *SzAttributeSearchResult) Validate() error {
 	var failures []validate.FieldError
+	if err := func() error {
+		var failures []validate.FieldError
+		for i, elem := range s.RecordSummaries {
+			if err := func() error {
+				if err := elem.Validate(); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				failures = append(failures, validate.FieldError{
+					Name:  fmt.Sprintf("[%d]", i),
+					Error: err,
+				})
+			}
+		}
+		if len(failures) > 0 {
+			return &validate.Error{Fields: failures}
+		}
+		return nil
+	}(); err != nil {
+		failures = append(failures, validate.FieldError{
+			Name:  "recordSummaries",
+			Error: err,
+		})
+	}
+	if err := func() error {
+		var failures []validate.FieldError
+		for i, elem := range s.Records {
+			if err := func() error {
+				if err := elem.Validate(); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				failures = append(failures, validate.FieldError{
+					Name:  fmt.Sprintf("[%d]", i),
+					Error: err,
+				})
+			}
+		}
+		if len(failures) > 0 {
+			return &validate.Error{Fields: failures}
+		}
+		return nil
+	}(); err != nil {
+		failures = append(failures, validate.FieldError{
+			Name:  "records",
+			Error: err,
+		})
+	}
+	if err := func() error {
+		if s.Features.Set {
+			if err := func() error {
+				if err := s.Features.Value.Validate(); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return err
+			}
+		}
+		return nil
+	}(); err != nil {
+		failures = append(failures, validate.FieldError{
+			Name:  "features",
+			Error: err,
+		})
+	}
 	if err := func() error {
 		if s.ResultType.Set {
 			if err := func() error {
@@ -487,6 +573,27 @@ func (s SzAttributeSearchResultFeatureScores) Validate() error {
 	}
 	return nil
 }
+func (s SzAttributeSearchResultFeatures) Validate() error {
+	var failures []validate.FieldError
+	for key, elem := range s {
+		if err := func() error {
+			if elem == nil {
+				return errors.New("nil is invalid value")
+			}
+			return nil
+		}(); err != nil {
+			failures = append(failures, validate.FieldError{
+				Name:  key,
+				Error: err,
+			})
+		}
+	}
+
+	if len(failures) > 0 {
+		return &validate.Error{Fields: failures}
+	}
+	return nil
+}
 func (s SzAttributeSearchResultType) Validate() error {
 	switch s {
 	case "MATCH":
@@ -547,6 +654,24 @@ func (s *SzAttributeType) Validate() error {
 func (s *SzAttributeTypeResponse) Validate() error {
 	var failures []validate.FieldError
 	if err := func() error {
+		if s.Meta.Set {
+			if err := func() error {
+				if err := s.Meta.Value.Validate(); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return err
+			}
+		}
+		return nil
+	}(); err != nil {
+		failures = append(failures, validate.FieldError{
+			Name:  "meta",
+			Error: err,
+		})
+	}
+	if err := func() error {
 		if s.Data.Set {
 			if err := func() error {
 				if err := s.Data.Value.Validate(); err != nil {
@@ -596,6 +721,24 @@ func (s *SzAttributeTypeResponseData) Validate() error {
 }
 func (s *SzAttributeTypesResponse) Validate() error {
 	var failures []validate.FieldError
+	if err := func() error {
+		if s.Meta.Set {
+			if err := func() error {
+				if err := s.Meta.Value.Validate(); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return err
+			}
+		}
+		return nil
+	}(); err != nil {
+		failures = append(failures, validate.FieldError{
+			Name:  "meta",
+			Error: err,
+		})
+	}
 	if err := func() error {
 		if s.Data.Set {
 			if err := func() error {
@@ -851,6 +994,81 @@ func (s *SzDataSourceRecordSummary) Validate() error {
 	}
 	return nil
 }
+func (s *SzDataSourceResponse) Validate() error {
+	var failures []validate.FieldError
+	if err := func() error {
+		if s.Meta.Set {
+			if err := func() error {
+				if err := s.Meta.Value.Validate(); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return err
+			}
+		}
+		return nil
+	}(); err != nil {
+		failures = append(failures, validate.FieldError{
+			Name:  "meta",
+			Error: err,
+		})
+	}
+	if len(failures) > 0 {
+		return &validate.Error{Fields: failures}
+	}
+	return nil
+}
+func (s *SzDataSourcesResponse) Validate() error {
+	var failures []validate.FieldError
+	if err := func() error {
+		if s.Meta.Set {
+			if err := func() error {
+				if err := s.Meta.Value.Validate(); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return err
+			}
+		}
+		return nil
+	}(); err != nil {
+		failures = append(failures, validate.FieldError{
+			Name:  "meta",
+			Error: err,
+		})
+	}
+	if len(failures) > 0 {
+		return &validate.Error{Fields: failures}
+	}
+	return nil
+}
+func (s *SzDeleteRecordResponse) Validate() error {
+	var failures []validate.FieldError
+	if err := func() error {
+		if s.Meta.Set {
+			if err := func() error {
+				if err := s.Meta.Value.Validate(); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return err
+			}
+		}
+		return nil
+	}(); err != nil {
+		failures = append(failures, validate.FieldError{
+			Name:  "meta",
+			Error: err,
+		})
+	}
+	if len(failures) > 0 {
+		return &validate.Error{Fields: failures}
+	}
+	return nil
+}
 func (s SzDetailLevel) Validate() error {
 	switch s {
 	case "BARE_MINIMAL":
@@ -1042,6 +1260,24 @@ func (s *SzEntityNetworkData) Validate() error {
 func (s *SzEntityNetworkResponse) Validate() error {
 	var failures []validate.FieldError
 	if err := func() error {
+		if s.Meta.Set {
+			if err := func() error {
+				if err := s.Meta.Value.Validate(); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return err
+			}
+		}
+		return nil
+	}(); err != nil {
+		failures = append(failures, validate.FieldError{
+			Name:  "meta",
+			Error: err,
+		})
+	}
+	if err := func() error {
 		if s.Data.Set {
 			if err := func() error {
 				if err := s.Data.Value.Validate(); err != nil {
@@ -1142,6 +1378,24 @@ func (s *SzEntityPathData) Validate() error {
 func (s *SzEntityPathResponse) Validate() error {
 	var failures []validate.FieldError
 	if err := func() error {
+		if s.Meta.Set {
+			if err := func() error {
+				if err := s.Meta.Value.Validate(); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return err
+			}
+		}
+		return nil
+	}(); err != nil {
+		failures = append(failures, validate.FieldError{
+			Name:  "meta",
+			Error: err,
+		})
+	}
+	if err := func() error {
 		if s.Data.Set {
 			if err := func() error {
 				if err := s.Data.Value.Validate(); err != nil {
@@ -1191,6 +1445,24 @@ func (s *SzEntityRecord) Validate() error {
 }
 func (s *SzEntityResponse) Validate() error {
 	var failures []validate.FieldError
+	if err := func() error {
+		if s.Meta.Set {
+			if err := func() error {
+				if err := s.Meta.Value.Validate(); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return err
+			}
+		}
+		return nil
+	}(); err != nil {
+		failures = append(failures, validate.FieldError{
+			Name:  "meta",
+			Error: err,
+		})
+	}
 	if err := func() error {
 		if s.Data.Set {
 			if err := func() error {
@@ -1300,6 +1572,24 @@ func (s *SzFeatureScore) Validate() error {
 }
 func (s *SzHowEntityResponse) Validate() error {
 	var failures []validate.FieldError
+	if err := func() error {
+		if s.Meta.Set {
+			if err := func() error {
+				if err := s.Meta.Value.Validate(); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return err
+			}
+		}
+		return nil
+	}(); err != nil {
+		failures = append(failures, validate.FieldError{
+			Name:  "meta",
+			Error: err,
+		})
+	}
 	if err := func() error {
 		if s.Data.Set {
 			if err := func() error {
@@ -1448,6 +1738,56 @@ func (s SzHttpMethod) Validate() error {
 		return errors.Errorf("invalid value: %v", s)
 	}
 }
+func (s *SzLicenseResponse) Validate() error {
+	var failures []validate.FieldError
+	if err := func() error {
+		if s.Meta.Set {
+			if err := func() error {
+				if err := s.Meta.Value.Validate(); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return err
+			}
+		}
+		return nil
+	}(); err != nil {
+		failures = append(failures, validate.FieldError{
+			Name:  "meta",
+			Error: err,
+		})
+	}
+	if len(failures) > 0 {
+		return &validate.Error{Fields: failures}
+	}
+	return nil
+}
+func (s *SzLoadRecordResponse) Validate() error {
+	var failures []validate.FieldError
+	if err := func() error {
+		if s.Meta.Set {
+			if err := func() error {
+				if err := s.Meta.Value.Validate(); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return err
+			}
+		}
+		return nil
+	}(); err != nil {
+		failures = append(failures, validate.FieldError{
+			Name:  "meta",
+			Error: err,
+		})
+	}
+	if len(failures) > 0 {
+		return &validate.Error{Fields: failures}
+	}
+	return nil
+}
 func (s SzMatchLevel) Validate() error {
 	switch s {
 	case "NO_MATCH":
@@ -1519,6 +1859,24 @@ func (s *SzMeta) Validate() error {
 func (s *SzRecordResponse) Validate() error {
 	var failures []validate.FieldError
 	if err := func() error {
+		if s.Meta.Set {
+			if err := func() error {
+				if err := s.Meta.Value.Validate(); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return err
+			}
+		}
+		return nil
+	}(); err != nil {
+		failures = append(failures, validate.FieldError{
+			Name:  "meta",
+			Error: err,
+		})
+	}
+	if err := func() error {
 		if s.Data.Set {
 			if err := func() error {
 				if err := s.Data.Value.Validate(); err != nil {
@@ -1566,8 +1924,101 @@ func (s *SzRecordResponseData) Validate() error {
 	}
 	return nil
 }
+func (s *SzReevaluateResponse) Validate() error {
+	var failures []validate.FieldError
+	if err := func() error {
+		if s.Meta.Set {
+			if err := func() error {
+				if err := s.Meta.Value.Validate(); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return err
+			}
+		}
+		return nil
+	}(); err != nil {
+		failures = append(failures, validate.FieldError{
+			Name:  "meta",
+			Error: err,
+		})
+	}
+	if len(failures) > 0 {
+		return &validate.Error{Fields: failures}
+	}
+	return nil
+}
 func (s *SzRelatedEntity) Validate() error {
 	var failures []validate.FieldError
+	if err := func() error {
+		var failures []validate.FieldError
+		for i, elem := range s.RecordSummaries {
+			if err := func() error {
+				if err := elem.Validate(); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				failures = append(failures, validate.FieldError{
+					Name:  fmt.Sprintf("[%d]", i),
+					Error: err,
+				})
+			}
+		}
+		if len(failures) > 0 {
+			return &validate.Error{Fields: failures}
+		}
+		return nil
+	}(); err != nil {
+		failures = append(failures, validate.FieldError{
+			Name:  "recordSummaries",
+			Error: err,
+		})
+	}
+	if err := func() error {
+		var failures []validate.FieldError
+		for i, elem := range s.Records {
+			if err := func() error {
+				if err := elem.Validate(); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				failures = append(failures, validate.FieldError{
+					Name:  fmt.Sprintf("[%d]", i),
+					Error: err,
+				})
+			}
+		}
+		if len(failures) > 0 {
+			return &validate.Error{Fields: failures}
+		}
+		return nil
+	}(); err != nil {
+		failures = append(failures, validate.FieldError{
+			Name:  "records",
+			Error: err,
+		})
+	}
+	if err := func() error {
+		if s.Features.Set {
+			if err := func() error {
+				if err := s.Features.Value.Validate(); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return err
+			}
+		}
+		return nil
+	}(); err != nil {
+		failures = append(failures, validate.FieldError{
+			Name:  "features",
+			Error: err,
+		})
+	}
 	if err := func() error {
 		if s.RelationType.Set {
 			if err := func() error {
@@ -1586,6 +2037,27 @@ func (s *SzRelatedEntity) Validate() error {
 			Error: err,
 		})
 	}
+	if len(failures) > 0 {
+		return &validate.Error{Fields: failures}
+	}
+	return nil
+}
+func (s SzRelatedEntityFeatures) Validate() error {
+	var failures []validate.FieldError
+	for key, elem := range s {
+		if err := func() error {
+			if elem == nil {
+				return errors.New("nil is invalid value")
+			}
+			return nil
+		}(); err != nil {
+			failures = append(failures, validate.FieldError{
+				Name:  key,
+				Error: err,
+			})
+		}
+	}
+
 	if len(failures) > 0 {
 		return &validate.Error{Fields: failures}
 	}
@@ -1861,6 +2333,31 @@ func (s *SzServerInfoResponse) Validate() error {
 	}
 	return nil
 }
+func (s *SzVersionResponse) Validate() error {
+	var failures []validate.FieldError
+	if err := func() error {
+		if s.Meta.Set {
+			if err := func() error {
+				if err := s.Meta.Value.Validate(); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return err
+			}
+		}
+		return nil
+	}(); err != nil {
+		failures = append(failures, validate.FieldError{
+			Name:  "meta",
+			Error: err,
+		})
+	}
+	if len(failures) > 0 {
+		return &validate.Error{Fields: failures}
+	}
+	return nil
+}
 func (s *SzVirtualEntityData) Validate() error {
 	var failures []validate.FieldError
 	if err := func() error {
@@ -1889,6 +2386,24 @@ func (s *SzVirtualEntityData) Validate() error {
 func (s *SzVirtualEntityResponse) Validate() error {
 	var failures []validate.FieldError
 	if err := func() error {
+		if s.Meta.Set {
+			if err := func() error {
+				if err := s.Meta.Value.Validate(); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return err
+			}
+		}
+		return nil
+	}(); err != nil {
+		failures = append(failures, validate.FieldError{
+			Name:  "meta",
+			Error: err,
+		})
+	}
+	if err := func() error {
 		if s.Data.Set {
 			if err := func() error {
 				if err := s.Data.Value.Validate(); err != nil {
@@ -1913,6 +2428,24 @@ func (s *SzVirtualEntityResponse) Validate() error {
 }
 func (s *SzWhyEntitiesResponse) Validate() error {
 	var failures []validate.FieldError
+	if err := func() error {
+		if s.Meta.Set {
+			if err := func() error {
+				if err := s.Meta.Value.Validate(); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return err
+			}
+		}
+		return nil
+	}(); err != nil {
+		failures = append(failures, validate.FieldError{
+			Name:  "meta",
+			Error: err,
+		})
+	}
 	if err := func() error {
 		if s.Data.Set {
 			if err := func() error {
@@ -2013,6 +2546,24 @@ func (s *SzWhyEntitiesResult) Validate() error {
 }
 func (s *SzWhyEntityResponse) Validate() error {
 	var failures []validate.FieldError
+	if err := func() error {
+		if s.Meta.Set {
+			if err := func() error {
+				if err := s.Meta.Value.Validate(); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return err
+			}
+		}
+		return nil
+	}(); err != nil {
+		failures = append(failures, validate.FieldError{
+			Name:  "meta",
+			Error: err,
+		})
+	}
 	if err := func() error {
 		if s.Data.Set {
 			if err := func() error {
@@ -2275,6 +2826,24 @@ func (s SzWhyMatchInfoFeatureScores) Validate() error {
 }
 func (s *SzWhyRecordsResponse) Validate() error {
 	var failures []validate.FieldError
+	if err := func() error {
+		if s.Meta.Set {
+			if err := func() error {
+				if err := s.Meta.Value.Validate(); err != nil {
+					return err
+				}
+				return nil
+			}(); err != nil {
+				return err
+			}
+		}
+		return nil
+	}(); err != nil {
+		failures = append(failures, validate.FieldError{
+			Name:  "meta",
+			Error: err,
+		})
+	}
 	if err := func() error {
 		if s.Data.Set {
 			if err := func() error {

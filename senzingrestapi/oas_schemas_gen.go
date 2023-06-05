@@ -1717,6 +1717,69 @@ func (o OptNilStringArray) Or(d []string) []string {
 	return d
 }
 
+// NewOptNilSzAttributeSearchResponseRawData returns new OptNilSzAttributeSearchResponseRawData with value set to v.
+func NewOptNilSzAttributeSearchResponseRawData(v SzAttributeSearchResponseRawData) OptNilSzAttributeSearchResponseRawData {
+	return OptNilSzAttributeSearchResponseRawData{
+		Value: v,
+		Set:   true,
+	}
+}
+
+// OptNilSzAttributeSearchResponseRawData is optional nullable SzAttributeSearchResponseRawData.
+type OptNilSzAttributeSearchResponseRawData struct {
+	Value SzAttributeSearchResponseRawData
+	Set   bool
+	Null  bool
+}
+
+// IsSet returns true if OptNilSzAttributeSearchResponseRawData was set.
+func (o OptNilSzAttributeSearchResponseRawData) IsSet() bool { return o.Set }
+
+// Reset unsets value.
+func (o *OptNilSzAttributeSearchResponseRawData) Reset() {
+	var v SzAttributeSearchResponseRawData
+	o.Value = v
+	o.Set = false
+	o.Null = false
+}
+
+// SetTo sets value to v.
+func (o *OptNilSzAttributeSearchResponseRawData) SetTo(v SzAttributeSearchResponseRawData) {
+	o.Set = true
+	o.Null = false
+	o.Value = v
+}
+
+// IsSet returns true if value is Null.
+func (o OptNilSzAttributeSearchResponseRawData) IsNull() bool { return o.Null }
+
+// SetNull sets value to null.
+func (o *OptNilSzAttributeSearchResponseRawData) SetToNull() {
+	o.Set = true
+	o.Null = true
+	var v SzAttributeSearchResponseRawData
+	o.Value = v
+}
+
+// Get returns value and boolean that denotes whether value was set.
+func (o OptNilSzAttributeSearchResponseRawData) Get() (v SzAttributeSearchResponseRawData, ok bool) {
+	if o.Null {
+		return v, false
+	}
+	if !o.Set {
+		return v, false
+	}
+	return o.Value, true
+}
+
+// Or returns value if set, or given parameter if does not.
+func (o OptNilSzAttributeSearchResponseRawData) Or(d SzAttributeSearchResponseRawData) SzAttributeSearchResponseRawData {
+	if v, ok := o.Get(); ok {
+		return v
+	}
+	return d
+}
+
 // NewOptNilSzAttributeSearchResultFeatureScores returns new OptNilSzAttributeSearchResultFeatureScores with value set to v.
 func NewOptNilSzAttributeSearchResultFeatureScores(v SzAttributeSearchResultFeatureScores) OptNilSzAttributeSearchResultFeatureScores {
 	return OptNilSzAttributeSearchResultFeatureScores{
@@ -1774,6 +1837,321 @@ func (o OptNilSzAttributeSearchResultFeatureScores) Get() (v SzAttributeSearchRe
 
 // Or returns value if set, or given parameter if does not.
 func (o OptNilSzAttributeSearchResultFeatureScores) Or(d SzAttributeSearchResultFeatureScores) SzAttributeSearchResultFeatureScores {
+	if v, ok := o.Get(); ok {
+		return v
+	}
+	return d
+}
+
+// NewOptNilSzAttributeTypeResponseRawData returns new OptNilSzAttributeTypeResponseRawData with value set to v.
+func NewOptNilSzAttributeTypeResponseRawData(v SzAttributeTypeResponseRawData) OptNilSzAttributeTypeResponseRawData {
+	return OptNilSzAttributeTypeResponseRawData{
+		Value: v,
+		Set:   true,
+	}
+}
+
+// OptNilSzAttributeTypeResponseRawData is optional nullable SzAttributeTypeResponseRawData.
+type OptNilSzAttributeTypeResponseRawData struct {
+	Value SzAttributeTypeResponseRawData
+	Set   bool
+	Null  bool
+}
+
+// IsSet returns true if OptNilSzAttributeTypeResponseRawData was set.
+func (o OptNilSzAttributeTypeResponseRawData) IsSet() bool { return o.Set }
+
+// Reset unsets value.
+func (o *OptNilSzAttributeTypeResponseRawData) Reset() {
+	var v SzAttributeTypeResponseRawData
+	o.Value = v
+	o.Set = false
+	o.Null = false
+}
+
+// SetTo sets value to v.
+func (o *OptNilSzAttributeTypeResponseRawData) SetTo(v SzAttributeTypeResponseRawData) {
+	o.Set = true
+	o.Null = false
+	o.Value = v
+}
+
+// IsSet returns true if value is Null.
+func (o OptNilSzAttributeTypeResponseRawData) IsNull() bool { return o.Null }
+
+// SetNull sets value to null.
+func (o *OptNilSzAttributeTypeResponseRawData) SetToNull() {
+	o.Set = true
+	o.Null = true
+	var v SzAttributeTypeResponseRawData
+	o.Value = v
+}
+
+// Get returns value and boolean that denotes whether value was set.
+func (o OptNilSzAttributeTypeResponseRawData) Get() (v SzAttributeTypeResponseRawData, ok bool) {
+	if o.Null {
+		return v, false
+	}
+	if !o.Set {
+		return v, false
+	}
+	return o.Value, true
+}
+
+// Or returns value if set, or given parameter if does not.
+func (o OptNilSzAttributeTypeResponseRawData) Or(d SzAttributeTypeResponseRawData) SzAttributeTypeResponseRawData {
+	if v, ok := o.Get(); ok {
+		return v
+	}
+	return d
+}
+
+// NewOptNilSzAttributeTypesResponseRawData returns new OptNilSzAttributeTypesResponseRawData with value set to v.
+func NewOptNilSzAttributeTypesResponseRawData(v SzAttributeTypesResponseRawData) OptNilSzAttributeTypesResponseRawData {
+	return OptNilSzAttributeTypesResponseRawData{
+		Value: v,
+		Set:   true,
+	}
+}
+
+// OptNilSzAttributeTypesResponseRawData is optional nullable SzAttributeTypesResponseRawData.
+type OptNilSzAttributeTypesResponseRawData struct {
+	Value SzAttributeTypesResponseRawData
+	Set   bool
+	Null  bool
+}
+
+// IsSet returns true if OptNilSzAttributeTypesResponseRawData was set.
+func (o OptNilSzAttributeTypesResponseRawData) IsSet() bool { return o.Set }
+
+// Reset unsets value.
+func (o *OptNilSzAttributeTypesResponseRawData) Reset() {
+	var v SzAttributeTypesResponseRawData
+	o.Value = v
+	o.Set = false
+	o.Null = false
+}
+
+// SetTo sets value to v.
+func (o *OptNilSzAttributeTypesResponseRawData) SetTo(v SzAttributeTypesResponseRawData) {
+	o.Set = true
+	o.Null = false
+	o.Value = v
+}
+
+// IsSet returns true if value is Null.
+func (o OptNilSzAttributeTypesResponseRawData) IsNull() bool { return o.Null }
+
+// SetNull sets value to null.
+func (o *OptNilSzAttributeTypesResponseRawData) SetToNull() {
+	o.Set = true
+	o.Null = true
+	var v SzAttributeTypesResponseRawData
+	o.Value = v
+}
+
+// Get returns value and boolean that denotes whether value was set.
+func (o OptNilSzAttributeTypesResponseRawData) Get() (v SzAttributeTypesResponseRawData, ok bool) {
+	if o.Null {
+		return v, false
+	}
+	if !o.Set {
+		return v, false
+	}
+	return o.Value, true
+}
+
+// Or returns value if set, or given parameter if does not.
+func (o OptNilSzAttributeTypesResponseRawData) Or(d SzAttributeTypesResponseRawData) SzAttributeTypesResponseRawData {
+	if v, ok := o.Get(); ok {
+		return v
+	}
+	return d
+}
+
+// NewOptNilSzDataSourceResponseRawData returns new OptNilSzDataSourceResponseRawData with value set to v.
+func NewOptNilSzDataSourceResponseRawData(v SzDataSourceResponseRawData) OptNilSzDataSourceResponseRawData {
+	return OptNilSzDataSourceResponseRawData{
+		Value: v,
+		Set:   true,
+	}
+}
+
+// OptNilSzDataSourceResponseRawData is optional nullable SzDataSourceResponseRawData.
+type OptNilSzDataSourceResponseRawData struct {
+	Value SzDataSourceResponseRawData
+	Set   bool
+	Null  bool
+}
+
+// IsSet returns true if OptNilSzDataSourceResponseRawData was set.
+func (o OptNilSzDataSourceResponseRawData) IsSet() bool { return o.Set }
+
+// Reset unsets value.
+func (o *OptNilSzDataSourceResponseRawData) Reset() {
+	var v SzDataSourceResponseRawData
+	o.Value = v
+	o.Set = false
+	o.Null = false
+}
+
+// SetTo sets value to v.
+func (o *OptNilSzDataSourceResponseRawData) SetTo(v SzDataSourceResponseRawData) {
+	o.Set = true
+	o.Null = false
+	o.Value = v
+}
+
+// IsSet returns true if value is Null.
+func (o OptNilSzDataSourceResponseRawData) IsNull() bool { return o.Null }
+
+// SetNull sets value to null.
+func (o *OptNilSzDataSourceResponseRawData) SetToNull() {
+	o.Set = true
+	o.Null = true
+	var v SzDataSourceResponseRawData
+	o.Value = v
+}
+
+// Get returns value and boolean that denotes whether value was set.
+func (o OptNilSzDataSourceResponseRawData) Get() (v SzDataSourceResponseRawData, ok bool) {
+	if o.Null {
+		return v, false
+	}
+	if !o.Set {
+		return v, false
+	}
+	return o.Value, true
+}
+
+// Or returns value if set, or given parameter if does not.
+func (o OptNilSzDataSourceResponseRawData) Or(d SzDataSourceResponseRawData) SzDataSourceResponseRawData {
+	if v, ok := o.Get(); ok {
+		return v
+	}
+	return d
+}
+
+// NewOptNilSzDataSourcesResponseRawData returns new OptNilSzDataSourcesResponseRawData with value set to v.
+func NewOptNilSzDataSourcesResponseRawData(v SzDataSourcesResponseRawData) OptNilSzDataSourcesResponseRawData {
+	return OptNilSzDataSourcesResponseRawData{
+		Value: v,
+		Set:   true,
+	}
+}
+
+// OptNilSzDataSourcesResponseRawData is optional nullable SzDataSourcesResponseRawData.
+type OptNilSzDataSourcesResponseRawData struct {
+	Value SzDataSourcesResponseRawData
+	Set   bool
+	Null  bool
+}
+
+// IsSet returns true if OptNilSzDataSourcesResponseRawData was set.
+func (o OptNilSzDataSourcesResponseRawData) IsSet() bool { return o.Set }
+
+// Reset unsets value.
+func (o *OptNilSzDataSourcesResponseRawData) Reset() {
+	var v SzDataSourcesResponseRawData
+	o.Value = v
+	o.Set = false
+	o.Null = false
+}
+
+// SetTo sets value to v.
+func (o *OptNilSzDataSourcesResponseRawData) SetTo(v SzDataSourcesResponseRawData) {
+	o.Set = true
+	o.Null = false
+	o.Value = v
+}
+
+// IsSet returns true if value is Null.
+func (o OptNilSzDataSourcesResponseRawData) IsNull() bool { return o.Null }
+
+// SetNull sets value to null.
+func (o *OptNilSzDataSourcesResponseRawData) SetToNull() {
+	o.Set = true
+	o.Null = true
+	var v SzDataSourcesResponseRawData
+	o.Value = v
+}
+
+// Get returns value and boolean that denotes whether value was set.
+func (o OptNilSzDataSourcesResponseRawData) Get() (v SzDataSourcesResponseRawData, ok bool) {
+	if o.Null {
+		return v, false
+	}
+	if !o.Set {
+		return v, false
+	}
+	return o.Value, true
+}
+
+// Or returns value if set, or given parameter if does not.
+func (o OptNilSzDataSourcesResponseRawData) Or(d SzDataSourcesResponseRawData) SzDataSourcesResponseRawData {
+	if v, ok := o.Get(); ok {
+		return v
+	}
+	return d
+}
+
+// NewOptNilSzDeleteRecordResponseRawData returns new OptNilSzDeleteRecordResponseRawData with value set to v.
+func NewOptNilSzDeleteRecordResponseRawData(v SzDeleteRecordResponseRawData) OptNilSzDeleteRecordResponseRawData {
+	return OptNilSzDeleteRecordResponseRawData{
+		Value: v,
+		Set:   true,
+	}
+}
+
+// OptNilSzDeleteRecordResponseRawData is optional nullable SzDeleteRecordResponseRawData.
+type OptNilSzDeleteRecordResponseRawData struct {
+	Value SzDeleteRecordResponseRawData
+	Set   bool
+	Null  bool
+}
+
+// IsSet returns true if OptNilSzDeleteRecordResponseRawData was set.
+func (o OptNilSzDeleteRecordResponseRawData) IsSet() bool { return o.Set }
+
+// Reset unsets value.
+func (o *OptNilSzDeleteRecordResponseRawData) Reset() {
+	var v SzDeleteRecordResponseRawData
+	o.Value = v
+	o.Set = false
+	o.Null = false
+}
+
+// SetTo sets value to v.
+func (o *OptNilSzDeleteRecordResponseRawData) SetTo(v SzDeleteRecordResponseRawData) {
+	o.Set = true
+	o.Null = false
+	o.Value = v
+}
+
+// IsSet returns true if value is Null.
+func (o OptNilSzDeleteRecordResponseRawData) IsNull() bool { return o.Null }
+
+// SetNull sets value to null.
+func (o *OptNilSzDeleteRecordResponseRawData) SetToNull() {
+	o.Set = true
+	o.Null = true
+	var v SzDeleteRecordResponseRawData
+	o.Value = v
+}
+
+// Get returns value and boolean that denotes whether value was set.
+func (o OptNilSzDeleteRecordResponseRawData) Get() (v SzDeleteRecordResponseRawData, ok bool) {
+	if o.Null {
+		return v, false
+	}
+	if !o.Set {
+		return v, false
+	}
+	return o.Value, true
+}
+
+// Or returns value if set, or given parameter if does not.
+func (o OptNilSzDeleteRecordResponseRawData) Or(d SzDeleteRecordResponseRawData) SzDeleteRecordResponseRawData {
 	if v, ok := o.Get(); ok {
 		return v
 	}
@@ -1843,6 +2221,195 @@ func (o OptNilSzDisclosedRelationArray) Or(d []SzDisclosedRelation) []SzDisclose
 	return d
 }
 
+// NewOptNilSzEntityNetworkResponseRawData returns new OptNilSzEntityNetworkResponseRawData with value set to v.
+func NewOptNilSzEntityNetworkResponseRawData(v SzEntityNetworkResponseRawData) OptNilSzEntityNetworkResponseRawData {
+	return OptNilSzEntityNetworkResponseRawData{
+		Value: v,
+		Set:   true,
+	}
+}
+
+// OptNilSzEntityNetworkResponseRawData is optional nullable SzEntityNetworkResponseRawData.
+type OptNilSzEntityNetworkResponseRawData struct {
+	Value SzEntityNetworkResponseRawData
+	Set   bool
+	Null  bool
+}
+
+// IsSet returns true if OptNilSzEntityNetworkResponseRawData was set.
+func (o OptNilSzEntityNetworkResponseRawData) IsSet() bool { return o.Set }
+
+// Reset unsets value.
+func (o *OptNilSzEntityNetworkResponseRawData) Reset() {
+	var v SzEntityNetworkResponseRawData
+	o.Value = v
+	o.Set = false
+	o.Null = false
+}
+
+// SetTo sets value to v.
+func (o *OptNilSzEntityNetworkResponseRawData) SetTo(v SzEntityNetworkResponseRawData) {
+	o.Set = true
+	o.Null = false
+	o.Value = v
+}
+
+// IsSet returns true if value is Null.
+func (o OptNilSzEntityNetworkResponseRawData) IsNull() bool { return o.Null }
+
+// SetNull sets value to null.
+func (o *OptNilSzEntityNetworkResponseRawData) SetToNull() {
+	o.Set = true
+	o.Null = true
+	var v SzEntityNetworkResponseRawData
+	o.Value = v
+}
+
+// Get returns value and boolean that denotes whether value was set.
+func (o OptNilSzEntityNetworkResponseRawData) Get() (v SzEntityNetworkResponseRawData, ok bool) {
+	if o.Null {
+		return v, false
+	}
+	if !o.Set {
+		return v, false
+	}
+	return o.Value, true
+}
+
+// Or returns value if set, or given parameter if does not.
+func (o OptNilSzEntityNetworkResponseRawData) Or(d SzEntityNetworkResponseRawData) SzEntityNetworkResponseRawData {
+	if v, ok := o.Get(); ok {
+		return v
+	}
+	return d
+}
+
+// NewOptNilSzEntityPathResponseRawData returns new OptNilSzEntityPathResponseRawData with value set to v.
+func NewOptNilSzEntityPathResponseRawData(v SzEntityPathResponseRawData) OptNilSzEntityPathResponseRawData {
+	return OptNilSzEntityPathResponseRawData{
+		Value: v,
+		Set:   true,
+	}
+}
+
+// OptNilSzEntityPathResponseRawData is optional nullable SzEntityPathResponseRawData.
+type OptNilSzEntityPathResponseRawData struct {
+	Value SzEntityPathResponseRawData
+	Set   bool
+	Null  bool
+}
+
+// IsSet returns true if OptNilSzEntityPathResponseRawData was set.
+func (o OptNilSzEntityPathResponseRawData) IsSet() bool { return o.Set }
+
+// Reset unsets value.
+func (o *OptNilSzEntityPathResponseRawData) Reset() {
+	var v SzEntityPathResponseRawData
+	o.Value = v
+	o.Set = false
+	o.Null = false
+}
+
+// SetTo sets value to v.
+func (o *OptNilSzEntityPathResponseRawData) SetTo(v SzEntityPathResponseRawData) {
+	o.Set = true
+	o.Null = false
+	o.Value = v
+}
+
+// IsSet returns true if value is Null.
+func (o OptNilSzEntityPathResponseRawData) IsNull() bool { return o.Null }
+
+// SetNull sets value to null.
+func (o *OptNilSzEntityPathResponseRawData) SetToNull() {
+	o.Set = true
+	o.Null = true
+	var v SzEntityPathResponseRawData
+	o.Value = v
+}
+
+// Get returns value and boolean that denotes whether value was set.
+func (o OptNilSzEntityPathResponseRawData) Get() (v SzEntityPathResponseRawData, ok bool) {
+	if o.Null {
+		return v, false
+	}
+	if !o.Set {
+		return v, false
+	}
+	return o.Value, true
+}
+
+// Or returns value if set, or given parameter if does not.
+func (o OptNilSzEntityPathResponseRawData) Or(d SzEntityPathResponseRawData) SzEntityPathResponseRawData {
+	if v, ok := o.Get(); ok {
+		return v
+	}
+	return d
+}
+
+// NewOptNilSzEntityResponseRawData returns new OptNilSzEntityResponseRawData with value set to v.
+func NewOptNilSzEntityResponseRawData(v SzEntityResponseRawData) OptNilSzEntityResponseRawData {
+	return OptNilSzEntityResponseRawData{
+		Value: v,
+		Set:   true,
+	}
+}
+
+// OptNilSzEntityResponseRawData is optional nullable SzEntityResponseRawData.
+type OptNilSzEntityResponseRawData struct {
+	Value SzEntityResponseRawData
+	Set   bool
+	Null  bool
+}
+
+// IsSet returns true if OptNilSzEntityResponseRawData was set.
+func (o OptNilSzEntityResponseRawData) IsSet() bool { return o.Set }
+
+// Reset unsets value.
+func (o *OptNilSzEntityResponseRawData) Reset() {
+	var v SzEntityResponseRawData
+	o.Value = v
+	o.Set = false
+	o.Null = false
+}
+
+// SetTo sets value to v.
+func (o *OptNilSzEntityResponseRawData) SetTo(v SzEntityResponseRawData) {
+	o.Set = true
+	o.Null = false
+	o.Value = v
+}
+
+// IsSet returns true if value is Null.
+func (o OptNilSzEntityResponseRawData) IsNull() bool { return o.Null }
+
+// SetNull sets value to null.
+func (o *OptNilSzEntityResponseRawData) SetToNull() {
+	o.Set = true
+	o.Null = true
+	var v SzEntityResponseRawData
+	o.Value = v
+}
+
+// Get returns value and boolean that denotes whether value was set.
+func (o OptNilSzEntityResponseRawData) Get() (v SzEntityResponseRawData, ok bool) {
+	if o.Null {
+		return v, false
+	}
+	if !o.Set {
+		return v, false
+	}
+	return o.Value, true
+}
+
+// Or returns value if set, or given parameter if does not.
+func (o OptNilSzEntityResponseRawData) Or(d SzEntityResponseRawData) SzEntityResponseRawData {
+	if v, ok := o.Get(); ok {
+		return v
+	}
+	return d
+}
+
 // NewOptNilSzFeatureReferenceArray returns new OptNilSzFeatureReferenceArray with value set to v.
 func NewOptNilSzFeatureReferenceArray(v []SzFeatureReference) OptNilSzFeatureReferenceArray {
 	return OptNilSzFeatureReferenceArray{
@@ -1900,6 +2467,69 @@ func (o OptNilSzFeatureReferenceArray) Get() (v []SzFeatureReference, ok bool) {
 
 // Or returns value if set, or given parameter if does not.
 func (o OptNilSzFeatureReferenceArray) Or(d []SzFeatureReference) []SzFeatureReference {
+	if v, ok := o.Get(); ok {
+		return v
+	}
+	return d
+}
+
+// NewOptNilSzHowEntityResponseRawData returns new OptNilSzHowEntityResponseRawData with value set to v.
+func NewOptNilSzHowEntityResponseRawData(v SzHowEntityResponseRawData) OptNilSzHowEntityResponseRawData {
+	return OptNilSzHowEntityResponseRawData{
+		Value: v,
+		Set:   true,
+	}
+}
+
+// OptNilSzHowEntityResponseRawData is optional nullable SzHowEntityResponseRawData.
+type OptNilSzHowEntityResponseRawData struct {
+	Value SzHowEntityResponseRawData
+	Set   bool
+	Null  bool
+}
+
+// IsSet returns true if OptNilSzHowEntityResponseRawData was set.
+func (o OptNilSzHowEntityResponseRawData) IsSet() bool { return o.Set }
+
+// Reset unsets value.
+func (o *OptNilSzHowEntityResponseRawData) Reset() {
+	var v SzHowEntityResponseRawData
+	o.Value = v
+	o.Set = false
+	o.Null = false
+}
+
+// SetTo sets value to v.
+func (o *OptNilSzHowEntityResponseRawData) SetTo(v SzHowEntityResponseRawData) {
+	o.Set = true
+	o.Null = false
+	o.Value = v
+}
+
+// IsSet returns true if value is Null.
+func (o OptNilSzHowEntityResponseRawData) IsNull() bool { return o.Null }
+
+// SetNull sets value to null.
+func (o *OptNilSzHowEntityResponseRawData) SetToNull() {
+	o.Set = true
+	o.Null = true
+	var v SzHowEntityResponseRawData
+	o.Value = v
+}
+
+// Get returns value and boolean that denotes whether value was set.
+func (o OptNilSzHowEntityResponseRawData) Get() (v SzHowEntityResponseRawData, ok bool) {
+	if o.Null {
+		return v, false
+	}
+	if !o.Set {
+		return v, false
+	}
+	return o.Value, true
+}
+
+// Or returns value if set, or given parameter if does not.
+func (o OptNilSzHowEntityResponseRawData) Or(d SzHowEntityResponseRawData) SzHowEntityResponseRawData {
 	if v, ok := o.Get(); ok {
 		return v
 	}
@@ -1969,6 +2599,132 @@ func (o OptNilSzHowMatchInfoFeatureScores) Or(d SzHowMatchInfoFeatureScores) SzH
 	return d
 }
 
+// NewOptNilSzLicenseResponseRawData returns new OptNilSzLicenseResponseRawData with value set to v.
+func NewOptNilSzLicenseResponseRawData(v SzLicenseResponseRawData) OptNilSzLicenseResponseRawData {
+	return OptNilSzLicenseResponseRawData{
+		Value: v,
+		Set:   true,
+	}
+}
+
+// OptNilSzLicenseResponseRawData is optional nullable SzLicenseResponseRawData.
+type OptNilSzLicenseResponseRawData struct {
+	Value SzLicenseResponseRawData
+	Set   bool
+	Null  bool
+}
+
+// IsSet returns true if OptNilSzLicenseResponseRawData was set.
+func (o OptNilSzLicenseResponseRawData) IsSet() bool { return o.Set }
+
+// Reset unsets value.
+func (o *OptNilSzLicenseResponseRawData) Reset() {
+	var v SzLicenseResponseRawData
+	o.Value = v
+	o.Set = false
+	o.Null = false
+}
+
+// SetTo sets value to v.
+func (o *OptNilSzLicenseResponseRawData) SetTo(v SzLicenseResponseRawData) {
+	o.Set = true
+	o.Null = false
+	o.Value = v
+}
+
+// IsSet returns true if value is Null.
+func (o OptNilSzLicenseResponseRawData) IsNull() bool { return o.Null }
+
+// SetNull sets value to null.
+func (o *OptNilSzLicenseResponseRawData) SetToNull() {
+	o.Set = true
+	o.Null = true
+	var v SzLicenseResponseRawData
+	o.Value = v
+}
+
+// Get returns value and boolean that denotes whether value was set.
+func (o OptNilSzLicenseResponseRawData) Get() (v SzLicenseResponseRawData, ok bool) {
+	if o.Null {
+		return v, false
+	}
+	if !o.Set {
+		return v, false
+	}
+	return o.Value, true
+}
+
+// Or returns value if set, or given parameter if does not.
+func (o OptNilSzLicenseResponseRawData) Or(d SzLicenseResponseRawData) SzLicenseResponseRawData {
+	if v, ok := o.Get(); ok {
+		return v
+	}
+	return d
+}
+
+// NewOptNilSzLoadRecordResponseRawData returns new OptNilSzLoadRecordResponseRawData with value set to v.
+func NewOptNilSzLoadRecordResponseRawData(v SzLoadRecordResponseRawData) OptNilSzLoadRecordResponseRawData {
+	return OptNilSzLoadRecordResponseRawData{
+		Value: v,
+		Set:   true,
+	}
+}
+
+// OptNilSzLoadRecordResponseRawData is optional nullable SzLoadRecordResponseRawData.
+type OptNilSzLoadRecordResponseRawData struct {
+	Value SzLoadRecordResponseRawData
+	Set   bool
+	Null  bool
+}
+
+// IsSet returns true if OptNilSzLoadRecordResponseRawData was set.
+func (o OptNilSzLoadRecordResponseRawData) IsSet() bool { return o.Set }
+
+// Reset unsets value.
+func (o *OptNilSzLoadRecordResponseRawData) Reset() {
+	var v SzLoadRecordResponseRawData
+	o.Value = v
+	o.Set = false
+	o.Null = false
+}
+
+// SetTo sets value to v.
+func (o *OptNilSzLoadRecordResponseRawData) SetTo(v SzLoadRecordResponseRawData) {
+	o.Set = true
+	o.Null = false
+	o.Value = v
+}
+
+// IsSet returns true if value is Null.
+func (o OptNilSzLoadRecordResponseRawData) IsNull() bool { return o.Null }
+
+// SetNull sets value to null.
+func (o *OptNilSzLoadRecordResponseRawData) SetToNull() {
+	o.Set = true
+	o.Null = true
+	var v SzLoadRecordResponseRawData
+	o.Value = v
+}
+
+// Get returns value and boolean that denotes whether value was set.
+func (o OptNilSzLoadRecordResponseRawData) Get() (v SzLoadRecordResponseRawData, ok bool) {
+	if o.Null {
+		return v, false
+	}
+	if !o.Set {
+		return v, false
+	}
+	return o.Value, true
+}
+
+// Or returns value if set, or given parameter if does not.
+func (o OptNilSzLoadRecordResponseRawData) Or(d SzLoadRecordResponseRawData) SzLoadRecordResponseRawData {
+	if v, ok := o.Get(); ok {
+		return v
+	}
+	return d
+}
+
 // NewOptNilSzMetaTimings returns new OptNilSzMetaTimings with value set to v.
 func NewOptNilSzMetaTimings(v SzMetaTimings) OptNilSzMetaTimings {
 	return OptNilSzMetaTimings{
@@ -2032,6 +2788,132 @@ func (o OptNilSzMetaTimings) Or(d SzMetaTimings) SzMetaTimings {
 	return d
 }
 
+// NewOptNilSzRecordResponseRawData returns new OptNilSzRecordResponseRawData with value set to v.
+func NewOptNilSzRecordResponseRawData(v SzRecordResponseRawData) OptNilSzRecordResponseRawData {
+	return OptNilSzRecordResponseRawData{
+		Value: v,
+		Set:   true,
+	}
+}
+
+// OptNilSzRecordResponseRawData is optional nullable SzRecordResponseRawData.
+type OptNilSzRecordResponseRawData struct {
+	Value SzRecordResponseRawData
+	Set   bool
+	Null  bool
+}
+
+// IsSet returns true if OptNilSzRecordResponseRawData was set.
+func (o OptNilSzRecordResponseRawData) IsSet() bool { return o.Set }
+
+// Reset unsets value.
+func (o *OptNilSzRecordResponseRawData) Reset() {
+	var v SzRecordResponseRawData
+	o.Value = v
+	o.Set = false
+	o.Null = false
+}
+
+// SetTo sets value to v.
+func (o *OptNilSzRecordResponseRawData) SetTo(v SzRecordResponseRawData) {
+	o.Set = true
+	o.Null = false
+	o.Value = v
+}
+
+// IsSet returns true if value is Null.
+func (o OptNilSzRecordResponseRawData) IsNull() bool { return o.Null }
+
+// SetNull sets value to null.
+func (o *OptNilSzRecordResponseRawData) SetToNull() {
+	o.Set = true
+	o.Null = true
+	var v SzRecordResponseRawData
+	o.Value = v
+}
+
+// Get returns value and boolean that denotes whether value was set.
+func (o OptNilSzRecordResponseRawData) Get() (v SzRecordResponseRawData, ok bool) {
+	if o.Null {
+		return v, false
+	}
+	if !o.Set {
+		return v, false
+	}
+	return o.Value, true
+}
+
+// Or returns value if set, or given parameter if does not.
+func (o OptNilSzRecordResponseRawData) Or(d SzRecordResponseRawData) SzRecordResponseRawData {
+	if v, ok := o.Get(); ok {
+		return v
+	}
+	return d
+}
+
+// NewOptNilSzReevaluateResponseRawData returns new OptNilSzReevaluateResponseRawData with value set to v.
+func NewOptNilSzReevaluateResponseRawData(v SzReevaluateResponseRawData) OptNilSzReevaluateResponseRawData {
+	return OptNilSzReevaluateResponseRawData{
+		Value: v,
+		Set:   true,
+	}
+}
+
+// OptNilSzReevaluateResponseRawData is optional nullable SzReevaluateResponseRawData.
+type OptNilSzReevaluateResponseRawData struct {
+	Value SzReevaluateResponseRawData
+	Set   bool
+	Null  bool
+}
+
+// IsSet returns true if OptNilSzReevaluateResponseRawData was set.
+func (o OptNilSzReevaluateResponseRawData) IsSet() bool { return o.Set }
+
+// Reset unsets value.
+func (o *OptNilSzReevaluateResponseRawData) Reset() {
+	var v SzReevaluateResponseRawData
+	o.Value = v
+	o.Set = false
+	o.Null = false
+}
+
+// SetTo sets value to v.
+func (o *OptNilSzReevaluateResponseRawData) SetTo(v SzReevaluateResponseRawData) {
+	o.Set = true
+	o.Null = false
+	o.Value = v
+}
+
+// IsSet returns true if value is Null.
+func (o OptNilSzReevaluateResponseRawData) IsNull() bool { return o.Null }
+
+// SetNull sets value to null.
+func (o *OptNilSzReevaluateResponseRawData) SetToNull() {
+	o.Set = true
+	o.Null = true
+	var v SzReevaluateResponseRawData
+	o.Value = v
+}
+
+// Get returns value and boolean that denotes whether value was set.
+func (o OptNilSzReevaluateResponseRawData) Get() (v SzReevaluateResponseRawData, ok bool) {
+	if o.Null {
+		return v, false
+	}
+	if !o.Set {
+		return v, false
+	}
+	return o.Value, true
+}
+
+// Or returns value if set, or given parameter if does not.
+func (o OptNilSzReevaluateResponseRawData) Or(d SzReevaluateResponseRawData) SzReevaluateResponseRawData {
+	if v, ok := o.Get(); ok {
+		return v
+	}
+	return d
+}
+
 // NewOptNilSzResponseWithRawDataRawData returns new OptNilSzResponseWithRawDataRawData with value set to v.
 func NewOptNilSzResponseWithRawDataRawData(v SzResponseWithRawDataRawData) OptNilSzResponseWithRawDataRawData {
 	return OptNilSzResponseWithRawDataRawData{
@@ -2089,6 +2971,258 @@ func (o OptNilSzResponseWithRawDataRawData) Get() (v SzResponseWithRawDataRawDat
 
 // Or returns value if set, or given parameter if does not.
 func (o OptNilSzResponseWithRawDataRawData) Or(d SzResponseWithRawDataRawData) SzResponseWithRawDataRawData {
+	if v, ok := o.Get(); ok {
+		return v
+	}
+	return d
+}
+
+// NewOptNilSzVersionResponseRawData returns new OptNilSzVersionResponseRawData with value set to v.
+func NewOptNilSzVersionResponseRawData(v SzVersionResponseRawData) OptNilSzVersionResponseRawData {
+	return OptNilSzVersionResponseRawData{
+		Value: v,
+		Set:   true,
+	}
+}
+
+// OptNilSzVersionResponseRawData is optional nullable SzVersionResponseRawData.
+type OptNilSzVersionResponseRawData struct {
+	Value SzVersionResponseRawData
+	Set   bool
+	Null  bool
+}
+
+// IsSet returns true if OptNilSzVersionResponseRawData was set.
+func (o OptNilSzVersionResponseRawData) IsSet() bool { return o.Set }
+
+// Reset unsets value.
+func (o *OptNilSzVersionResponseRawData) Reset() {
+	var v SzVersionResponseRawData
+	o.Value = v
+	o.Set = false
+	o.Null = false
+}
+
+// SetTo sets value to v.
+func (o *OptNilSzVersionResponseRawData) SetTo(v SzVersionResponseRawData) {
+	o.Set = true
+	o.Null = false
+	o.Value = v
+}
+
+// IsSet returns true if value is Null.
+func (o OptNilSzVersionResponseRawData) IsNull() bool { return o.Null }
+
+// SetNull sets value to null.
+func (o *OptNilSzVersionResponseRawData) SetToNull() {
+	o.Set = true
+	o.Null = true
+	var v SzVersionResponseRawData
+	o.Value = v
+}
+
+// Get returns value and boolean that denotes whether value was set.
+func (o OptNilSzVersionResponseRawData) Get() (v SzVersionResponseRawData, ok bool) {
+	if o.Null {
+		return v, false
+	}
+	if !o.Set {
+		return v, false
+	}
+	return o.Value, true
+}
+
+// Or returns value if set, or given parameter if does not.
+func (o OptNilSzVersionResponseRawData) Or(d SzVersionResponseRawData) SzVersionResponseRawData {
+	if v, ok := o.Get(); ok {
+		return v
+	}
+	return d
+}
+
+// NewOptNilSzVirtualEntityResponseRawData returns new OptNilSzVirtualEntityResponseRawData with value set to v.
+func NewOptNilSzVirtualEntityResponseRawData(v SzVirtualEntityResponseRawData) OptNilSzVirtualEntityResponseRawData {
+	return OptNilSzVirtualEntityResponseRawData{
+		Value: v,
+		Set:   true,
+	}
+}
+
+// OptNilSzVirtualEntityResponseRawData is optional nullable SzVirtualEntityResponseRawData.
+type OptNilSzVirtualEntityResponseRawData struct {
+	Value SzVirtualEntityResponseRawData
+	Set   bool
+	Null  bool
+}
+
+// IsSet returns true if OptNilSzVirtualEntityResponseRawData was set.
+func (o OptNilSzVirtualEntityResponseRawData) IsSet() bool { return o.Set }
+
+// Reset unsets value.
+func (o *OptNilSzVirtualEntityResponseRawData) Reset() {
+	var v SzVirtualEntityResponseRawData
+	o.Value = v
+	o.Set = false
+	o.Null = false
+}
+
+// SetTo sets value to v.
+func (o *OptNilSzVirtualEntityResponseRawData) SetTo(v SzVirtualEntityResponseRawData) {
+	o.Set = true
+	o.Null = false
+	o.Value = v
+}
+
+// IsSet returns true if value is Null.
+func (o OptNilSzVirtualEntityResponseRawData) IsNull() bool { return o.Null }
+
+// SetNull sets value to null.
+func (o *OptNilSzVirtualEntityResponseRawData) SetToNull() {
+	o.Set = true
+	o.Null = true
+	var v SzVirtualEntityResponseRawData
+	o.Value = v
+}
+
+// Get returns value and boolean that denotes whether value was set.
+func (o OptNilSzVirtualEntityResponseRawData) Get() (v SzVirtualEntityResponseRawData, ok bool) {
+	if o.Null {
+		return v, false
+	}
+	if !o.Set {
+		return v, false
+	}
+	return o.Value, true
+}
+
+// Or returns value if set, or given parameter if does not.
+func (o OptNilSzVirtualEntityResponseRawData) Or(d SzVirtualEntityResponseRawData) SzVirtualEntityResponseRawData {
+	if v, ok := o.Get(); ok {
+		return v
+	}
+	return d
+}
+
+// NewOptNilSzWhyEntitiesResponseRawData returns new OptNilSzWhyEntitiesResponseRawData with value set to v.
+func NewOptNilSzWhyEntitiesResponseRawData(v SzWhyEntitiesResponseRawData) OptNilSzWhyEntitiesResponseRawData {
+	return OptNilSzWhyEntitiesResponseRawData{
+		Value: v,
+		Set:   true,
+	}
+}
+
+// OptNilSzWhyEntitiesResponseRawData is optional nullable SzWhyEntitiesResponseRawData.
+type OptNilSzWhyEntitiesResponseRawData struct {
+	Value SzWhyEntitiesResponseRawData
+	Set   bool
+	Null  bool
+}
+
+// IsSet returns true if OptNilSzWhyEntitiesResponseRawData was set.
+func (o OptNilSzWhyEntitiesResponseRawData) IsSet() bool { return o.Set }
+
+// Reset unsets value.
+func (o *OptNilSzWhyEntitiesResponseRawData) Reset() {
+	var v SzWhyEntitiesResponseRawData
+	o.Value = v
+	o.Set = false
+	o.Null = false
+}
+
+// SetTo sets value to v.
+func (o *OptNilSzWhyEntitiesResponseRawData) SetTo(v SzWhyEntitiesResponseRawData) {
+	o.Set = true
+	o.Null = false
+	o.Value = v
+}
+
+// IsSet returns true if value is Null.
+func (o OptNilSzWhyEntitiesResponseRawData) IsNull() bool { return o.Null }
+
+// SetNull sets value to null.
+func (o *OptNilSzWhyEntitiesResponseRawData) SetToNull() {
+	o.Set = true
+	o.Null = true
+	var v SzWhyEntitiesResponseRawData
+	o.Value = v
+}
+
+// Get returns value and boolean that denotes whether value was set.
+func (o OptNilSzWhyEntitiesResponseRawData) Get() (v SzWhyEntitiesResponseRawData, ok bool) {
+	if o.Null {
+		return v, false
+	}
+	if !o.Set {
+		return v, false
+	}
+	return o.Value, true
+}
+
+// Or returns value if set, or given parameter if does not.
+func (o OptNilSzWhyEntitiesResponseRawData) Or(d SzWhyEntitiesResponseRawData) SzWhyEntitiesResponseRawData {
+	if v, ok := o.Get(); ok {
+		return v
+	}
+	return d
+}
+
+// NewOptNilSzWhyEntityResponseRawData returns new OptNilSzWhyEntityResponseRawData with value set to v.
+func NewOptNilSzWhyEntityResponseRawData(v SzWhyEntityResponseRawData) OptNilSzWhyEntityResponseRawData {
+	return OptNilSzWhyEntityResponseRawData{
+		Value: v,
+		Set:   true,
+	}
+}
+
+// OptNilSzWhyEntityResponseRawData is optional nullable SzWhyEntityResponseRawData.
+type OptNilSzWhyEntityResponseRawData struct {
+	Value SzWhyEntityResponseRawData
+	Set   bool
+	Null  bool
+}
+
+// IsSet returns true if OptNilSzWhyEntityResponseRawData was set.
+func (o OptNilSzWhyEntityResponseRawData) IsSet() bool { return o.Set }
+
+// Reset unsets value.
+func (o *OptNilSzWhyEntityResponseRawData) Reset() {
+	var v SzWhyEntityResponseRawData
+	o.Value = v
+	o.Set = false
+	o.Null = false
+}
+
+// SetTo sets value to v.
+func (o *OptNilSzWhyEntityResponseRawData) SetTo(v SzWhyEntityResponseRawData) {
+	o.Set = true
+	o.Null = false
+	o.Value = v
+}
+
+// IsSet returns true if value is Null.
+func (o OptNilSzWhyEntityResponseRawData) IsNull() bool { return o.Null }
+
+// SetNull sets value to null.
+func (o *OptNilSzWhyEntityResponseRawData) SetToNull() {
+	o.Set = true
+	o.Null = true
+	var v SzWhyEntityResponseRawData
+	o.Value = v
+}
+
+// Get returns value and boolean that denotes whether value was set.
+func (o OptNilSzWhyEntityResponseRawData) Get() (v SzWhyEntityResponseRawData, ok bool) {
+	if o.Null {
+		return v, false
+	}
+	if !o.Set {
+		return v, false
+	}
+	return o.Value, true
+}
+
+// Or returns value if set, or given parameter if does not.
+func (o OptNilSzWhyEntityResponseRawData) Or(d SzWhyEntityResponseRawData) SzWhyEntityResponseRawData {
 	if v, ok := o.Get(); ok {
 		return v
 	}
@@ -2215,6 +3349,69 @@ func (o OptNilSzWhyMatchInfoFeatureScores) Get() (v SzWhyMatchInfoFeatureScores,
 
 // Or returns value if set, or given parameter if does not.
 func (o OptNilSzWhyMatchInfoFeatureScores) Or(d SzWhyMatchInfoFeatureScores) SzWhyMatchInfoFeatureScores {
+	if v, ok := o.Get(); ok {
+		return v
+	}
+	return d
+}
+
+// NewOptNilSzWhyRecordsResponseRawData returns new OptNilSzWhyRecordsResponseRawData with value set to v.
+func NewOptNilSzWhyRecordsResponseRawData(v SzWhyRecordsResponseRawData) OptNilSzWhyRecordsResponseRawData {
+	return OptNilSzWhyRecordsResponseRawData{
+		Value: v,
+		Set:   true,
+	}
+}
+
+// OptNilSzWhyRecordsResponseRawData is optional nullable SzWhyRecordsResponseRawData.
+type OptNilSzWhyRecordsResponseRawData struct {
+	Value SzWhyRecordsResponseRawData
+	Set   bool
+	Null  bool
+}
+
+// IsSet returns true if OptNilSzWhyRecordsResponseRawData was set.
+func (o OptNilSzWhyRecordsResponseRawData) IsSet() bool { return o.Set }
+
+// Reset unsets value.
+func (o *OptNilSzWhyRecordsResponseRawData) Reset() {
+	var v SzWhyRecordsResponseRawData
+	o.Value = v
+	o.Set = false
+	o.Null = false
+}
+
+// SetTo sets value to v.
+func (o *OptNilSzWhyRecordsResponseRawData) SetTo(v SzWhyRecordsResponseRawData) {
+	o.Set = true
+	o.Null = false
+	o.Value = v
+}
+
+// IsSet returns true if value is Null.
+func (o OptNilSzWhyRecordsResponseRawData) IsNull() bool { return o.Null }
+
+// SetNull sets value to null.
+func (o *OptNilSzWhyRecordsResponseRawData) SetToNull() {
+	o.Set = true
+	o.Null = true
+	var v SzWhyRecordsResponseRawData
+	o.Value = v
+}
+
+// Get returns value and boolean that denotes whether value was set.
+func (o OptNilSzWhyRecordsResponseRawData) Get() (v SzWhyRecordsResponseRawData, ok bool) {
+	if o.Null {
+		return v, false
+	}
+	if !o.Set {
+		return v, false
+	}
+	return o.Value, true
+}
+
+// Or returns value if set, or given parameter if does not.
+func (o OptNilSzWhyRecordsResponseRawData) Or(d SzWhyRecordsResponseRawData) SzWhyRecordsResponseRawData {
 	if v, ok := o.Get(); ok {
 		return v
 	}
@@ -2399,6 +3596,52 @@ func (o OptSzAttributeSearchResponseData) Get() (v SzAttributeSearchResponseData
 
 // Or returns value if set, or given parameter if does not.
 func (o OptSzAttributeSearchResponseData) Or(d SzAttributeSearchResponseData) SzAttributeSearchResponseData {
+	if v, ok := o.Get(); ok {
+		return v
+	}
+	return d
+}
+
+// NewOptSzAttributeSearchResultFeatures returns new OptSzAttributeSearchResultFeatures with value set to v.
+func NewOptSzAttributeSearchResultFeatures(v SzAttributeSearchResultFeatures) OptSzAttributeSearchResultFeatures {
+	return OptSzAttributeSearchResultFeatures{
+		Value: v,
+		Set:   true,
+	}
+}
+
+// OptSzAttributeSearchResultFeatures is optional SzAttributeSearchResultFeatures.
+type OptSzAttributeSearchResultFeatures struct {
+	Value SzAttributeSearchResultFeatures
+	Set   bool
+}
+
+// IsSet returns true if OptSzAttributeSearchResultFeatures was set.
+func (o OptSzAttributeSearchResultFeatures) IsSet() bool { return o.Set }
+
+// Reset unsets value.
+func (o *OptSzAttributeSearchResultFeatures) Reset() {
+	var v SzAttributeSearchResultFeatures
+	o.Value = v
+	o.Set = false
+}
+
+// SetTo sets value to v.
+func (o *OptSzAttributeSearchResultFeatures) SetTo(v SzAttributeSearchResultFeatures) {
+	o.Set = true
+	o.Value = v
+}
+
+// Get returns value and boolean that denotes whether value was set.
+func (o OptSzAttributeSearchResultFeatures) Get() (v SzAttributeSearchResultFeatures, ok bool) {
+	if !o.Set {
+		return v, false
+	}
+	return o.Value, true
+}
+
+// Or returns value if set, or given parameter if does not.
+func (o OptSzAttributeSearchResultFeatures) Or(d SzAttributeSearchResultFeatures) SzAttributeSearchResultFeatures {
 	if v, ok := o.Get(); ok {
 		return v
 	}
@@ -4061,6 +5304,52 @@ func (o OptSzReevaluateResponseData) Or(d SzReevaluateResponseData) SzReevaluate
 	return d
 }
 
+// NewOptSzRelatedEntityFeatures returns new OptSzRelatedEntityFeatures with value set to v.
+func NewOptSzRelatedEntityFeatures(v SzRelatedEntityFeatures) OptSzRelatedEntityFeatures {
+	return OptSzRelatedEntityFeatures{
+		Value: v,
+		Set:   true,
+	}
+}
+
+// OptSzRelatedEntityFeatures is optional SzRelatedEntityFeatures.
+type OptSzRelatedEntityFeatures struct {
+	Value SzRelatedEntityFeatures
+	Set   bool
+}
+
+// IsSet returns true if OptSzRelatedEntityFeatures was set.
+func (o OptSzRelatedEntityFeatures) IsSet() bool { return o.Set }
+
+// Reset unsets value.
+func (o *OptSzRelatedEntityFeatures) Reset() {
+	var v SzRelatedEntityFeatures
+	o.Value = v
+	o.Set = false
+}
+
+// SetTo sets value to v.
+func (o *OptSzRelatedEntityFeatures) SetTo(v SzRelatedEntityFeatures) {
+	o.Set = true
+	o.Value = v
+}
+
+// Get returns value and boolean that denotes whether value was set.
+func (o OptSzRelatedEntityFeatures) Get() (v SzRelatedEntityFeatures, ok bool) {
+	if !o.Set {
+		return v, false
+	}
+	return o.Value, true
+}
+
+// Or returns value if set, or given parameter if does not.
+func (o OptSzRelatedEntityFeatures) Or(d SzRelatedEntityFeatures) SzRelatedEntityFeatures {
+	if v, ok := o.Get(); ok {
+		return v
+	}
+	return d
+}
+
 // NewOptSzRelationDirection returns new OptSzRelationDirection with value set to v.
 func NewOptSzRelationDirection(v SzRelationDirection) OptSzRelationDirection {
 	return OptSzRelationDirection{
@@ -5371,12 +6660,46 @@ func (s *SzAttributeNecessity) UnmarshalText(data []byte) error {
 // Merged schema.
 // Ref: #/components/schemas/SzAttributeSearchResponse
 type SzAttributeSearchResponse struct {
-	Data OptSzAttributeSearchResponseData `json:"data"`
+	Meta  OptSzMeta  `json:"meta"`
+	Links OptSzLinks `json:"links"`
+	// The RAW result from the underlying native API function.
+	RawData OptNilSzAttributeSearchResponseRawData `json:"rawData"`
+	Data    OptSzAttributeSearchResponseData       `json:"data"`
+}
+
+// GetMeta returns the value of Meta.
+func (s *SzAttributeSearchResponse) GetMeta() OptSzMeta {
+	return s.Meta
+}
+
+// GetLinks returns the value of Links.
+func (s *SzAttributeSearchResponse) GetLinks() OptSzLinks {
+	return s.Links
+}
+
+// GetRawData returns the value of RawData.
+func (s *SzAttributeSearchResponse) GetRawData() OptNilSzAttributeSearchResponseRawData {
+	return s.RawData
 }
 
 // GetData returns the value of Data.
 func (s *SzAttributeSearchResponse) GetData() OptSzAttributeSearchResponseData {
 	return s.Data
+}
+
+// SetMeta sets the value of Meta.
+func (s *SzAttributeSearchResponse) SetMeta(val OptSzMeta) {
+	s.Meta = val
+}
+
+// SetLinks sets the value of Links.
+func (s *SzAttributeSearchResponse) SetLinks(val OptSzLinks) {
+	s.Links = val
+}
+
+// SetRawData sets the value of RawData.
+func (s *SzAttributeSearchResponse) SetRawData(val OptNilSzAttributeSearchResponseRawData) {
+	s.RawData = val
 }
 
 // SetData sets the value of Data.
@@ -5405,10 +6728,79 @@ func (s *SzAttributeSearchResponseData) SetSearchResults(val []SzAttributeSearch
 	s.SearchResults = val
 }
 
+// The RAW result from the underlying native API function.
+type SzAttributeSearchResponseRawData map[string]jx.Raw
+
+func (s *SzAttributeSearchResponseRawData) init() SzAttributeSearchResponseRawData {
+	m := *s
+	if m == nil {
+		m = map[string]jx.Raw{}
+		*s = m
+	}
+	return m
+}
+
 // Merged schema.
 // Ref: #/components/schemas/SzAttributeSearchResult
 type SzAttributeSearchResult struct {
-	ResultType OptSzAttributeSearchResultType `json:"resultType"`
+	// The unique numeric ID identifying the entity.
+	EntityId OptInt64 `json:"entityId"`
+	// The name associated with this entity that is considered the best name among all the associated
+	// names.
+	EntityName OptString `json:"entityName"`
+	// Usually the same as the entityName property, but this may differ if the entity was found based on
+	// a name search.  In such a case, this field represents the name that most closely matches the name
+	// that was searched on.
+	BestName OptString `json:"bestName"`
+	// The array of DataSourceRecordSummary instances describing the number of records associated with
+	// each data source that contributes to this entity.
+	RecordSummaries []SzDataSourceRecordSummary `json:"recordSummaries"`
+	// An array of names associated with the entity that are formatted for readability.  These may be
+	// prefixed by a "usage type" if one was provided (e.g.: "Joe Schmoe" or "AKA: Joseph P. Schmoe").
+	NameData []string `json:"nameData"`
+	// An array of characteristics associated with the entity that are formatted for readability.  These
+	// will be prefixed by a characteristic type and optionally by a "usage type" if one was provided.
+	// **NOTE:** The `characteristicData` field is derived from the feature data values that contribute
+	// to the `ATTRIBUTE_DATA` field at the record level in the "raw data" JSON.
+	CharacteristicData []string `json:"characteristicData"`
+	// An array of addresses associated with the entity that are formatted for readability.  These may be
+	// prefixed by a "usage type" if one was provided (e.g.: "HOME: 101 Main Street").
+	AddressData []string `json:"addressData"`
+	// An array of phone numbers associated with the entity that are formatted for readability.  These
+	// may be prefixed by a "usage type" if one was provided (e.g.: "HOME: 702-555-1212").
+	PhoneData []string `json:"phoneData"`
+	// An array of entity data associated with the entity where the items are formatted for readability.
+	// These will be prefixed by an identifier type and may be prefixed by a "usage type" if one was
+	// provided (e.g.: "ID: 123456789" or "EMAIL: WORK: joe@nowhere.com").
+	IdentifierData []string `json:"identifierData"`
+	// An array of relationship data items associated with the entity that describes disclosed
+	// relationships.
+	RelationshipData []string `json:"relationshipData"`
+	// An array of associated data items that were loaded with the entity's records but not normally
+	// recognized or used for entity resolution. This array usually contains useful information from the
+	// source systems.
+	OtherData []string `json:"otherData"`
+	// The array of `SzMatchedRecord` instances describing the records associated with this entity.
+	Records []SzMatchedRecord `json:"records"`
+	// The map of string feature names to arrays of SzEntityFeature instances describing the values
+	// associated with each respective feature name.
+	Features OptSzAttributeSearchResultFeatures `json:"features"`
+	// If true then this `SzResolvedEntity` has complete features and records, otherwise they are not
+	// provided.  Also, the recordSummary items may be missing the topRecordIds if partial is true.  This
+	// can be true for partially retrieved related entities or if features are suppressed, if the detail
+	// level has suppressed records or related matching info (in the case of related entities) or if the
+	// force-minimal response flag has been been specified.
+	Partial OptBool `json:"partial"`
+	// The timestamp that the entity was last seen (i.e.: most recent record was loaded).
+	LastSeenTimestamp OptDateTime `json:"lastSeenTimestamp"`
+	// The integer "match level" describing how the related entity matched to the primary resolved entity.
+	MatchLevel OptInt32 `json:"matchLevel"`
+	// The match key describing what features matched between the primary resolved entity and the related
+	// entity.
+	MatchKey OptString `json:"matchKey"`
+	// The code identifying the resolution rule that related this entity to the primary resolved entity.
+	ResolutionRuleCode OptString                      `json:"resolutionRuleCode"`
+	ResultType         OptSzAttributeSearchResultType `json:"resultType"`
 	// The best name score between the search criteria and this matched search entity.  The higher the
 	// score the closer the name match.  This uses either the full name score or organization name score.
 	//  If none exist then this filed is omitted.
@@ -5418,6 +6810,96 @@ type SzAttributeSearchResult struct {
 	// The array of RelatedEntity instances describing the possible matches, discovered relationships,
 	// and disclosed relationships.
 	RelatedEntities []SzRelatedEntity `json:"relatedEntities"`
+}
+
+// GetEntityId returns the value of EntityId.
+func (s *SzAttributeSearchResult) GetEntityId() OptInt64 {
+	return s.EntityId
+}
+
+// GetEntityName returns the value of EntityName.
+func (s *SzAttributeSearchResult) GetEntityName() OptString {
+	return s.EntityName
+}
+
+// GetBestName returns the value of BestName.
+func (s *SzAttributeSearchResult) GetBestName() OptString {
+	return s.BestName
+}
+
+// GetRecordSummaries returns the value of RecordSummaries.
+func (s *SzAttributeSearchResult) GetRecordSummaries() []SzDataSourceRecordSummary {
+	return s.RecordSummaries
+}
+
+// GetNameData returns the value of NameData.
+func (s *SzAttributeSearchResult) GetNameData() []string {
+	return s.NameData
+}
+
+// GetCharacteristicData returns the value of CharacteristicData.
+func (s *SzAttributeSearchResult) GetCharacteristicData() []string {
+	return s.CharacteristicData
+}
+
+// GetAddressData returns the value of AddressData.
+func (s *SzAttributeSearchResult) GetAddressData() []string {
+	return s.AddressData
+}
+
+// GetPhoneData returns the value of PhoneData.
+func (s *SzAttributeSearchResult) GetPhoneData() []string {
+	return s.PhoneData
+}
+
+// GetIdentifierData returns the value of IdentifierData.
+func (s *SzAttributeSearchResult) GetIdentifierData() []string {
+	return s.IdentifierData
+}
+
+// GetRelationshipData returns the value of RelationshipData.
+func (s *SzAttributeSearchResult) GetRelationshipData() []string {
+	return s.RelationshipData
+}
+
+// GetOtherData returns the value of OtherData.
+func (s *SzAttributeSearchResult) GetOtherData() []string {
+	return s.OtherData
+}
+
+// GetRecords returns the value of Records.
+func (s *SzAttributeSearchResult) GetRecords() []SzMatchedRecord {
+	return s.Records
+}
+
+// GetFeatures returns the value of Features.
+func (s *SzAttributeSearchResult) GetFeatures() OptSzAttributeSearchResultFeatures {
+	return s.Features
+}
+
+// GetPartial returns the value of Partial.
+func (s *SzAttributeSearchResult) GetPartial() OptBool {
+	return s.Partial
+}
+
+// GetLastSeenTimestamp returns the value of LastSeenTimestamp.
+func (s *SzAttributeSearchResult) GetLastSeenTimestamp() OptDateTime {
+	return s.LastSeenTimestamp
+}
+
+// GetMatchLevel returns the value of MatchLevel.
+func (s *SzAttributeSearchResult) GetMatchLevel() OptInt32 {
+	return s.MatchLevel
+}
+
+// GetMatchKey returns the value of MatchKey.
+func (s *SzAttributeSearchResult) GetMatchKey() OptString {
+	return s.MatchKey
+}
+
+// GetResolutionRuleCode returns the value of ResolutionRuleCode.
+func (s *SzAttributeSearchResult) GetResolutionRuleCode() OptString {
+	return s.ResolutionRuleCode
 }
 
 // GetResultType returns the value of ResultType.
@@ -5438,6 +6920,96 @@ func (s *SzAttributeSearchResult) GetFeatureScores() OptNilSzAttributeSearchResu
 // GetRelatedEntities returns the value of RelatedEntities.
 func (s *SzAttributeSearchResult) GetRelatedEntities() []SzRelatedEntity {
 	return s.RelatedEntities
+}
+
+// SetEntityId sets the value of EntityId.
+func (s *SzAttributeSearchResult) SetEntityId(val OptInt64) {
+	s.EntityId = val
+}
+
+// SetEntityName sets the value of EntityName.
+func (s *SzAttributeSearchResult) SetEntityName(val OptString) {
+	s.EntityName = val
+}
+
+// SetBestName sets the value of BestName.
+func (s *SzAttributeSearchResult) SetBestName(val OptString) {
+	s.BestName = val
+}
+
+// SetRecordSummaries sets the value of RecordSummaries.
+func (s *SzAttributeSearchResult) SetRecordSummaries(val []SzDataSourceRecordSummary) {
+	s.RecordSummaries = val
+}
+
+// SetNameData sets the value of NameData.
+func (s *SzAttributeSearchResult) SetNameData(val []string) {
+	s.NameData = val
+}
+
+// SetCharacteristicData sets the value of CharacteristicData.
+func (s *SzAttributeSearchResult) SetCharacteristicData(val []string) {
+	s.CharacteristicData = val
+}
+
+// SetAddressData sets the value of AddressData.
+func (s *SzAttributeSearchResult) SetAddressData(val []string) {
+	s.AddressData = val
+}
+
+// SetPhoneData sets the value of PhoneData.
+func (s *SzAttributeSearchResult) SetPhoneData(val []string) {
+	s.PhoneData = val
+}
+
+// SetIdentifierData sets the value of IdentifierData.
+func (s *SzAttributeSearchResult) SetIdentifierData(val []string) {
+	s.IdentifierData = val
+}
+
+// SetRelationshipData sets the value of RelationshipData.
+func (s *SzAttributeSearchResult) SetRelationshipData(val []string) {
+	s.RelationshipData = val
+}
+
+// SetOtherData sets the value of OtherData.
+func (s *SzAttributeSearchResult) SetOtherData(val []string) {
+	s.OtherData = val
+}
+
+// SetRecords sets the value of Records.
+func (s *SzAttributeSearchResult) SetRecords(val []SzMatchedRecord) {
+	s.Records = val
+}
+
+// SetFeatures sets the value of Features.
+func (s *SzAttributeSearchResult) SetFeatures(val OptSzAttributeSearchResultFeatures) {
+	s.Features = val
+}
+
+// SetPartial sets the value of Partial.
+func (s *SzAttributeSearchResult) SetPartial(val OptBool) {
+	s.Partial = val
+}
+
+// SetLastSeenTimestamp sets the value of LastSeenTimestamp.
+func (s *SzAttributeSearchResult) SetLastSeenTimestamp(val OptDateTime) {
+	s.LastSeenTimestamp = val
+}
+
+// SetMatchLevel sets the value of MatchLevel.
+func (s *SzAttributeSearchResult) SetMatchLevel(val OptInt32) {
+	s.MatchLevel = val
+}
+
+// SetMatchKey sets the value of MatchKey.
+func (s *SzAttributeSearchResult) SetMatchKey(val OptString) {
+	s.MatchKey = val
+}
+
+// SetResolutionRuleCode sets the value of ResolutionRuleCode.
+func (s *SzAttributeSearchResult) SetResolutionRuleCode(val OptString) {
+	s.ResolutionRuleCode = val
 }
 
 // SetResultType sets the value of ResultType.
@@ -5467,6 +7039,19 @@ func (s *SzAttributeSearchResultFeatureScores) init() SzAttributeSearchResultFea
 	m := *s
 	if m == nil {
 		m = map[string][]SzSearchFeatureScore{}
+		*s = m
+	}
+	return m
+}
+
+// The map of string feature names to arrays of SzEntityFeature instances describing the values
+// associated with each respective feature name.
+type SzAttributeSearchResultFeatures map[string][]SzEntityFeature
+
+func (s *SzAttributeSearchResultFeatures) init() SzAttributeSearchResultFeatures {
+	m := *s
+	if m == nil {
+		m = map[string][]SzEntityFeature{}
 		*s = m
 	}
 	return m
@@ -5631,12 +7216,46 @@ func (s *SzAttributeType) SetInternal(val OptBool) {
 // Merged schema.
 // Ref: #/components/schemas/SzAttributeTypeResponse
 type SzAttributeTypeResponse struct {
-	Data OptSzAttributeTypeResponseData `json:"data"`
+	Meta  OptSzMeta  `json:"meta"`
+	Links OptSzLinks `json:"links"`
+	// The RAW result from the underlying native API function.
+	RawData OptNilSzAttributeTypeResponseRawData `json:"rawData"`
+	Data    OptSzAttributeTypeResponseData       `json:"data"`
+}
+
+// GetMeta returns the value of Meta.
+func (s *SzAttributeTypeResponse) GetMeta() OptSzMeta {
+	return s.Meta
+}
+
+// GetLinks returns the value of Links.
+func (s *SzAttributeTypeResponse) GetLinks() OptSzLinks {
+	return s.Links
+}
+
+// GetRawData returns the value of RawData.
+func (s *SzAttributeTypeResponse) GetRawData() OptNilSzAttributeTypeResponseRawData {
+	return s.RawData
 }
 
 // GetData returns the value of Data.
 func (s *SzAttributeTypeResponse) GetData() OptSzAttributeTypeResponseData {
 	return s.Data
+}
+
+// SetMeta sets the value of Meta.
+func (s *SzAttributeTypeResponse) SetMeta(val OptSzMeta) {
+	s.Meta = val
+}
+
+// SetLinks sets the value of Links.
+func (s *SzAttributeTypeResponse) SetLinks(val OptSzLinks) {
+	s.Links = val
+}
+
+// SetRawData sets the value of RawData.
+func (s *SzAttributeTypeResponse) SetRawData(val OptNilSzAttributeTypeResponseRawData) {
+	s.RawData = val
 }
 
 // SetData sets the value of Data.
@@ -5662,15 +7281,61 @@ func (s *SzAttributeTypeResponseData) SetAttributeType(val OptSzAttributeType) {
 	s.AttributeType = val
 }
 
+// The RAW result from the underlying native API function.
+type SzAttributeTypeResponseRawData map[string]jx.Raw
+
+func (s *SzAttributeTypeResponseRawData) init() SzAttributeTypeResponseRawData {
+	m := *s
+	if m == nil {
+		m = map[string]jx.Raw{}
+		*s = m
+	}
+	return m
+}
+
 // Merged schema.
 // Ref: #/components/schemas/SzAttributeTypesResponse
 type SzAttributeTypesResponse struct {
-	Data OptSzAttributeTypesResponseData `json:"data"`
+	Meta  OptSzMeta  `json:"meta"`
+	Links OptSzLinks `json:"links"`
+	// The RAW result from the underlying native API function.
+	RawData OptNilSzAttributeTypesResponseRawData `json:"rawData"`
+	Data    OptSzAttributeTypesResponseData       `json:"data"`
+}
+
+// GetMeta returns the value of Meta.
+func (s *SzAttributeTypesResponse) GetMeta() OptSzMeta {
+	return s.Meta
+}
+
+// GetLinks returns the value of Links.
+func (s *SzAttributeTypesResponse) GetLinks() OptSzLinks {
+	return s.Links
+}
+
+// GetRawData returns the value of RawData.
+func (s *SzAttributeTypesResponse) GetRawData() OptNilSzAttributeTypesResponseRawData {
+	return s.RawData
 }
 
 // GetData returns the value of Data.
 func (s *SzAttributeTypesResponse) GetData() OptSzAttributeTypesResponseData {
 	return s.Data
+}
+
+// SetMeta sets the value of Meta.
+func (s *SzAttributeTypesResponse) SetMeta(val OptSzMeta) {
+	s.Meta = val
+}
+
+// SetLinks sets the value of Links.
+func (s *SzAttributeTypesResponse) SetLinks(val OptSzLinks) {
+	s.Links = val
+}
+
+// SetRawData sets the value of RawData.
+func (s *SzAttributeTypesResponse) SetRawData(val OptNilSzAttributeTypesResponseRawData) {
+	s.RawData = val
 }
 
 // SetData sets the value of Data.
@@ -5695,6 +7360,18 @@ func (s *SzAttributeTypesResponseData) GetAttributeTypes() []SzAttributeType {
 // SetAttributeTypes sets the value of AttributeTypes.
 func (s *SzAttributeTypesResponseData) SetAttributeTypes(val []SzAttributeType) {
 	s.AttributeTypes = val
+}
+
+// The RAW result from the underlying native API function.
+type SzAttributeTypesResponseRawData map[string]jx.Raw
+
+func (s *SzAttributeTypesResponseRawData) init() SzAttributeTypesResponseRawData {
+	m := *s
+	if m == nil {
+		m = map[string]jx.Raw{}
+		*s = m
+	}
+	return m
 }
 
 // Represents the base information included in all responses sans the actual data for the response.
@@ -6420,12 +8097,46 @@ func (s *SzDataSourceRecordSummary) SetTopRecordIds(val OptNilStringArray) {
 // Merged schema.
 // Ref: #/components/schemas/SzDataSourceResponse
 type SzDataSourceResponse struct {
-	Data OptSzDataSourceResponseData `json:"data"`
+	Meta  OptSzMeta  `json:"meta"`
+	Links OptSzLinks `json:"links"`
+	// The RAW result from the underlying native API function.
+	RawData OptNilSzDataSourceResponseRawData `json:"rawData"`
+	Data    OptSzDataSourceResponseData       `json:"data"`
+}
+
+// GetMeta returns the value of Meta.
+func (s *SzDataSourceResponse) GetMeta() OptSzMeta {
+	return s.Meta
+}
+
+// GetLinks returns the value of Links.
+func (s *SzDataSourceResponse) GetLinks() OptSzLinks {
+	return s.Links
+}
+
+// GetRawData returns the value of RawData.
+func (s *SzDataSourceResponse) GetRawData() OptNilSzDataSourceResponseRawData {
+	return s.RawData
 }
 
 // GetData returns the value of Data.
 func (s *SzDataSourceResponse) GetData() OptSzDataSourceResponseData {
 	return s.Data
+}
+
+// SetMeta sets the value of Meta.
+func (s *SzDataSourceResponse) SetMeta(val OptSzMeta) {
+	s.Meta = val
+}
+
+// SetLinks sets the value of Links.
+func (s *SzDataSourceResponse) SetLinks(val OptSzLinks) {
+	s.Links = val
+}
+
+// SetRawData sets the value of RawData.
+func (s *SzDataSourceResponse) SetRawData(val OptNilSzDataSourceResponseRawData) {
+	s.RawData = val
 }
 
 // SetData sets the value of Data.
@@ -6452,15 +8163,61 @@ func (s *SzDataSourceResponseData) SetDataSource(val OptSzDataSource) {
 	s.DataSource = val
 }
 
+// The RAW result from the underlying native API function.
+type SzDataSourceResponseRawData map[string]jx.Raw
+
+func (s *SzDataSourceResponseRawData) init() SzDataSourceResponseRawData {
+	m := *s
+	if m == nil {
+		m = map[string]jx.Raw{}
+		*s = m
+	}
+	return m
+}
+
 // Merged schema.
 // Ref: #/components/schemas/SzDataSourcesResponse
 type SzDataSourcesResponse struct {
-	Data OptSzDataSourcesResponseData `json:"data"`
+	Meta  OptSzMeta  `json:"meta"`
+	Links OptSzLinks `json:"links"`
+	// The RAW result from the underlying native API function.
+	RawData OptNilSzDataSourcesResponseRawData `json:"rawData"`
+	Data    OptSzDataSourcesResponseData       `json:"data"`
+}
+
+// GetMeta returns the value of Meta.
+func (s *SzDataSourcesResponse) GetMeta() OptSzMeta {
+	return s.Meta
+}
+
+// GetLinks returns the value of Links.
+func (s *SzDataSourcesResponse) GetLinks() OptSzLinks {
+	return s.Links
+}
+
+// GetRawData returns the value of RawData.
+func (s *SzDataSourcesResponse) GetRawData() OptNilSzDataSourcesResponseRawData {
+	return s.RawData
 }
 
 // GetData returns the value of Data.
 func (s *SzDataSourcesResponse) GetData() OptSzDataSourcesResponseData {
 	return s.Data
+}
+
+// SetMeta sets the value of Meta.
+func (s *SzDataSourcesResponse) SetMeta(val OptSzMeta) {
+	s.Meta = val
+}
+
+// SetLinks sets the value of Links.
+func (s *SzDataSourcesResponse) SetLinks(val OptSzLinks) {
+	s.Links = val
+}
+
+// SetRawData sets the value of RawData.
+func (s *SzDataSourcesResponse) SetRawData(val OptNilSzDataSourcesResponseRawData) {
+	s.RawData = val
 }
 
 // SetData sets the value of Data.
@@ -6512,15 +8269,61 @@ func (s *SzDataSourcesResponseDataDataSourceDetails) init() SzDataSourcesRespons
 	return m
 }
 
+// The RAW result from the underlying native API function.
+type SzDataSourcesResponseRawData map[string]jx.Raw
+
+func (s *SzDataSourcesResponseRawData) init() SzDataSourcesResponseRawData {
+	m := *s
+	if m == nil {
+		m = map[string]jx.Raw{}
+		*s = m
+	}
+	return m
+}
+
 // Merged schema.
 // Ref: #/components/schemas/SzDeleteRecordResponse
 type SzDeleteRecordResponse struct {
-	Data OptSzDeleteRecordResponseData `json:"data"`
+	Meta  OptSzMeta  `json:"meta"`
+	Links OptSzLinks `json:"links"`
+	// The RAW result from the underlying native API function.
+	RawData OptNilSzDeleteRecordResponseRawData `json:"rawData"`
+	Data    OptSzDeleteRecordResponseData       `json:"data"`
+}
+
+// GetMeta returns the value of Meta.
+func (s *SzDeleteRecordResponse) GetMeta() OptSzMeta {
+	return s.Meta
+}
+
+// GetLinks returns the value of Links.
+func (s *SzDeleteRecordResponse) GetLinks() OptSzLinks {
+	return s.Links
+}
+
+// GetRawData returns the value of RawData.
+func (s *SzDeleteRecordResponse) GetRawData() OptNilSzDeleteRecordResponseRawData {
+	return s.RawData
 }
 
 // GetData returns the value of Data.
 func (s *SzDeleteRecordResponse) GetData() OptSzDeleteRecordResponseData {
 	return s.Data
+}
+
+// SetMeta sets the value of Meta.
+func (s *SzDeleteRecordResponse) SetMeta(val OptSzMeta) {
+	s.Meta = val
+}
+
+// SetLinks sets the value of Links.
+func (s *SzDeleteRecordResponse) SetLinks(val OptSzLinks) {
+	s.Links = val
+}
+
+// SetRawData sets the value of RawData.
+func (s *SzDeleteRecordResponse) SetRawData(val OptNilSzDeleteRecordResponseRawData) {
+	s.RawData = val
 }
 
 // SetData sets the value of Data.
@@ -6545,6 +8348,18 @@ func (s *SzDeleteRecordResponseData) GetInfo() OptSzResolutionInfo {
 // SetInfo sets the value of Info.
 func (s *SzDeleteRecordResponseData) SetInfo(val OptSzResolutionInfo) {
 	s.Info = val
+}
+
+// The RAW result from the underlying native API function.
+type SzDeleteRecordResponseRawData map[string]jx.Raw
+
+func (s *SzDeleteRecordResponseRawData) init() SzDeleteRecordResponseRawData {
+	m := *s
+	if m == nil {
+		m = map[string]jx.Raw{}
+		*s = m
+	}
+	return m
 }
 
 // Describes the level of detail desired for entity data when obtained via the various endpoints that
@@ -7059,12 +8874,46 @@ func (s *SzEntityNetworkData) SetEntities(val []SzEntityData) {
 // Merged schema.
 // Ref: #/components/schemas/SzEntityNetworkResponse
 type SzEntityNetworkResponse struct {
-	Data OptSzEntityNetworkData `json:"data"`
+	Meta  OptSzMeta  `json:"meta"`
+	Links OptSzLinks `json:"links"`
+	// The RAW result from the underlying native API function.
+	RawData OptNilSzEntityNetworkResponseRawData `json:"rawData"`
+	Data    OptSzEntityNetworkData               `json:"data"`
+}
+
+// GetMeta returns the value of Meta.
+func (s *SzEntityNetworkResponse) GetMeta() OptSzMeta {
+	return s.Meta
+}
+
+// GetLinks returns the value of Links.
+func (s *SzEntityNetworkResponse) GetLinks() OptSzLinks {
+	return s.Links
+}
+
+// GetRawData returns the value of RawData.
+func (s *SzEntityNetworkResponse) GetRawData() OptNilSzEntityNetworkResponseRawData {
+	return s.RawData
 }
 
 // GetData returns the value of Data.
 func (s *SzEntityNetworkResponse) GetData() OptSzEntityNetworkData {
 	return s.Data
+}
+
+// SetMeta sets the value of Meta.
+func (s *SzEntityNetworkResponse) SetMeta(val OptSzMeta) {
+	s.Meta = val
+}
+
+// SetLinks sets the value of Links.
+func (s *SzEntityNetworkResponse) SetLinks(val OptSzLinks) {
+	s.Links = val
+}
+
+// SetRawData sets the value of RawData.
+func (s *SzEntityNetworkResponse) SetRawData(val OptNilSzEntityNetworkResponseRawData) {
+	s.RawData = val
 }
 
 // SetData sets the value of Data.
@@ -7073,6 +8922,18 @@ func (s *SzEntityNetworkResponse) SetData(val OptSzEntityNetworkData) {
 }
 
 func (*SzEntityNetworkResponse) findEntityNetworkRes() {}
+
+// The RAW result from the underlying native API function.
+type SzEntityNetworkResponseRawData map[string]jx.Raw
+
+func (s *SzEntityNetworkResponseRawData) init() SzEntityNetworkResponseRawData {
+	m := *s
+	if m == nil {
+		m = map[string]jx.Raw{}
+		*s = m
+	}
+	return m
+}
 
 // Describes a path between two entities using the entity IDs of the entities in the path.
 // Ref: #/components/schemas/SzEntityPath
@@ -7149,12 +9010,46 @@ func (s *SzEntityPathData) SetEntities(val []SzEntityData) {
 // Merged schema.
 // Ref: #/components/schemas/SzEntityPathResponse
 type SzEntityPathResponse struct {
-	Data OptSzEntityPathData `json:"data"`
+	Meta  OptSzMeta  `json:"meta"`
+	Links OptSzLinks `json:"links"`
+	// The RAW result from the underlying native API function.
+	RawData OptNilSzEntityPathResponseRawData `json:"rawData"`
+	Data    OptSzEntityPathData               `json:"data"`
+}
+
+// GetMeta returns the value of Meta.
+func (s *SzEntityPathResponse) GetMeta() OptSzMeta {
+	return s.Meta
+}
+
+// GetLinks returns the value of Links.
+func (s *SzEntityPathResponse) GetLinks() OptSzLinks {
+	return s.Links
+}
+
+// GetRawData returns the value of RawData.
+func (s *SzEntityPathResponse) GetRawData() OptNilSzEntityPathResponseRawData {
+	return s.RawData
 }
 
 // GetData returns the value of Data.
 func (s *SzEntityPathResponse) GetData() OptSzEntityPathData {
 	return s.Data
+}
+
+// SetMeta sets the value of Meta.
+func (s *SzEntityPathResponse) SetMeta(val OptSzMeta) {
+	s.Meta = val
+}
+
+// SetLinks sets the value of Links.
+func (s *SzEntityPathResponse) SetLinks(val OptSzLinks) {
+	s.Links = val
+}
+
+// SetRawData sets the value of RawData.
+func (s *SzEntityPathResponse) SetRawData(val OptNilSzEntityPathResponseRawData) {
+	s.RawData = val
 }
 
 // SetData sets the value of Data.
@@ -7163,6 +9058,18 @@ func (s *SzEntityPathResponse) SetData(val OptSzEntityPathData) {
 }
 
 func (*SzEntityPathResponse) findEntityPathRes() {}
+
+// The RAW result from the underlying native API function.
+type SzEntityPathResponseRawData map[string]jx.Raw
+
+func (s *SzEntityPathResponseRawData) init() SzEntityPathResponseRawData {
+	m := *s
+	if m == nil {
+		m = map[string]jx.Raw{}
+		*s = m
+	}
+	return m
+}
 
 // Describes a record (aka: observed entity) that has been loaded for a particular data source.
 // Ref: #/components/schemas/SzEntityRecord
@@ -7342,12 +9249,46 @@ func (s *SzEntityRecordOriginalSourceData) init() SzEntityRecordOriginalSourceDa
 // Merged schema.
 // Ref: #/components/schemas/SzEntityResponse
 type SzEntityResponse struct {
-	Data OptSzEntityData `json:"data"`
+	Meta  OptSzMeta  `json:"meta"`
+	Links OptSzLinks `json:"links"`
+	// The RAW result from the underlying native API function.
+	RawData OptNilSzEntityResponseRawData `json:"rawData"`
+	Data    OptSzEntityData               `json:"data"`
+}
+
+// GetMeta returns the value of Meta.
+func (s *SzEntityResponse) GetMeta() OptSzMeta {
+	return s.Meta
+}
+
+// GetLinks returns the value of Links.
+func (s *SzEntityResponse) GetLinks() OptSzLinks {
+	return s.Links
+}
+
+// GetRawData returns the value of RawData.
+func (s *SzEntityResponse) GetRawData() OptNilSzEntityResponseRawData {
+	return s.RawData
 }
 
 // GetData returns the value of Data.
 func (s *SzEntityResponse) GetData() OptSzEntityData {
 	return s.Data
+}
+
+// SetMeta sets the value of Meta.
+func (s *SzEntityResponse) SetMeta(val OptSzMeta) {
+	s.Meta = val
+}
+
+// SetLinks sets the value of Links.
+func (s *SzEntityResponse) SetLinks(val OptSzLinks) {
+	s.Links = val
+}
+
+// SetRawData sets the value of RawData.
+func (s *SzEntityResponse) SetRawData(val OptNilSzEntityResponseRawData) {
+	s.RawData = val
 }
 
 // SetData sets the value of Data.
@@ -7357,6 +9298,18 @@ func (s *SzEntityResponse) SetData(val OptSzEntityData) {
 
 func (*SzEntityResponse) getEntityByEntityIdRes() {}
 func (*SzEntityResponse) getEntityByRecordIdRes() {}
+
+// The RAW result from the underlying native API function.
+type SzEntityResponseRawData map[string]jx.Raw
+
+func (s *SzEntityResponseRawData) init() SzEntityResponseRawData {
+	m := *s
+	if m == nil {
+		m = map[string]jx.Raw{}
+		*s = m
+	}
+	return m
+}
 
 // Describes an error.
 // Ref: #/components/schemas/SzError
@@ -7729,13 +9682,47 @@ func (s *SzFlaggedRecord) SetFlags(val []string) {
 // Merged schema.
 // Ref: #/components/schemas/SzHowEntityResponse
 type SzHowEntityResponse struct {
+	Meta  OptSzMeta  `json:"meta"`
+	Links OptSzLinks `json:"links"`
+	// The RAW result from the underlying native API function.
+	RawData OptNilSzHowEntityResponseRawData `json:"rawData"`
 	// The data field is the `SzHowEntityResult` itself.
 	Data OptSzHowEntityResult `json:"data"`
+}
+
+// GetMeta returns the value of Meta.
+func (s *SzHowEntityResponse) GetMeta() OptSzMeta {
+	return s.Meta
+}
+
+// GetLinks returns the value of Links.
+func (s *SzHowEntityResponse) GetLinks() OptSzLinks {
+	return s.Links
+}
+
+// GetRawData returns the value of RawData.
+func (s *SzHowEntityResponse) GetRawData() OptNilSzHowEntityResponseRawData {
+	return s.RawData
 }
 
 // GetData returns the value of Data.
 func (s *SzHowEntityResponse) GetData() OptSzHowEntityResult {
 	return s.Data
+}
+
+// SetMeta sets the value of Meta.
+func (s *SzHowEntityResponse) SetMeta(val OptSzMeta) {
+	s.Meta = val
+}
+
+// SetLinks sets the value of Links.
+func (s *SzHowEntityResponse) SetLinks(val OptSzLinks) {
+	s.Links = val
+}
+
+// SetRawData sets the value of RawData.
+func (s *SzHowEntityResponse) SetRawData(val OptNilSzHowEntityResponseRawData) {
+	s.RawData = val
 }
 
 // SetData sets the value of Data.
@@ -7745,6 +9732,18 @@ func (s *SzHowEntityResponse) SetData(val OptSzHowEntityResult) {
 
 func (*SzHowEntityResponse) howEntityByEntityIDRes() {}
 func (*SzHowEntityResponse) howEntityByRecordIDRes() {}
+
+// The RAW result from the underlying native API function.
+type SzHowEntityResponseRawData map[string]jx.Raw
+
+func (s *SzHowEntityResponseRawData) init() SzHowEntityResponseRawData {
+	m := *s
+	if m == nil {
+		m = map[string]jx.Raw{}
+		*s = m
+	}
+	return m
+}
 
 // Describes the result of the "how entity" operation as a mapping of non-singleton virtual entity
 // ID's to their corresponding `SzResolutionStep` instances as well as an array of `SzVirtualEntity`
@@ -8016,12 +10015,46 @@ func (s *SzLicenseInfo) SetRecordLimit(val OptInt64) {
 // Merged schema.
 // Ref: #/components/schemas/SzLicenseResponse
 type SzLicenseResponse struct {
-	Data OptSzLicenseResponseData `json:"data"`
+	Meta  OptSzMeta  `json:"meta"`
+	Links OptSzLinks `json:"links"`
+	// The RAW result from the underlying native API function.
+	RawData OptNilSzLicenseResponseRawData `json:"rawData"`
+	Data    OptSzLicenseResponseData       `json:"data"`
+}
+
+// GetMeta returns the value of Meta.
+func (s *SzLicenseResponse) GetMeta() OptSzMeta {
+	return s.Meta
+}
+
+// GetLinks returns the value of Links.
+func (s *SzLicenseResponse) GetLinks() OptSzLinks {
+	return s.Links
+}
+
+// GetRawData returns the value of RawData.
+func (s *SzLicenseResponse) GetRawData() OptNilSzLicenseResponseRawData {
+	return s.RawData
 }
 
 // GetData returns the value of Data.
 func (s *SzLicenseResponse) GetData() OptSzLicenseResponseData {
 	return s.Data
+}
+
+// SetMeta sets the value of Meta.
+func (s *SzLicenseResponse) SetMeta(val OptSzMeta) {
+	s.Meta = val
+}
+
+// SetLinks sets the value of Links.
+func (s *SzLicenseResponse) SetLinks(val OptSzLinks) {
+	s.Links = val
+}
+
+// SetRawData sets the value of RawData.
+func (s *SzLicenseResponse) SetRawData(val OptNilSzLicenseResponseRawData) {
+	s.RawData = val
 }
 
 // SetData sets the value of Data.
@@ -8045,6 +10078,18 @@ func (s *SzLicenseResponseData) GetLicense() OptSzLicenseInfo {
 // SetLicense sets the value of License.
 func (s *SzLicenseResponseData) SetLicense(val OptSzLicenseInfo) {
 	s.License = val
+}
+
+// The RAW result from the underlying native API function.
+type SzLicenseResponseRawData map[string]jx.Raw
+
+func (s *SzLicenseResponseRawData) init() SzLicenseResponseRawData {
+	m := *s
+	if m == nil {
+		m = map[string]jx.Raw{}
+		*s = m
+	}
+	return m
 }
 
 // Represents the default links returned with each response.
@@ -8077,12 +10122,46 @@ func (s *SzLinks) SetOpenApiSpecification(val OptString) {
 // Merged schema.
 // Ref: #/components/schemas/SzLoadRecordResponse
 type SzLoadRecordResponse struct {
-	Data OptSzLoadRecordResponseData `json:"data"`
+	Meta  OptSzMeta  `json:"meta"`
+	Links OptSzLinks `json:"links"`
+	// The RAW result from the underlying native API function.
+	RawData OptNilSzLoadRecordResponseRawData `json:"rawData"`
+	Data    OptSzLoadRecordResponseData       `json:"data"`
+}
+
+// GetMeta returns the value of Meta.
+func (s *SzLoadRecordResponse) GetMeta() OptSzMeta {
+	return s.Meta
+}
+
+// GetLinks returns the value of Links.
+func (s *SzLoadRecordResponse) GetLinks() OptSzLinks {
+	return s.Links
+}
+
+// GetRawData returns the value of RawData.
+func (s *SzLoadRecordResponse) GetRawData() OptNilSzLoadRecordResponseRawData {
+	return s.RawData
 }
 
 // GetData returns the value of Data.
 func (s *SzLoadRecordResponse) GetData() OptSzLoadRecordResponseData {
 	return s.Data
+}
+
+// SetMeta sets the value of Meta.
+func (s *SzLoadRecordResponse) SetMeta(val OptSzMeta) {
+	s.Meta = val
+}
+
+// SetLinks sets the value of Links.
+func (s *SzLoadRecordResponse) SetLinks(val OptSzLinks) {
+	s.Links = val
+}
+
+// SetRawData sets the value of RawData.
+func (s *SzLoadRecordResponse) SetRawData(val OptNilSzLoadRecordResponseRawData) {
+	s.RawData = val
 }
 
 // SetData sets the value of Data.
@@ -8120,6 +10199,18 @@ func (s *SzLoadRecordResponseData) SetRecordId(val OptString) {
 // SetInfo sets the value of Info.
 func (s *SzLoadRecordResponseData) SetInfo(val OptSzResolutionInfo) {
 	s.Info = val
+}
+
+// The RAW result from the underlying native API function.
+type SzLoadRecordResponseRawData map[string]jx.Raw
+
+func (s *SzLoadRecordResponseRawData) init() SzLoadRecordResponseRawData {
+	m := *s
+	if m == nil {
+		m = map[string]jx.Raw{}
+		*s = m
+	}
+	return m
 }
 
 // Describes the various match levels describing how two records resolve against each other.  The
@@ -8738,12 +10829,46 @@ func NewStringSzRecordIdentifier(v string) SzRecordIdentifier {
 // Merged schema.
 // Ref: #/components/schemas/SzRecordResponse
 type SzRecordResponse struct {
-	Data OptSzRecordResponseData `json:"data"`
+	Meta  OptSzMeta  `json:"meta"`
+	Links OptSzLinks `json:"links"`
+	// The RAW result from the underlying native API function.
+	RawData OptNilSzRecordResponseRawData `json:"rawData"`
+	Data    OptSzRecordResponseData       `json:"data"`
+}
+
+// GetMeta returns the value of Meta.
+func (s *SzRecordResponse) GetMeta() OptSzMeta {
+	return s.Meta
+}
+
+// GetLinks returns the value of Links.
+func (s *SzRecordResponse) GetLinks() OptSzLinks {
+	return s.Links
+}
+
+// GetRawData returns the value of RawData.
+func (s *SzRecordResponse) GetRawData() OptNilSzRecordResponseRawData {
+	return s.RawData
 }
 
 // GetData returns the value of Data.
 func (s *SzRecordResponse) GetData() OptSzRecordResponseData {
 	return s.Data
+}
+
+// SetMeta sets the value of Meta.
+func (s *SzRecordResponse) SetMeta(val OptSzMeta) {
+	s.Meta = val
+}
+
+// SetLinks sets the value of Links.
+func (s *SzRecordResponse) SetLinks(val OptSzLinks) {
+	s.Links = val
+}
+
+// SetRawData sets the value of RawData.
+func (s *SzRecordResponse) SetRawData(val OptNilSzRecordResponseRawData) {
+	s.RawData = val
 }
 
 // SetData sets the value of Data.
@@ -8768,15 +10893,61 @@ func (s *SzRecordResponseData) SetRecord(val OptSzEntityRecord) {
 	s.Record = val
 }
 
+// The RAW result from the underlying native API function.
+type SzRecordResponseRawData map[string]jx.Raw
+
+func (s *SzRecordResponseRawData) init() SzRecordResponseRawData {
+	m := *s
+	if m == nil {
+		m = map[string]jx.Raw{}
+		*s = m
+	}
+	return m
+}
+
 // Merged schema.
 // Ref: #/components/schemas/SzReevaluateResponse
 type SzReevaluateResponse struct {
-	Data OptSzReevaluateResponseData `json:"data"`
+	Meta  OptSzMeta  `json:"meta"`
+	Links OptSzLinks `json:"links"`
+	// The RAW result from the underlying native API function.
+	RawData OptNilSzReevaluateResponseRawData `json:"rawData"`
+	Data    OptSzReevaluateResponseData       `json:"data"`
+}
+
+// GetMeta returns the value of Meta.
+func (s *SzReevaluateResponse) GetMeta() OptSzMeta {
+	return s.Meta
+}
+
+// GetLinks returns the value of Links.
+func (s *SzReevaluateResponse) GetLinks() OptSzLinks {
+	return s.Links
+}
+
+// GetRawData returns the value of RawData.
+func (s *SzReevaluateResponse) GetRawData() OptNilSzReevaluateResponseRawData {
+	return s.RawData
 }
 
 // GetData returns the value of Data.
 func (s *SzReevaluateResponse) GetData() OptSzReevaluateResponseData {
 	return s.Data
+}
+
+// SetMeta sets the value of Meta.
+func (s *SzReevaluateResponse) SetMeta(val OptSzMeta) {
+	s.Meta = val
+}
+
+// SetLinks sets the value of Links.
+func (s *SzReevaluateResponse) SetLinks(val OptSzLinks) {
+	s.Links = val
+}
+
+// SetRawData sets the value of RawData.
+func (s *SzReevaluateResponse) SetRawData(val OptNilSzReevaluateResponseRawData) {
+	s.RawData = val
 }
 
 // SetData sets the value of Data.
@@ -8804,14 +10975,173 @@ func (s *SzReevaluateResponseData) SetInfo(val OptSzResolutionInfo) {
 	s.Info = val
 }
 
+// The RAW result from the underlying native API function.
+type SzReevaluateResponseRawData map[string]jx.Raw
+
+func (s *SzReevaluateResponseRawData) init() SzReevaluateResponseRawData {
+	m := *s
+	if m == nil {
+		m = map[string]jx.Raw{}
+		*s = m
+	}
+	return m
+}
+
 // Merged schema.
 // Ref: #/components/schemas/SzRelatedEntity
 type SzRelatedEntity struct {
+	// The unique numeric ID identifying the entity.
+	EntityId OptInt64 `json:"entityId"`
+	// The name associated with this entity that is considered the best name among all the associated
+	// names.
+	EntityName OptString `json:"entityName"`
+	// Usually the same as the entityName property, but this may differ if the entity was found based on
+	// a name search.  In such a case, this field represents the name that most closely matches the name
+	// that was searched on.
+	BestName OptString `json:"bestName"`
+	// The array of DataSourceRecordSummary instances describing the number of records associated with
+	// each data source that contributes to this entity.
+	RecordSummaries []SzDataSourceRecordSummary `json:"recordSummaries"`
+	// An array of names associated with the entity that are formatted for readability.  These may be
+	// prefixed by a "usage type" if one was provided (e.g.: "Joe Schmoe" or "AKA: Joseph P. Schmoe").
+	NameData []string `json:"nameData"`
+	// An array of characteristics associated with the entity that are formatted for readability.  These
+	// will be prefixed by a characteristic type and optionally by a "usage type" if one was provided.
+	// **NOTE:** The `characteristicData` field is derived from the feature data values that contribute
+	// to the `ATTRIBUTE_DATA` field at the record level in the "raw data" JSON.
+	CharacteristicData []string `json:"characteristicData"`
+	// An array of addresses associated with the entity that are formatted for readability.  These may be
+	// prefixed by a "usage type" if one was provided (e.g.: "HOME: 101 Main Street").
+	AddressData []string `json:"addressData"`
+	// An array of phone numbers associated with the entity that are formatted for readability.  These
+	// may be prefixed by a "usage type" if one was provided (e.g.: "HOME: 702-555-1212").
+	PhoneData []string `json:"phoneData"`
+	// An array of entity data associated with the entity where the items are formatted for readability.
+	// These will be prefixed by an identifier type and may be prefixed by a "usage type" if one was
+	// provided (e.g.: "ID: 123456789" or "EMAIL: WORK: joe@nowhere.com").
+	IdentifierData []string `json:"identifierData"`
+	// An array of relationship data items associated with the entity that describes disclosed
+	// relationships.
+	RelationshipData []string `json:"relationshipData"`
+	// An array of associated data items that were loaded with the entity's records but not normally
+	// recognized or used for entity resolution. This array usually contains useful information from the
+	// source systems.
+	OtherData []string `json:"otherData"`
+	// The array of `SzMatchedRecord` instances describing the records associated with this entity.
+	Records []SzMatchedRecord `json:"records"`
+	// The map of string feature names to arrays of SzEntityFeature instances describing the values
+	// associated with each respective feature name.
+	Features OptSzRelatedEntityFeatures `json:"features"`
+	// If true then this `SzResolvedEntity` has complete features and records, otherwise they are not
+	// provided.  Also, the recordSummary items may be missing the topRecordIds if partial is true.  This
+	// can be true for partially retrieved related entities or if features are suppressed, if the detail
+	// level has suppressed records or related matching info (in the case of related entities) or if the
+	// force-minimal response flag has been been specified.
+	Partial OptBool `json:"partial"`
+	// The timestamp that the entity was last seen (i.e.: most recent record was loaded).
+	LastSeenTimestamp OptDateTime `json:"lastSeenTimestamp"`
+	// The integer "match level" describing how the related entity matched to the primary resolved entity.
+	MatchLevel OptInt32 `json:"matchLevel"`
+	// The match key describing what features matched between the primary resolved entity and the related
+	// entity.
+	MatchKey OptString `json:"matchKey"`
+	// The code identifying the resolution rule that related this entity to the primary resolved entity.
+	ResolutionRuleCode OptString `json:"resolutionRuleCode"`
 	// A boolean flag indicating if this related entity represents a disclosed relationship.
 	Disclosed OptBool `json:"disclosed"`
 	// A boolean flag indicating if this related entity represents an ambiguous relationship.
 	Ambiguous    OptBool               `json:"ambiguous"`
 	RelationType OptSzRelationshipType `json:"relationType"`
+}
+
+// GetEntityId returns the value of EntityId.
+func (s *SzRelatedEntity) GetEntityId() OptInt64 {
+	return s.EntityId
+}
+
+// GetEntityName returns the value of EntityName.
+func (s *SzRelatedEntity) GetEntityName() OptString {
+	return s.EntityName
+}
+
+// GetBestName returns the value of BestName.
+func (s *SzRelatedEntity) GetBestName() OptString {
+	return s.BestName
+}
+
+// GetRecordSummaries returns the value of RecordSummaries.
+func (s *SzRelatedEntity) GetRecordSummaries() []SzDataSourceRecordSummary {
+	return s.RecordSummaries
+}
+
+// GetNameData returns the value of NameData.
+func (s *SzRelatedEntity) GetNameData() []string {
+	return s.NameData
+}
+
+// GetCharacteristicData returns the value of CharacteristicData.
+func (s *SzRelatedEntity) GetCharacteristicData() []string {
+	return s.CharacteristicData
+}
+
+// GetAddressData returns the value of AddressData.
+func (s *SzRelatedEntity) GetAddressData() []string {
+	return s.AddressData
+}
+
+// GetPhoneData returns the value of PhoneData.
+func (s *SzRelatedEntity) GetPhoneData() []string {
+	return s.PhoneData
+}
+
+// GetIdentifierData returns the value of IdentifierData.
+func (s *SzRelatedEntity) GetIdentifierData() []string {
+	return s.IdentifierData
+}
+
+// GetRelationshipData returns the value of RelationshipData.
+func (s *SzRelatedEntity) GetRelationshipData() []string {
+	return s.RelationshipData
+}
+
+// GetOtherData returns the value of OtherData.
+func (s *SzRelatedEntity) GetOtherData() []string {
+	return s.OtherData
+}
+
+// GetRecords returns the value of Records.
+func (s *SzRelatedEntity) GetRecords() []SzMatchedRecord {
+	return s.Records
+}
+
+// GetFeatures returns the value of Features.
+func (s *SzRelatedEntity) GetFeatures() OptSzRelatedEntityFeatures {
+	return s.Features
+}
+
+// GetPartial returns the value of Partial.
+func (s *SzRelatedEntity) GetPartial() OptBool {
+	return s.Partial
+}
+
+// GetLastSeenTimestamp returns the value of LastSeenTimestamp.
+func (s *SzRelatedEntity) GetLastSeenTimestamp() OptDateTime {
+	return s.LastSeenTimestamp
+}
+
+// GetMatchLevel returns the value of MatchLevel.
+func (s *SzRelatedEntity) GetMatchLevel() OptInt32 {
+	return s.MatchLevel
+}
+
+// GetMatchKey returns the value of MatchKey.
+func (s *SzRelatedEntity) GetMatchKey() OptString {
+	return s.MatchKey
+}
+
+// GetResolutionRuleCode returns the value of ResolutionRuleCode.
+func (s *SzRelatedEntity) GetResolutionRuleCode() OptString {
+	return s.ResolutionRuleCode
 }
 
 // GetDisclosed returns the value of Disclosed.
@@ -8829,6 +11159,96 @@ func (s *SzRelatedEntity) GetRelationType() OptSzRelationshipType {
 	return s.RelationType
 }
 
+// SetEntityId sets the value of EntityId.
+func (s *SzRelatedEntity) SetEntityId(val OptInt64) {
+	s.EntityId = val
+}
+
+// SetEntityName sets the value of EntityName.
+func (s *SzRelatedEntity) SetEntityName(val OptString) {
+	s.EntityName = val
+}
+
+// SetBestName sets the value of BestName.
+func (s *SzRelatedEntity) SetBestName(val OptString) {
+	s.BestName = val
+}
+
+// SetRecordSummaries sets the value of RecordSummaries.
+func (s *SzRelatedEntity) SetRecordSummaries(val []SzDataSourceRecordSummary) {
+	s.RecordSummaries = val
+}
+
+// SetNameData sets the value of NameData.
+func (s *SzRelatedEntity) SetNameData(val []string) {
+	s.NameData = val
+}
+
+// SetCharacteristicData sets the value of CharacteristicData.
+func (s *SzRelatedEntity) SetCharacteristicData(val []string) {
+	s.CharacteristicData = val
+}
+
+// SetAddressData sets the value of AddressData.
+func (s *SzRelatedEntity) SetAddressData(val []string) {
+	s.AddressData = val
+}
+
+// SetPhoneData sets the value of PhoneData.
+func (s *SzRelatedEntity) SetPhoneData(val []string) {
+	s.PhoneData = val
+}
+
+// SetIdentifierData sets the value of IdentifierData.
+func (s *SzRelatedEntity) SetIdentifierData(val []string) {
+	s.IdentifierData = val
+}
+
+// SetRelationshipData sets the value of RelationshipData.
+func (s *SzRelatedEntity) SetRelationshipData(val []string) {
+	s.RelationshipData = val
+}
+
+// SetOtherData sets the value of OtherData.
+func (s *SzRelatedEntity) SetOtherData(val []string) {
+	s.OtherData = val
+}
+
+// SetRecords sets the value of Records.
+func (s *SzRelatedEntity) SetRecords(val []SzMatchedRecord) {
+	s.Records = val
+}
+
+// SetFeatures sets the value of Features.
+func (s *SzRelatedEntity) SetFeatures(val OptSzRelatedEntityFeatures) {
+	s.Features = val
+}
+
+// SetPartial sets the value of Partial.
+func (s *SzRelatedEntity) SetPartial(val OptBool) {
+	s.Partial = val
+}
+
+// SetLastSeenTimestamp sets the value of LastSeenTimestamp.
+func (s *SzRelatedEntity) SetLastSeenTimestamp(val OptDateTime) {
+	s.LastSeenTimestamp = val
+}
+
+// SetMatchLevel sets the value of MatchLevel.
+func (s *SzRelatedEntity) SetMatchLevel(val OptInt32) {
+	s.MatchLevel = val
+}
+
+// SetMatchKey sets the value of MatchKey.
+func (s *SzRelatedEntity) SetMatchKey(val OptString) {
+	s.MatchKey = val
+}
+
+// SetResolutionRuleCode sets the value of ResolutionRuleCode.
+func (s *SzRelatedEntity) SetResolutionRuleCode(val OptString) {
+	s.ResolutionRuleCode = val
+}
+
 // SetDisclosed sets the value of Disclosed.
 func (s *SzRelatedEntity) SetDisclosed(val OptBool) {
 	s.Disclosed = val
@@ -8842,6 +11262,19 @@ func (s *SzRelatedEntity) SetAmbiguous(val OptBool) {
 // SetRelationType sets the value of RelationType.
 func (s *SzRelatedEntity) SetRelationType(val OptSzRelationshipType) {
 	s.RelationType = val
+}
+
+// The map of string feature names to arrays of SzEntityFeature instances describing the values
+// associated with each respective feature name.
+type SzRelatedEntityFeatures map[string][]SzEntityFeature
+
+func (s *SzRelatedEntityFeatures) init() SzRelatedEntityFeatures {
+	m := *s
+	if m == nil {
+		m = map[string][]SzEntityFeature{}
+		*s = m
+	}
+	return m
 }
 
 // Describes a pair of features that triggered a relationship between the respective records.
@@ -9978,12 +12411,46 @@ func (s *SzVersionInfo) SetConfigCompatibilityVersion(val OptString) {
 // Merged schema.
 // Ref: #/components/schemas/SzVersionResponse
 type SzVersionResponse struct {
-	Data OptSzVersionInfo `json:"data"`
+	Meta  OptSzMeta  `json:"meta"`
+	Links OptSzLinks `json:"links"`
+	// The RAW result from the underlying native API function.
+	RawData OptNilSzVersionResponseRawData `json:"rawData"`
+	Data    OptSzVersionInfo               `json:"data"`
+}
+
+// GetMeta returns the value of Meta.
+func (s *SzVersionResponse) GetMeta() OptSzMeta {
+	return s.Meta
+}
+
+// GetLinks returns the value of Links.
+func (s *SzVersionResponse) GetLinks() OptSzLinks {
+	return s.Links
+}
+
+// GetRawData returns the value of RawData.
+func (s *SzVersionResponse) GetRawData() OptNilSzVersionResponseRawData {
+	return s.RawData
 }
 
 // GetData returns the value of Data.
 func (s *SzVersionResponse) GetData() OptSzVersionInfo {
 	return s.Data
+}
+
+// SetMeta sets the value of Meta.
+func (s *SzVersionResponse) SetMeta(val OptSzMeta) {
+	s.Meta = val
+}
+
+// SetLinks sets the value of Links.
+func (s *SzVersionResponse) SetLinks(val OptSzLinks) {
+	s.Links = val
+}
+
+// SetRawData sets the value of RawData.
+func (s *SzVersionResponse) SetRawData(val OptNilSzVersionResponseRawData) {
+	s.RawData = val
 }
 
 // SetData sets the value of Data.
@@ -9992,6 +12459,18 @@ func (s *SzVersionResponse) SetData(val OptSzVersionInfo) {
 }
 
 func (*SzVersionResponse) versionRes() {}
+
+// The RAW result from the underlying native API function.
+type SzVersionResponseRawData map[string]jx.Raw
+
+func (s *SzVersionResponseRawData) init() SzVersionResponseRawData {
+	m := *s
+	if m == nil {
+		m = map[string]jx.Raw{}
+		*s = m
+	}
+	return m
+}
 
 // Describes a virtual entity that describes an interim resolution step for an actual entity.
 // Virtual entities that consist of a single record (or multiple "identical" records) are considered
@@ -10107,12 +12586,46 @@ func (s *SzVirtualEntityRecord) SetInternalId(val OptString) {
 // Merged schema.
 // Ref: #/components/schemas/SzVirtualEntityResponse
 type SzVirtualEntityResponse struct {
-	Data OptSzVirtualEntityData `json:"data"`
+	Meta  OptSzMeta  `json:"meta"`
+	Links OptSzLinks `json:"links"`
+	// The RAW result from the underlying native API function.
+	RawData OptNilSzVirtualEntityResponseRawData `json:"rawData"`
+	Data    OptSzVirtualEntityData               `json:"data"`
+}
+
+// GetMeta returns the value of Meta.
+func (s *SzVirtualEntityResponse) GetMeta() OptSzMeta {
+	return s.Meta
+}
+
+// GetLinks returns the value of Links.
+func (s *SzVirtualEntityResponse) GetLinks() OptSzLinks {
+	return s.Links
+}
+
+// GetRawData returns the value of RawData.
+func (s *SzVirtualEntityResponse) GetRawData() OptNilSzVirtualEntityResponseRawData {
+	return s.RawData
 }
 
 // GetData returns the value of Data.
 func (s *SzVirtualEntityResponse) GetData() OptSzVirtualEntityData {
 	return s.Data
+}
+
+// SetMeta sets the value of Meta.
+func (s *SzVirtualEntityResponse) SetMeta(val OptSzMeta) {
+	s.Meta = val
+}
+
+// SetLinks sets the value of Links.
+func (s *SzVirtualEntityResponse) SetLinks(val OptSzLinks) {
+	s.Links = val
+}
+
+// SetRawData sets the value of RawData.
+func (s *SzVirtualEntityResponse) SetRawData(val OptNilSzVirtualEntityResponseRawData) {
+	s.RawData = val
 }
 
 // SetData sets the value of Data.
@@ -10122,15 +12635,61 @@ func (s *SzVirtualEntityResponse) SetData(val OptSzVirtualEntityData) {
 
 func (*SzVirtualEntityResponse) getVirtualEntityByRecordIdsRes() {}
 
+// The RAW result from the underlying native API function.
+type SzVirtualEntityResponseRawData map[string]jx.Raw
+
+func (s *SzVirtualEntityResponseRawData) init() SzVirtualEntityResponseRawData {
+	m := *s
+	if m == nil {
+		m = map[string]jx.Raw{}
+		*s = m
+	}
+	return m
+}
+
 // Merged schema.
 // Ref: #/components/schemas/SzWhyEntitiesResponse
 type SzWhyEntitiesResponse struct {
-	Data OptSzWhyEntitiesResponseData `json:"data"`
+	Meta  OptSzMeta  `json:"meta"`
+	Links OptSzLinks `json:"links"`
+	// The RAW result from the underlying native API function.
+	RawData OptNilSzWhyEntitiesResponseRawData `json:"rawData"`
+	Data    OptSzWhyEntitiesResponseData       `json:"data"`
+}
+
+// GetMeta returns the value of Meta.
+func (s *SzWhyEntitiesResponse) GetMeta() OptSzMeta {
+	return s.Meta
+}
+
+// GetLinks returns the value of Links.
+func (s *SzWhyEntitiesResponse) GetLinks() OptSzLinks {
+	return s.Links
+}
+
+// GetRawData returns the value of RawData.
+func (s *SzWhyEntitiesResponse) GetRawData() OptNilSzWhyEntitiesResponseRawData {
+	return s.RawData
 }
 
 // GetData returns the value of Data.
 func (s *SzWhyEntitiesResponse) GetData() OptSzWhyEntitiesResponseData {
 	return s.Data
+}
+
+// SetMeta sets the value of Meta.
+func (s *SzWhyEntitiesResponse) SetMeta(val OptSzMeta) {
+	s.Meta = val
+}
+
+// SetLinks sets the value of Links.
+func (s *SzWhyEntitiesResponse) SetLinks(val OptSzLinks) {
+	s.Links = val
+}
+
+// SetRawData sets the value of RawData.
+func (s *SzWhyEntitiesResponse) SetRawData(val OptNilSzWhyEntitiesResponseRawData) {
+	s.RawData = val
 }
 
 // SetData sets the value of Data.
@@ -10166,6 +12725,18 @@ func (s *SzWhyEntitiesResponseData) SetWhyResult(val OptSzWhyEntitiesResult) {
 // SetEntities sets the value of Entities.
 func (s *SzWhyEntitiesResponseData) SetEntities(val []SzEntityData) {
 	s.Entities = val
+}
+
+// The RAW result from the underlying native API function.
+type SzWhyEntitiesResponseRawData map[string]jx.Raw
+
+func (s *SzWhyEntitiesResponseRawData) init() SzWhyEntitiesResponseRawData {
+	m := *s
+	if m == nil {
+		m = map[string]jx.Raw{}
+		*s = m
+	}
+	return m
 }
 
 // Describes why two entities did not resolve or why they related.
@@ -10212,12 +12783,46 @@ func (s *SzWhyEntitiesResult) SetMatchInfo(val OptSzWhyMatchInfo) {
 // Merged schema.
 // Ref: #/components/schemas/SzWhyEntityResponse
 type SzWhyEntityResponse struct {
-	Data OptSzWhyEntityResponseData `json:"data"`
+	Meta  OptSzMeta  `json:"meta"`
+	Links OptSzLinks `json:"links"`
+	// The RAW result from the underlying native API function.
+	RawData OptNilSzWhyEntityResponseRawData `json:"rawData"`
+	Data    OptSzWhyEntityResponseData       `json:"data"`
+}
+
+// GetMeta returns the value of Meta.
+func (s *SzWhyEntityResponse) GetMeta() OptSzMeta {
+	return s.Meta
+}
+
+// GetLinks returns the value of Links.
+func (s *SzWhyEntityResponse) GetLinks() OptSzLinks {
+	return s.Links
+}
+
+// GetRawData returns the value of RawData.
+func (s *SzWhyEntityResponse) GetRawData() OptNilSzWhyEntityResponseRawData {
+	return s.RawData
 }
 
 // GetData returns the value of Data.
 func (s *SzWhyEntityResponse) GetData() OptSzWhyEntityResponseData {
 	return s.Data
+}
+
+// SetMeta sets the value of Meta.
+func (s *SzWhyEntityResponse) SetMeta(val OptSzMeta) {
+	s.Meta = val
+}
+
+// SetLinks sets the value of Links.
+func (s *SzWhyEntityResponse) SetLinks(val OptSzLinks) {
+	s.Links = val
+}
+
+// SetRawData sets the value of RawData.
+func (s *SzWhyEntityResponse) SetRawData(val OptNilSzWhyEntityResponseRawData) {
+	s.RawData = val
 }
 
 // SetData sets the value of Data.
@@ -10255,6 +12860,18 @@ func (s *SzWhyEntityResponseData) SetWhyResults(val []SzWhyEntityResult) {
 // SetEntities sets the value of Entities.
 func (s *SzWhyEntityResponseData) SetEntities(val []SzEntityData) {
 	s.Entities = val
+}
+
+// The RAW result from the underlying native API function.
+type SzWhyEntityResponseRawData map[string]jx.Raw
+
+func (s *SzWhyEntityResponseRawData) init() SzWhyEntityResponseRawData {
+	m := *s
+	if m == nil {
+		m = map[string]jx.Raw{}
+		*s = m
+	}
+	return m
 }
 
 // Describes why an entity resolved.
@@ -10394,12 +13011,46 @@ type SzWhyPerspective jx.Raw
 // Merged schema.
 // Ref: #/components/schemas/SzWhyRecordsResponse
 type SzWhyRecordsResponse struct {
-	Data OptSzWhyRecordsResponseData `json:"data"`
+	Meta  OptSzMeta  `json:"meta"`
+	Links OptSzLinks `json:"links"`
+	// The RAW result from the underlying native API function.
+	RawData OptNilSzWhyRecordsResponseRawData `json:"rawData"`
+	Data    OptSzWhyRecordsResponseData       `json:"data"`
+}
+
+// GetMeta returns the value of Meta.
+func (s *SzWhyRecordsResponse) GetMeta() OptSzMeta {
+	return s.Meta
+}
+
+// GetLinks returns the value of Links.
+func (s *SzWhyRecordsResponse) GetLinks() OptSzLinks {
+	return s.Links
+}
+
+// GetRawData returns the value of RawData.
+func (s *SzWhyRecordsResponse) GetRawData() OptNilSzWhyRecordsResponseRawData {
+	return s.RawData
 }
 
 // GetData returns the value of Data.
 func (s *SzWhyRecordsResponse) GetData() OptSzWhyRecordsResponseData {
 	return s.Data
+}
+
+// SetMeta sets the value of Meta.
+func (s *SzWhyRecordsResponse) SetMeta(val OptSzMeta) {
+	s.Meta = val
+}
+
+// SetLinks sets the value of Links.
+func (s *SzWhyRecordsResponse) SetLinks(val OptSzLinks) {
+	s.Links = val
+}
+
+// SetRawData sets the value of RawData.
+func (s *SzWhyRecordsResponse) SetRawData(val OptNilSzWhyRecordsResponseRawData) {
+	s.RawData = val
 }
 
 // SetData sets the value of Data.
@@ -10435,6 +13086,18 @@ func (s *SzWhyRecordsResponseData) SetWhyResult(val OptSzWhyRecordsResult) {
 // SetEntities sets the value of Entities.
 func (s *SzWhyRecordsResponseData) SetEntities(val []SzEntityData) {
 	s.Entities = val
+}
+
+// The RAW result from the underlying native API function.
+type SzWhyRecordsResponseRawData map[string]jx.Raw
+
+func (s *SzWhyRecordsResponseRawData) init() SzWhyRecordsResponseRawData {
+	m := *s
+	if m == nil {
+		m = map[string]jx.Raw{}
+		*s = m
+	}
+	return m
 }
 
 // Describes why two records might resolve.
